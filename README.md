@@ -9,6 +9,16 @@
   +ellipsis
 ```
 
+```sass
+@import 'bootstrap/mixins/_scrolbar'
+
+.class
+  +scrollbar
+
+.class
+  +scrollbar(#f00)
+```
+
 ### Functions
 
 ```sass
