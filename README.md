@@ -12,6 +12,19 @@
 ### Functions
 
 ```sass
+@import 'bootstrap/mixins/_rhythm'
+
+.class
+  padding: rh() 0
+
+.class
+  padding: rh(1.5) 0
+
+.class
+  padding: rh(22px) 0
+```
+
+```sass
 @import 'bootstrap/mixins/_grid'
 
 .class
