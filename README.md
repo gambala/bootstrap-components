@@ -1,7 +1,7 @@
 ## Gambala addons
 
 ```sass
-@import "bootstrap/mixins/_ellipsis";
+@import 'bootstrap/mixins/_ellipsis'
 
 .class
   +ellipsis
