@@ -2,6 +2,17 @@
 //
 // Generate semantic grid columns with these mixins.
 
+// Calculate gutter for width in units or for gutter factor
+@function gg($width: 1, $qwazi: true, $width-base: $grid-gutter-width) {
+  @if (unitless($width)) {
+    $gutter-width: $width-base;
+    @return $width*$gutter-width;
+  } @else {
+    $gutter-width: if($qwazi, $width-base/2, $width-base);
+    @return ceil($width/$gutter-width)*$gutter-width;
+  }
+}
+
 // Centered container element
 @mixin container-fixed($gutter: $grid-gutter-width) {
   margin-right: auto;

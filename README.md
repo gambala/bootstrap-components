@@ -1,10 +1,27 @@
 ## Gambala addons
 
+### Mixins
+
 ```sass
 @import 'bootstrap/mixins/_ellipsis'
 
 .class
   +ellipsis
+```
+
+### Functions
+
+```sass
+@import 'bootstrap/mixins/_grid'
+
+.class
+  padding: 0 gg()
+
+.class
+  padding: 0 gg(1.5)
+
+.class
+  padding: 0 gg(22px)
 ```
 
 ---
