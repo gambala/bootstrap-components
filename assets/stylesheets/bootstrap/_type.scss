@@ -86,12 +86,26 @@ mark,
   padding: .2em;
 }
 
+.b {
+  font-weight: bold;
+}
+
 // Alignment
 .text-left           { text-align: left; }
 .text-right          { text-align: right; }
 .text-center         { text-align: center; }
 .text-justify        { text-align: justify; }
 .text-nowrap         { white-space: nowrap; }
+
+.text-center {
+  .form-control {
+    text-align: center
+  }
+  .img-responsive {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 
 // Transformation
 .text-lowercase      { text-transform: lowercase; }
@@ -184,7 +198,7 @@ ol {
 // Description Lists
 dl {
   margin-top: 0; // Remove browser default
-  margin-bottom: $line-height-computed;
+  margin-bottom: 0;
 }
 dt,
 dd {
@@ -195,6 +209,18 @@ dt {
 }
 dd {
   margin-left: 0; // Undo browser default
+  position: relative;
+}
+.dl-inline {
+  dt {
+    float: left;
+    clear: left;
+    margin-right: 5px;
+  }
+  dd {
+    display: inline-block;
+    margin-left: 0;
+  }
 }
 
 // Horizontal description lists
