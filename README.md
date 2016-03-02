@@ -28,22 +28,12 @@ This is [Bootstrap](https://github.com/twbs/bootstrap) 3 fork with some useful a
 
 ```sass
 @import 'bootstrap/mixins/_rhythm'
-
-.class
-  padding: rh() 0
-.class
-  padding: rh(1.5) 0
-.class
-  padding: rh(22px) 0
-```
-
-```sass
 @import 'bootstrap/mixins/_grid'
 
 .class
-  padding: 0 gg()
+  padding: rh() gg()
 .class
-  padding: 0 gg(1.5)
+  padding: rh(1.5) gg(1.5)
 .class
-  padding: 0 gg(22px)
+  padding: rh(22px) gg(22px)
 ```
