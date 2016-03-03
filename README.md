@@ -9,13 +9,6 @@ This is [Bootstrap](https://github.com/twbs/bootstrap) 3 fork with some useful a
 ## Mixins
 
 ```sass
-@import 'bootstrap/mixins/_ellipsis'
-
-.class
-  +ellipsis
-```
-
-```sass
 @import 'bootstrap/mixins/_scrollbar'
 
 .class
