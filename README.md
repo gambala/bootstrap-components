@@ -9,7 +9,7 @@ This is [Bootstrap](https://github.com/twbs/bootstrap) 3 fork with some useful a
 ## Mixins
 
 ```sass
-@import 'bootstrap/mixins/_scrollbar'
+@import 'bootstrap/mixins/scrollbar'
 
 .class
   +scrollbar
@@ -17,11 +17,19 @@ This is [Bootstrap](https://github.com/twbs/bootstrap) 3 fork with some useful a
   +scrollbar(#f00)
 ```
 
+```sass
+@import 'bootstrap/mixins/neighbours'
+
+.class
+  +between_neighbours('div, p')
+    margin-top: 20px
+```
+
 ## Functions
 
 ```sass
-@import 'bootstrap/mixins/_rhythm'
-@import 'bootstrap/mixins/_grid'
+@import 'bootstrap/mixins/rhythm'
+@import 'bootstrap/mixins/grid'
 
 .class
   padding: rh() gg()
