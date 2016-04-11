@@ -167,8 +167,7 @@
   line-height: $line-height-computed;
   height: $navbar-height;
 
-  &:hover,
-  &:focus {
+  &:hover {
     text-decoration: none;
   }
 
@@ -200,12 +199,6 @@
   background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
   border: 1px solid transparent;
   border-radius: $border-radius-base;
-
-  // We remove the `outline` here, but later compensate by attaching `:hover`
-  // styles to `:focus`.
-  &:focus {
-    outline: 0;
-  }
 
   // Bars
   .icon-bar {
@@ -254,8 +247,7 @@
       }
       > li > a {
         line-height: $line-height-computed;
-        &:hover,
-        &:focus {
+        &:hover {
           background-image: none;
         }
       }
@@ -400,8 +392,7 @@
 
   .navbar-brand {
     color: $navbar-default-brand-color;
-    &:hover,
-    &:focus {
+    &:hover {
       color: $navbar-default-brand-hover-color;
       background-color: $navbar-default-brand-hover-bg;
     }
@@ -415,24 +406,21 @@
     > li > a {
       color: $navbar-default-link-color;
 
-      &:hover,
-      &:focus {
+      &:hover {
         color: $navbar-default-link-hover-color;
         background-color: $navbar-default-link-hover-bg;
       }
     }
     > .active > a {
       &,
-      &:hover,
-      &:focus {
+      &:hover {
         color: $navbar-default-link-active-color;
         background-color: $navbar-default-link-active-bg;
       }
     }
     > .disabled > a {
       &,
-      &:hover,
-      &:focus {
+      &:hover {
         color: $navbar-default-link-disabled-color;
         background-color: $navbar-default-link-disabled-bg;
       }
@@ -441,8 +429,7 @@
 
   .navbar-toggle {
     border-color: $navbar-default-toggle-border-color;
-    &:hover,
-    &:focus {
+    &:hover {
       background-color: $navbar-default-toggle-hover-bg;
     }
     .icon-bar {
@@ -460,8 +447,7 @@
     // Remove background color from open dropdown
     > .open > a {
       &,
-      &:hover,
-      &:focus {
+      &:hover {
         background-color: $navbar-default-link-active-bg;
         color: $navbar-default-link-active-color;
       }
@@ -472,24 +458,21 @@
       .open .dropdown-menu {
         > li > a {
           color: $navbar-default-link-color;
-          &:hover,
-          &:focus {
+          &:hover {
             color: $navbar-default-link-hover-color;
             background-color: $navbar-default-link-hover-bg;
           }
         }
         > .active > a {
           &,
-          &:hover,
-          &:focus {
+          &:hover {
             color: $navbar-default-link-active-color;
             background-color: $navbar-default-link-active-bg;
           }
         }
         > .disabled > a {
           &,
-          &:hover,
-          &:focus {
+          &:hover {
             color: $navbar-default-link-disabled-color;
             background-color: $navbar-default-link-disabled-bg;
           }
@@ -512,14 +495,12 @@
 
   .btn-link {
     color: $navbar-default-link-color;
-    &:hover,
-    &:focus {
+    &:hover {
       color: $navbar-default-link-hover-color;
     }
     &[disabled],
     fieldset[disabled] & {
-      &:hover,
-      &:focus {
+      &:hover {
         color: $navbar-default-link-disabled-color;
       }
     }
@@ -534,8 +515,7 @@
 
   .navbar-brand {
     color: $navbar-inverse-brand-color;
-    &:hover,
-    &:focus {
+    &:hover {
       color: $navbar-inverse-brand-hover-color;
       background-color: $navbar-inverse-brand-hover-bg;
     }
@@ -549,24 +529,21 @@
     > li > a {
       color: $navbar-inverse-link-color;
 
-      &:hover,
-      &:focus {
+      &:hover {
         color: $navbar-inverse-link-hover-color;
         background-color: $navbar-inverse-link-hover-bg;
       }
     }
     > .active > a {
       &,
-      &:hover,
-      &:focus {
+      &:hover {
         color: $navbar-inverse-link-active-color;
         background-color: $navbar-inverse-link-active-bg;
       }
     }
     > .disabled > a {
       &,
-      &:hover,
-      &:focus {
+      &:hover {
         color: $navbar-inverse-link-disabled-color;
         background-color: $navbar-inverse-link-disabled-bg;
       }
@@ -576,8 +553,7 @@
   // Darken the responsive nav toggle
   .navbar-toggle {
     border-color: $navbar-inverse-toggle-border-color;
-    &:hover,
-    &:focus {
+    &:hover {
       background-color: $navbar-inverse-toggle-hover-bg;
     }
     .icon-bar {
@@ -594,8 +570,7 @@
   .navbar-nav {
     > .open > a {
       &,
-      &:hover,
-      &:focus {
+      &:hover {
         background-color: $navbar-inverse-link-active-bg;
         color: $navbar-inverse-link-active-color;
       }
@@ -612,24 +587,21 @@
         }
         > li > a {
           color: $navbar-inverse-link-color;
-          &:hover,
-          &:focus {
+          &:hover {
             color: $navbar-inverse-link-hover-color;
             background-color: $navbar-inverse-link-hover-bg;
           }
         }
         > .active > a {
           &,
-          &:hover,
-          &:focus {
+          &:hover {
             color: $navbar-inverse-link-active-color;
             background-color: $navbar-inverse-link-active-bg;
           }
         }
         > .disabled > a {
           &,
-          &:hover,
-          &:focus {
+          &:hover {
             color: $navbar-inverse-link-disabled-color;
             background-color: $navbar-inverse-link-disabled-bg;
           }
@@ -647,14 +619,12 @@
 
   .btn-link {
     color: $navbar-inverse-link-color;
-    &:hover,
-    &:focus {
+    &:hover {
       color: $navbar-inverse-link-hover-color;
     }
     &[disabled],
     fieldset[disabled] & {
-      &:hover,
-      &:focus {
+      &:hover {
         color: $navbar-inverse-link-disabled-color;
       }
     }

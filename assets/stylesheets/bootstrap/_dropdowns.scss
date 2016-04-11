@@ -22,11 +22,6 @@
   position: relative;
 }
 
-// Prevent the focus on the dropdown toggle when closing dropdowns
-.dropdown-toggle:focus {
-  outline: 0;
-}
-
 // The dropdown menu (ul)
 .dropdown-menu {
   position: absolute;
@@ -75,8 +70,7 @@
 
 // Hover/Focus state
 .dropdown-menu > li > a {
-  &:hover,
-  &:focus {
+  &:hover {
     text-decoration: none;
     color: $dropdown-link-hover-color;
     background-color: $dropdown-link-hover-bg;
@@ -86,8 +80,7 @@
 // Active state
 .dropdown-menu > .active > a {
   &,
-  &:hover,
-  &:focus {
+  &:hover {
     color: $dropdown-link-active-color;
     text-decoration: none;
     outline: 0;
@@ -101,14 +94,12 @@
 
 .dropdown-menu > .disabled > a {
   &,
-  &:hover,
-  &:focus {
+  &:hover {
     color: $dropdown-link-disabled-color;
   }
 
   // Nuke hover/focus effects
-  &:hover,
-  &:focus {
+  &:hover {
     text-decoration: none;
     background-color: transparent;
     background-image: none; // Remove CSS gradient
@@ -122,11 +113,6 @@
   // Show the menu
   > .dropdown-menu {
     display: block;
-  }
-
-  // Remove the outline when :focus is triggered
-  > a {
-    outline: 0;
   }
 }
 
