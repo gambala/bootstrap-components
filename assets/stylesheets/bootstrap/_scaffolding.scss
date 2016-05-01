@@ -16,6 +16,10 @@
   @include box-sizing(border-box);
 }
 
+*,
+*:focus {
+  outline: 0;
+};
 
 // Body reset
 
@@ -49,14 +53,9 @@ a {
   color: $link-color;
   text-decoration: none;
 
-  &:hover,
-  &:focus {
+  &:hover {
     color: $link-hover-color;
     text-decoration: $link-hover-decoration;
-  }
-
-  &:focus {
-    @include tab-focus;
   }
 }
 
@@ -138,8 +137,7 @@ hr {
 // Credit: HTML5 Boilerplate
 
 .sr-only-focusable {
-  &:active,
-  &:focus {
+  &:active {
     position: static;
     width: auto;
     height: auto;

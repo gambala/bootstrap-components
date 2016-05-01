@@ -13,7 +13,6 @@
     float: left;
     // Bring the "active" button to the front
     &:hover,
-    &:focus,
     &:active,
     &.active {
       z-index: 2;
@@ -80,12 +79,6 @@
 }
 .btn-group > .btn-group:last-child:not(:first-child) > .btn:first-child {
   @include border-left-radius(0);
-}
-
-// On active and open, don't show outline
-.btn-group .dropdown-toggle:active,
-.btn-group.open .dropdown-toggle {
-  outline: 0;
 }
 
 
