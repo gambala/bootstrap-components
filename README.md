@@ -1,10 +1,15 @@
-## Bootstrap for Sass with gambala addons
+## Optimized Bootstrap 3 for Sass
 [![Gem Version](https://badge.fury.io/rb/bootstrap-sass.svg)](http://badge.fury.io/rb/bootstrap-sass)
 [![npm version](https://img.shields.io/npm/v/bootstrap-sass.svg?style=flat)](https://www.npmjs.com/package/bootstrap-sass)
 [![Bower Version](https://badge.fury.io/bo/bootstrap-sass.svg)](http://badge.fury.io/bo/bootstrap-sass)
-[![Build Status](https://img.shields.io/travis/twbs/bootstrap-sass.svg)](https://travis-ci.org/twbs/bootstrap-sass)
 
-This is [Bootstrap](https://github.com/twbs/bootstrap) 3 fork with some useful addons like mixins and functions.
+This is [Bootstrap](https://github.com/twbs/bootstrap) 3 optimized fork. Info below.
+
+# Concept
+
+TODO: Write concept about 10*10*10
+
+# Addons
 
 ## Mixins
 
