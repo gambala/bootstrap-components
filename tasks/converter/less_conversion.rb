@@ -96,11 +96,8 @@ class Converter
             file = apply_mixin_parent_selector file, '\.(?:visible|hidden)'
           when 'variables.less'
             file = insert_default_vars(file)
-            file = ['$bootstrap-sass-asset-helper: false !default;', file].join("\n")
             file = replace_all file, %r{(\$icon-font-path): \s*"(.*)" (!default);}, "\n" + unindent(<<-SCSS, 14)
-              // [converter] If $bootstrap-sass-asset-helper if used, provide path relative to the assets load path.
-              // [converter] This is because some asset helpers, such as Sprockets, do not work with file-relative paths.
-              \\1: if($bootstrap-sass-asset-helper, "bootstrap/", "\\2bootstrap/") \\3;
+              \\1: "bootstrap/" \\3;
             SCSS
           when 'breadcrumbs.less'
             file = replace_all file, /(.*)(\\00a0)/, unindent(<<-SCSS, 8) + "\\1\#{$nbsp}"
@@ -189,7 +186,7 @@ class Converter
     end
 
     def replace_asset_url(rule, type)
-      replace_all rule, /url\((.*?)\)/, "url(if($bootstrap-sass-asset-helper, twbs-#{type}-path(\\1), \\1))"
+      replace_all rule, /url\((.*?)\)/, "url(#{type}-path(\\1))"
     end
 
     # convert recursively evaluated selector $list to @for loop
