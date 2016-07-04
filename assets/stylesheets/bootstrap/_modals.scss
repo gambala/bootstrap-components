@@ -26,10 +26,10 @@
 
   // When fading in the modal, animate it to slide down
   &.fade .modal-dialog {
-    @include translate(0, -25%);
-    @include transition-transform(0.3s ease-out);
+    transform: translate(0, -25%);
+    transition: transform 0.3s ease-out;
   }
-  &.in .modal-dialog { @include translate(0, 0) }
+  &.in .modal-dialog { transform: translate(0, 0) }
 }
 .modal-open .modal {
   overflow-x: hidden;
@@ -50,7 +50,7 @@
   border: 1px solid $modal-content-fallback-border-color; //old browsers fallback (ie8 etc)
   border: 1px solid $modal-content-border-color;
   border-radius: $border-radius-large;
-  @include box-shadow(0 3px 9px rgba(0,0,0,.5));
+  box-shadow: 0 3px 9px rgba(0,0,0,.5);
   background-clip: padding-box;
 }
 
@@ -132,7 +132,7 @@
     margin: 30px auto;
   }
   .modal-content {
-    @include box-shadow(0 5px 15px rgba(0,0,0,.5));
+    box-shadow: 0 5px 15px rgba(0,0,0,.5);
   }
 
   // Modal sizes
