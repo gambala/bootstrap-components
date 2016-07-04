@@ -282,7 +282,7 @@
   border-top: 1px solid transparent;
   border-bottom: 1px solid transparent;
   $shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 0 rgba(255,255,255,.1);
-  @include box-shadow($shadow);
+  box-shadow: $shadow;
 
   // Mixin behavior for optimum display
   @include form-inline;
@@ -308,7 +308,7 @@
     margin-right: 0;
     padding-top: 0;
     padding-bottom: 0;
-    @include box-shadow(none);
+    box-shadow: none;
   }
 }
 
