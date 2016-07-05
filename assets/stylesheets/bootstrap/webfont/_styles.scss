@@ -1,3 +1,6 @@
+@import "bootstrap/base/font-family/variables";
+@import "variables";
+
 @if $font-family-base-custom != none {
   .wf-active {
     body {
