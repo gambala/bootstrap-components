@@ -1,6 +1,12 @@
-//
-// Pagination (multiple pages)
-// --------------------------------------------------
+@import "bootstrap/base/border-radius/variables";
+@import "bootstrap/base/cursor/variables";
+@import "bootstrap/base/font-size/variables";
+@import "bootstrap/base/line-height/variables";
+@import "bootstrap/base/padding/variables";
+@import "bootstrap/base/border-radius/mixins";
+@import "variables";
+@import "mixins";
+
 .pagination {
   display: inline-block;
   padding-left: 0;
