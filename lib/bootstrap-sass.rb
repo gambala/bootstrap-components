@@ -5,8 +5,6 @@ module Bootstrap
     def load!
       if rails?
         register_rails_engine
-      elsif lotus?
-        register_lotus
       elsif sprockets?
         register_sprockets
       end
@@ -44,10 +42,6 @@ module Bootstrap
       defined?(::Rails)
     end
 
-    def lotus?
-      defined?(::Lotus)
-    end
-
     private
 
     def configure_sass
@@ -61,10 +55,6 @@ module Bootstrap
 
     def register_rails_engine
       require 'bootstrap-sass/engine'
-    end
-
-    def register_lotus
-      Lotus::Assets.sources << assets_path
     end
 
     def register_sprockets
