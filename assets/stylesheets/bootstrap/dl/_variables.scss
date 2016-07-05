@@ -1,0 +1,6 @@
+@import "bootstrap/base/grid/variables";
+
+//** Width of horizontal description list titles
+$dl-horizontal-offset:        180px !default;
+//** Point at which .dl-horizontal becomes horizontal
+$dl-horizontal-breakpoint:    $grid-float-breakpoint !default;
