@@ -1,7 +1,12 @@
-//
-// Dropdown menus
-// --------------------------------------------------
-
+@import "bootstrap/base/border-radius/variables";
+@import "bootstrap/base/cursor/variables";
+@import "bootstrap/base/font-size/variables";
+@import "bootstrap/base/line-height/variables";
+@import "bootstrap/base/padding/variables";
+@import "bootstrap/base/z-index/variables";
+@import "variables";
+@import "bootstrap/nav/mixins";
+@import "bootstrap/mixins/reset-filter";
 
 // The dropdown wrapper (div)
 .dropdown {
