@@ -71,7 +71,7 @@ task :compile, :css_path do |t, args|
   css_path = args.with_defaults(css_path: 'tmp')[:css_path]
   puts Term::ANSIColor.bold "Compiling SCSS in #{path}"
   Dir.mkdir(css_path) unless File.directory?(css_path)
-  %w(_bootstrap bootstrap/_theme).each do |file|
+  %w(_bootstrap).each do |file|
     save_path = "#{css_path}/#{file.sub(/(^|\/)?_+/, '\1').sub('/', '-')}.css"
     puts Term::ANSIColor.cyan("  #{save_path}") + '...'
     engine    = Sass::Engine.for_file("#{path}/#{file}.scss", syntax: :scss, load_paths: [path])
