@@ -17,7 +17,6 @@
 }
 
 // The dropdown wrapper (div)
-.dropup,
 .dropdown {
   position: relative;
 }
@@ -158,28 +157,6 @@
 .pull-right > .dropdown-menu {
   right: 0;
   left: auto;
-}
-
-// Allow for dropdowns to go bottom up (aka, dropup-menu)
-//
-// Just add .dropup after the standard .dropdown class and you're set, bro.
-// TODO: abstract this so that the navbar fixed styles are not placed here?
-
-.dropup,
-.navbar-fixed-bottom .dropdown {
-  // Reverse the caret
-  .caret {
-    border-top: 0;
-    border-bottom: $caret-width-base dashed;
-    border-bottom: $caret-width-base solid \9; // IE8
-    content: "";
-  }
-  // Different positioning for bottom up menu
-  .dropdown-menu {
-    top: auto;
-    bottom: 100%;
-    margin-bottom: 2px;
-  }
 }
 
 
