@@ -22,7 +22,6 @@
   "ignore": [
     "**/.*",
     "lib",
-    "tasks",
     "test",
     "*.gemspec",
     "Rakefile",
