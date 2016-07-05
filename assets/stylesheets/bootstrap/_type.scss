@@ -90,43 +90,6 @@ mark,
   font-weight: bold;
 }
 
-// Alignment
-.text-left           { text-align: left; }
-.text-right          { text-align: right; }
-.text-center         { text-align: center; }
-.text-justify        { text-align: justify; }
-.text-nowrap         { white-space: nowrap; }
-
-.text-center {
-  .form-control {
-    text-align: center
-  }
-  .img-responsive {
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
-// Transformation
-.text-lowercase      { text-transform: lowercase; }
-.text-uppercase      { text-transform: uppercase; }
-.text-capitalize     { text-transform: capitalize; }
-
-// Contextual colors
-.text-muted {
-  color: $text-muted;
-}
-
-@include text-emphasis-variant('.text-primary', $brand-primary);
-
-@include text-emphasis-variant('.text-success', $state-success-text);
-
-@include text-emphasis-variant('.text-info', $state-info-text);
-
-@include text-emphasis-variant('.text-warning', $state-warning-text);
-
-@include text-emphasis-variant('.text-danger', $state-danger-text);
-
 // Contextual backgrounds
 // For now we'll leave these alongside the text classes until v4 when we can
 // safely shift things around (per SemVer rules).
