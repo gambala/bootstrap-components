@@ -1,7 +1,6 @@
-//
-// Jumbotron
-// --------------------------------------------------
-
+@import "bootstrap/base/border-radius/variables";
+@import "bootstrap/base/grid/variables";
+@import "variables";
 
 .jumbotron {
   padding-top:    $jumbotron-padding;
