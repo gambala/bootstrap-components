@@ -1,7 +1,8 @@
-//
-// Panels
-// --------------------------------------------------
-
+@import "bootstrap/base/line-height/variables";
+@import "bootstrap/base/font-size/variables";
+@import "bootstrap/base/border-radius/mixins";
+@import "variables";
+@import "mixins";
 
 // Base class
 .panel {
