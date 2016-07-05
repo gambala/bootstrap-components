@@ -3,8 +3,6 @@ module Bootstrap
   class << self
     # Inspired by Kaminari
     def load!
-      register_compass_extension if compass?
-
       if rails?
         register_rails_engine
       elsif lotus?
@@ -42,10 +40,6 @@ module Bootstrap
       defined?(::Sprockets)
     end
 
-    def compass?
-      defined?(::Compass::Frameworks)
-    end
-
     def rails?
       defined?(::Rails)
     end
@@ -63,15 +57,6 @@ module Bootstrap
 
       # bootstrap requires minimum precision of 8, see https://github.com/twbs/bootstrap-sass/issues/409
       ::Sass::Script::Number.precision = [8, ::Sass::Script::Number.precision].max
-    end
-
-    def register_compass_extension
-      ::Compass::Frameworks.register(
-          'bootstrap',
-          :version               => Bootstrap::VERSION,
-          :path                  => gem_path,
-          :stylesheets_directory => stylesheets_path
-      )
     end
 
     def register_rails_engine
