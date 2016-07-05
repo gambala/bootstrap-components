@@ -1,6 +1,6 @@
-//
-// Button groups
-// --------------------------------------------------
+@import "bootstrap/btn/variables";
+@import "bootstrap/base/border-radius/mixins";
+@import "bootstrap/mixins/clearfix";
 
 // Make the div behave like a button
 .btn-group,
