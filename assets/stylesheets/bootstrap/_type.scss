@@ -70,10 +70,6 @@ p {
   }
 }
 
-
-// Emphasis & misc
-// -------------------------
-
 // Ex: (12px small font / 14px base font) * 100% = about 85%
 small,
 .small {
@@ -86,10 +82,6 @@ mark,
   padding: .2em;
 }
 
-
-// Misc
-// -------------------------
-
 // Abbreviations and acronyms
 abbr[title],
 // Add data-* attribute to help out our tooltip plugin, per https://github.com/twbs/bootstrap/issues/5257
@@ -97,14 +89,8 @@ abbr[data-original-title] {
   cursor: help;
   border-bottom: 1px dotted $abbr-border-color;
 }
+
 .initialism {
   font-size: 90%;
-  @extend .text-uppercase;
-}
-
-// Addresses
-address {
-  margin-bottom: $line-height-computed;
-  font-style: normal;
-  line-height: $line-height-base;
+  text-transform: uppercase;
 }
