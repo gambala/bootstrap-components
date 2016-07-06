@@ -1,7 +1,9 @@
-@import "bootstrap/base/line-height/variables";
 @import "bootstrap/base/font-size/variables";
-@import "bootstrap/base/border-radius/mixins";
+@import "bootstrap/base/line-height/variables";
+@import "bootstrap/table/variables";
 @import "variables";
+@import "bootstrap/base/border-radius/mixins";
+@import "bootstrap/mixins/clearfix";
 @import "mixins";
 
 // Base class

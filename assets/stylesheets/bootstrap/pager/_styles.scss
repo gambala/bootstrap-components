@@ -1,6 +1,7 @@
 @import "bootstrap/base/line-height/variables";
 @import "bootstrap/base/cursor/variables";
 @import "variables";
+@import "bootstrap/mixins/clearfix";
 
 .pager {
   padding-left: 0;

@@ -1,5 +1,8 @@
+@import "bootstrap/base/grid/variables";
 @import "variables";
 @import "bootstrap/img/mixins";
+@import "bootstrap/mixins/opacity";
+@import "mixins";
 
 // Wrapper for the slide container and indicators
 .carousel {

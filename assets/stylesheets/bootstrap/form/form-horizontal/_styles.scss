@@ -2,6 +2,7 @@
 @import "bootstrap/base/grid/variables";
 @import "bootstrap/base/line-height/variables";
 @import "bootstrap/base/padding/variables";
+@import "bootstrap/grid/row/mixins";
 
 .form-horizontal {
   // Consistent vertical alignment of radios and checkboxes

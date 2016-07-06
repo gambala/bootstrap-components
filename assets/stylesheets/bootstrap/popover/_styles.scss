@@ -2,6 +2,7 @@
 @import "bootstrap/base/font-size/variables";
 @import "bootstrap/base/z-index/variables";
 @import "variables";
+@import "bootstrap/text/mixins";
 
 .popover {
   position: absolute;
@@ -13,7 +14,7 @@
   padding: 1px;
   // Our parent element can be arbitrary since popovers are by default inserted as a sibling of their target element.
   // So reset our font and text properties to avoid inheriting weird values.
-  @include reset-text;
+  @include text-reset;
   font-size: $font-size-base;
 
   background-color: $popover-bg;
