@@ -24,6 +24,9 @@
 .text-uppercase      { text-transform: uppercase; }
 .text-capitalize     { text-transform: capitalize; }
 
+.text-regular        { font-weight: normal }
+.text-bold           { font-weight: bold }
+
 // Contextual colors
 .text-muted {
   color: $text-muted;
@@ -42,3 +45,8 @@
 @include text-emphasis-variant('.text-warning', $state-warning-text);
 
 @include text-emphasis-variant('.text-danger', $state-danger-text);
+
+// Deprecated, use .text-bold instead
+.b {
+  font-weight: bold;
+}
