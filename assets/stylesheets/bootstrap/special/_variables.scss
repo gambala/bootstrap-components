@@ -1,14 +1,5 @@
-//
-// Variables
-// --------------------------------------------------
-
-@import "base/variables";
-@import "link/variables";
-
-//== Scaffolding
-//
-//## Settings for some of the most global styles.
-
+@import "bootstrap/base/color/variables";
+@import "bootstrap/base/font-size/variables";
 
 //== Typography
 //
@@ -28,6 +19,5 @@ $headings-color:          inherit !default;
 //** Headings small color
 $headings-small-color:    $gray-light !default;
 
-
 //** Abbreviations and acronyms border color
-$abbr-border-color:           $gray-light !default;
+$abbr-border-color:       $gray-light !default;

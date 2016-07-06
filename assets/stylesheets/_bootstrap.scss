@@ -5,7 +5,6 @@
  */
 
 // Core variables and mixins
-@import "bootstrap/variables";
 @import "bootstrap/mixins";
 
 // Reset and dependencies
@@ -13,10 +12,9 @@
 @import "bootstrap/glyphicon";
 
 // Core CSS
-@import "bootstrap/scaffolding";
+@import "bootstrap/special";
 @import "bootstrap/link";
 @import "bootstrap/hr";
-@import "bootstrap/type";
 @import "bootstrap/text";
 @import "bootstrap/bg";
 @import "bootstrap/list";
@@ -56,11 +54,10 @@
 
 // Components w/ JavaScript
 @import "bootstrap/affix";
-@import "bootstrap/modals";
+@import "bootstrap/modal";
 @import "bootstrap/tooltip";
 @import "bootstrap/popover";
 @import "bootstrap/carousel";
 
 // Utility classes
-@import "bootstrap/utilities";
 @import "bootstrap/hidden-visible";
