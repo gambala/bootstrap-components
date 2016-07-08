@@ -1,9 +1,6 @@
 @import "bootstrap/base/color/variables";
 @import "bootstrap/base/font-size/variables";
 
-//** Blockquote small color
-$blockquote-small-color:      $gray-light !default;
-//** Blockquote font size
-$blockquote-font-size:        ($font-size-base * 1.25) !default;
-//** Blockquote border color
-$blockquote-border-color:     $gray-lighter !default;
+$blockquote-border-color: $gray-lighter !default;
+$blockquote-small-color:  $gray-light !default;
+$blockquote-font-size:    ($font-size-base * 1.25) !default;

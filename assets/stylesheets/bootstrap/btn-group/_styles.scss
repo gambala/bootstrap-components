@@ -6,12 +6,12 @@
 @import "bootstrap/btn/mixins";
 @import "bootstrap/mixins/clearfix";
 
-// Make the div behave like a button
 .btn-group,
 .btn-group-vertical {
   position: relative;
   display: inline-block;
   vertical-align: middle; // match .btn alignment given font-size hack above
+
   > .btn {
     position: relative;
     float: left;
@@ -69,10 +69,6 @@
 }
 
 
-// Sizing
-//
-// Remix the default button sizing classes into new ones for easier manipulation.
-
 .btn-group-lg > .btn {
   // line-height: ensure even-numbered height of button next to large input
   @include button-size($padding-large-vertical, $padding-large-horizontal, $font-size-large, $line-height-large, $btn-border-radius-large);
@@ -109,10 +105,6 @@
     box-shadow: none;
   }
 }
-
-
-// Vertical button groups
-// ----------------------
 
 .btn-group-vertical {
   > .btn,

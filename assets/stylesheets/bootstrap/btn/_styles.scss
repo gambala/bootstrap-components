@@ -8,9 +8,6 @@
 @import "mixins";
 @import "bootstrap/mixins/opacity";
 
-// Base styles
-// --------------------------------------------------
-
 .btn {
   display: inline-block;
   margin-bottom: 0; // For input.btn
@@ -44,8 +41,6 @@
     @include opacity(.65);
     box-shadow: none;
   }
-
-  // [converter] extracted a& to a.btn
 }
 
 a.btn {
@@ -55,38 +50,25 @@ a.btn {
   }
 }
 
-
-// Alternate buttons
-// --------------------------------------------------
-
 .btn-default {
   @include button-variant($btn-default-color, $btn-default-bg, $btn-default-border);
 }
 .btn-primary {
   @include button-variant($btn-primary-color, $btn-primary-bg, $btn-primary-border);
 }
-// Success appears as green
 .btn-success {
   @include button-variant($btn-success-color, $btn-success-bg, $btn-success-border);
 }
-// Info appears as blue-green
 .btn-info {
   @include button-variant($btn-info-color, $btn-info-bg, $btn-info-border);
 }
-// Warning appears as orange
 .btn-warning {
   @include button-variant($btn-warning-color, $btn-warning-bg, $btn-warning-border);
 }
-// Danger and error appear as red
 .btn-danger {
   @include button-variant($btn-danger-color, $btn-danger-bg, $btn-danger-border);
 }
 
-
-// Link buttons
-// -------------------------
-
-// Make a button look and behave like a link
 .btn-link {
   color: $link-color;
   font-weight: normal;
@@ -119,10 +101,6 @@ a.btn {
   }
 }
 
-
-// Button Sizes
-// --------------------------------------------------
-
 .btn-lg {
   // line-height: ensure even-numbered height of button next to large input
   @include button-size($padding-large-vertical, $padding-large-horizontal, $font-size-large, $line-height-large, $btn-border-radius-large);
@@ -135,7 +113,6 @@ a.btn {
   @include button-size($padding-xs-vertical, $padding-xs-horizontal, $font-size-small, $line-height-small, $btn-border-radius-small);
 }
 
-
 // Reposition the caret
 .btn .caret {
   margin-left: 0;
@@ -146,16 +123,10 @@ a.btn {
   border-bottom-width: 0;
 }
 
-
-// Block button
-// --------------------------------------------------
-
 .btn-block {
   display: block;
   width: 100%;
 }
-
-// Vertically space out multiple block buttons
 .btn-block + .btn-block {
   margin-top: 5px;
 }

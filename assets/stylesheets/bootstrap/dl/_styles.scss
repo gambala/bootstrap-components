@@ -3,7 +3,6 @@
 @import "bootstrap/text/mixins";
 @import "bootstrap/mixins/clearfix";
 
-// Description Lists
 dl {
   margin-top: 0; // Remove browser default
   margin-bottom: 0;
@@ -19,6 +18,7 @@ dd {
   margin-left: 0; // Undo browser default
   position: relative;
 }
+
 .dl-inline {
   dt {
     float: left;
