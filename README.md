@@ -1,60 +1,23 @@
 ## Оптимизированный под Sass и Sprockets Bootstrap 3
-[![Gem Version](https://badge.fury.io/rb/bootstrap-sass.svg)](http://badge.fury.io/rb/bootstrap-sass)
-[![npm version](https://img.shields.io/npm/v/bootstrap-sass.svg?style=flat)](https://www.npmjs.com/package/bootstrap-sass)
-[![Bower Version](https://badge.fury.io/bo/bootstrap-sass.svg)](http://badge.fury.io/bo/bootstrap-sass)
 
 Конвертируем [Bootstrap 3](https://github.com/twbs/bootstrap) - получаем [Bootstrap 3 for Sass](https://github.com/twbs/bootstrap-sass).
-Оптимизируем под Sprockets - получаем данный форк.
+
+Раскладываем на компоненты и оптимизируем под Sprockets - получаем данный форк.
 
 # Disclaimer
 
 Я создал форк для своих production-ready проектов. На популярность не рассчитываю. Поэтому:
 
 * Пишу на русском сколько хочу и где хочу (issues, pull-requests, readme)
-* Убираю из форка все, что лично мне не нужно (поддержка mincer и compass)
-* Развиваю форк в своем темпе
+* Убираю из форка все, что лично мне не нужно (поддержка mincer и compass, неиспользуемые миксины)
+* Развиваю форк в своем темпе, независимо от бутстрапа (добавляю свои компоненты, использую компоненты 4-ой версии бутстрапа)
 
 # Цели
 
-## Ускорение сборки в sprockets
+## Структурировать кашу бутстраповских стилей
 
-Решается заменой `@import` директив sass'а на `*= require` директивы sprockets'а. С оптимизацией кода.
+И в 3-й, и в 4-й версии бутстрапа нет четко сформулированной методологии, по которой раскладывались бы стили. Стили набрасывались по принципам "Абы как" и "Главное, что работает". Из-за этого сложнее расширять фреймворк и поддерживать стилевую базу в крупных production-ready проектах.
 
-## Разбиение файлов по правилу 10\*10\*10
+## Ускорить сборку в sprockets
 
-Правило: максимальное кол-во легко воспринимаемых элементов в списке = 10. В бутстрапе плоская структура - иерархичность видна только в подключении mixins - либо всех сразу, либо конкретно нужного. Этот подход я растространю на остальной код.
-
-# Addons
-
-## Mixins
-
-```sass
-@import 'bootstrap/mixins/scrollbar'
-
-.class
-  +scrollbar
-.class
-  +scrollbar(#f00)
-```
-
-```sass
-@import 'bootstrap/mixins/neighbours'
-
-.class
-  +between_neighbours('div, p')
-    margin-top: 20px
-```
-
-## Functions
-
-```sass
-@import 'bootstrap/mixins/rhythm'
-@import 'bootstrap/mixins/grid'
-
-.class
-  padding: rh() gg()
-.class
-  padding: rh(1.5) gg(1.5)
-.class
-  padding: rh(22px) gg(22px)
-```
+Все проекты проекты я создаю в Ruby on Rails с использованием стандартного сборщика стилей и скриптов - sprockets. Его проблема - медлительность сборки. Подключение libsass не решает проблему сборки sass-стилей. Но ускорить сборку можно - заменой `@import` директив sass'а на `*= require` директивы sprockets'а. С оптимизацией кода.
