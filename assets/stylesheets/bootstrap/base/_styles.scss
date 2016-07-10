@@ -6,7 +6,7 @@
 @import "bootstrap/base/state/variables";
 @import "mixins";
 
-// Background modificators
+// Color modificators
 
 .bg-primary {
   background-color: $brand-primary;
@@ -28,6 +28,52 @@
 .bg-danger {
   background-color: $state-danger-bg;
 }
+
+.text-primary {
+  color: $brand-primary;
+}
+
+.text-success {
+  color: $state-success-text;
+}
+
+.text-info {
+  color: $state-info-text;
+}
+
+.text-warning {
+  color: $state-warning-text;
+}
+
+.text-danger {
+  color: $state-danger-text;
+}
+
+.text-muted {
+  color: $text-muted;
+}
+
+// Text modificators
+
+// Text-align
+.text-left           { text-align: left; }
+.text-right          { text-align: right; }
+.text-center         { text-align: center; }
+.text-justify        { text-align: justify; }
+.text-nowrap         { white-space: nowrap; }
+
+// Text-transform
+.text-lowercase      { text-transform: lowercase; }
+.text-uppercase      { text-transform: uppercase; }
+.text-capitalize     { text-transform: capitalize; }
+
+// Font-weight
+.text-regular        { font-weight: normal }
+.text-bold           { font-weight: bold }
+// Deprecated, use .text-bold instead
+.b                   { font-weight: bold; }
+
+.text-hide           { @include text-hide; }
 
 // Transition modificators
 
