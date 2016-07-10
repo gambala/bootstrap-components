@@ -2,6 +2,33 @@
 @import "bootstrap/base/font-family/variables";
 @import "bootstrap/base/font-size/variables";
 @import "bootstrap/base/line-height/variables";
+@import "bootstrap/base/state/variables";
+@import "mixins";
+
+// Modificators
+
+.bg-primary {
+  background-color: $brand-primary;
+  color: #fff;
+}
+
+.bg-success {
+  background-color: $state-success-bg;
+}
+
+.bg-info {
+  background-color: $state-info-bg;
+}
+
+.bg-warning {
+  background-color: $state-warning-bg;
+}
+
+.bg-danger {
+  background-color: $state-danger-bg;
+}
+
+// Parents
 
 html {
   font-size: 10px;
