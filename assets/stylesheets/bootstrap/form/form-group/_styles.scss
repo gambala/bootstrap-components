@@ -7,24 +7,16 @@
 @import "variables";
 @import "mixins";
 
-// Form groups
-//
-// Designed to help with the organization and spacing of vertical forms. For
-// horizontal forms, use the predefined grid classes.
+// Component
 
 .form-group {
   margin-bottom: $form-group-margin-bottom;
 }
 
+// Modificators
 
-// Form control sizing
-//
-// Build on `.form-control` with modifier classes to decrease or increase the
-// height and font-size of form controls.
-//
 // The `.form-group-* form-control` variations are sadly duplicated to avoid the
 // issue documented in https://github.com/twbs/bootstrap/issues/15074.
-
 .form-group-sm {
   .form-control {
     height: $input-height-small;
@@ -33,14 +25,17 @@
     line-height: $line-height-small;
     border-radius: $input-border-radius-small;
   }
+
   select.form-control {
     height: $input-height-small;
     line-height: $input-height-small;
   }
+
   textarea.form-control,
   select[multiple].form-control {
     height: auto;
   }
+
   .form-control-static {
     height: $input-height-small;
     min-height: ($line-height-computed + $font-size-small);
@@ -58,14 +53,17 @@
     line-height: $line-height-large;
     border-radius: $input-border-radius-large;
   }
+
   select.form-control {
     height: $input-height-large;
     line-height: $input-height-large;
   }
+
   textarea.form-control,
   select[multiple].form-control {
     height: auto;
   }
+
   .form-control-static {
     height: $input-height-large;
     min-height: ($line-height-computed + $font-size-large);
@@ -74,11 +72,6 @@
     line-height: $line-height-large;
   }
 }
-
-
-// Checkboxes and radios
-//
-// Indent the labels to position radios/checkboxes as hanging controls.
 
 .radio,
 .checkbox {
@@ -157,10 +150,7 @@ input[type="checkbox"] {
   }
 }
 
-
-// Form control feedback states
-//
-// Apply contextual and semantic states to individual form controls.
+// Special
 
 .has-feedback {
   // Enable absolute positioning

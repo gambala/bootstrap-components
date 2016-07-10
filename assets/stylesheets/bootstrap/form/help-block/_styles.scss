@@ -4,12 +4,8 @@
 @import "bootstrap/base/padding/variables";
 @import "bootstrap/form/input/variables";
 
+// Components
 
-// Normalize non-controls
-//
-// Restyle and baseline non-control form elements.
-
-// Adjust output element
 output {
   display: block;
   padding-top: ($padding-base-vertical + 1);
@@ -17,11 +13,6 @@ output {
   line-height: $line-height-base;
   color: $input-color;
 }
-
-// Help text
-//
-// Apply to any element you wish to create light text for placement immediately
-// below a form control. Use for general help, formatting, or instructional text.
 
 .help-block {
   display: block; // account for any element using help-block
