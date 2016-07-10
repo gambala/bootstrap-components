@@ -1,0 +1,17 @@
+@import "bootstrap/base/color/variables";
+@import "bootstrap/base/font-family/variables";
+@import "bootstrap/base/font-size/variables";
+@import "bootstrap/base/line-height/variables";
+
+html {
+  font-size: 10px;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+body {
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  color: $text-color;
+  background-color: $body-bg;
+}
