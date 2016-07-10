@@ -6,6 +6,12 @@
 @import "bootstrap/base/state/variables";
 @import "mixins";
 
+// Affix modificators
+
+.affix {
+  position: fixed;
+}
+
 // Color modificators
 
 .bg-primary {
