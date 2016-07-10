@@ -4,10 +4,14 @@
 @import "bootstrap/mixins/opacity";
 @import "mixins";
 
+// Component
+
 // Wrapper for the slide container and indicators
 .carousel {
   position: relative;
 }
+
+// Elements
 
 .carousel-inner {
   position: relative;
@@ -223,10 +227,10 @@
   }
 }
 
+// Parents
 
 // Scale up controls for tablets and up
 @media screen and (min-width: $screen-sm-min) {
-
   // Scale up the controls a smidge
   .carousel-control {
     .glyphicon-chevron-left,

@@ -2,15 +2,20 @@
 @import "bootstrap/base/grid/variables";
 @import "variables";
 
+// Component
+
 .jumbotron {
   padding-top:    $jumbotron-padding;
   padding-bottom: $jumbotron-padding;
   margin-bottom: $jumbotron-padding;
   color: $jumbotron-color;
   background-color: $jumbotron-bg;
+}
 
-  h1,
-  .h1 {
+// Elements
+
+.jumbotron {
+  h1, .h1 {
     color: $jumbotron-heading-color;
   }
 
@@ -24,15 +29,19 @@
     border-top-color: darken($jumbotron-bg, 10%);
   }
 
+  .container {
+    max-width: 100%;
+  }
+}
+
+// Parents
+
+.jumbotron {
   .container &,
   .container-fluid & {
     border-radius: $border-radius-large; // Only round corners at higher resolutions if contained in a container
     padding-left:  ($grid-gutter-width / 2);
     padding-right: ($grid-gutter-width / 2);
-  }
-
-  .container {
-    max-width: 100%;
   }
 
   @media screen and (min-width: $screen-sm-min) {

@@ -3,7 +3,8 @@
 @import "variables";
 @import "bootstrap/img/mixins";
 
-// Mixin and adjust the regular image class
+// Component
+
 .thumbnail {
   display: block;
   padding: $thumbnail-padding;
@@ -13,7 +14,11 @@
   border: 1px solid $thumbnail-border;
   border-radius: $thumbnail-border-radius;
   transition: border .2s ease-in-out;
+}
 
+// Elements
+
+.thumbnail {
   > img,
   a > img {
     @include img-responsive;
@@ -21,14 +26,14 @@
     margin-right: auto;
   }
 
-  // Image captions
   .caption {
     padding: $thumbnail-caption-padding;
     color: $thumbnail-caption-color;
   }
 }
 
-// Add a hover state for linked versions only
+// Modificators
+
 a.thumbnail:hover,
 a.thumbnail.active {
   border-color: $link-color;

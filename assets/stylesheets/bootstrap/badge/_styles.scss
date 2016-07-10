@@ -1,6 +1,8 @@
 @import "bootstrap/base/font-size/variables";
 @import "variables";
 
+// Component
+
 .badge {
   display: inline-block;
   min-width: 10px;
@@ -14,13 +16,27 @@
   text-align: center;
   background-color: $badge-bg;
   border-radius: $badge-border-radius;
+}
 
-  // Empty badges collapse automatically (not available in IE8)
-  &:empty {
-    display: none;
+// Modificators
+
+// Empty badges collapse automatically (not available in IE8)
+.badge:empty {
+  display: none;
+}
+
+// Hover state, but only for links
+a.badge {
+  &:hover {
+    color: $badge-link-hover-color;
+    text-decoration: none;
+    cursor: pointer;
   }
+}
 
-  // Quick fix for badges in buttons
+// Parents
+
+.badge {
   .btn & {
     position: relative;
     top: -1px;
@@ -49,14 +65,5 @@
 
   .nav-pills > li > a > & {
     margin-left: 3px;
-  }
-}
-
-// Hover state, but only for links
-a.badge {
-  &:hover {
-    color: $badge-link-hover-color;
-    text-decoration: none;
-    cursor: pointer;
   }
 }

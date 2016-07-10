@@ -4,6 +4,8 @@
 @import "bootstrap/base/line-height/variables";
 @import "variables";
 
+// Components
+
 // Inline and block code styles
 code,
 kbd,
@@ -62,6 +64,8 @@ pre {
     border-radius: 0;
   }
 }
+
+// Modificators
 
 // Enable scrollable blocks of code
 .pre-scrollable {

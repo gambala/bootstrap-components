@@ -4,6 +4,8 @@
 @import "variables";
 @import "bootstrap/base/mixins";
 
+// Component
+
 .popover {
   position: absolute;
   top: 0;
@@ -23,13 +25,9 @@
   border: 1px solid $popover-border-color;
   border-radius: $border-radius-large;
   box-shadow: 0 5px 10px rgba(0,0,0,.2);
-
-  // Offset the popover to account for the popover arrow
-  &.top     { margin-top: -$popover-arrow-width; }
-  &.right   { margin-left: $popover-arrow-width; }
-  &.bottom  { margin-top: $popover-arrow-width; }
-  &.left    { margin-left: -$popover-arrow-width; }
 }
+
+// Elements
 
 .popover-title {
   margin: 0; // reset heading margin
@@ -44,10 +42,7 @@
   padding: 9px 14px;
 }
 
-// Arrows
-//
 // .arrow is outer, .arrow:after is inner
-
 .popover > .arrow {
   &,
   &:after {
@@ -67,6 +62,15 @@
   content: "";
 }
 
+// Modificators
+
+.popover {
+  // Offset the popover to account for the popover arrow
+  &.top     { margin-top: -$popover-arrow-width; }
+  &.right   { margin-left: $popover-arrow-width; }
+  &.bottom  { margin-top: $popover-arrow-width; }
+  &.left    { margin-left: -$popover-arrow-width; }
+}
 .popover {
   &.top > .arrow {
     left: 50%;
@@ -113,7 +117,6 @@
       border-bottom-color: $popover-arrow-color;
     }
   }
-
   &.left > .arrow {
     top: 50%;
     right: -$popover-arrow-outer-width;

@@ -5,7 +5,8 @@
 @import "bootstrap/base/mixins";
 @import "bootstrap/mixins/opacity";
 
-// Base class
+// Component
+
 .tooltip {
   position: absolute;
   z-index: $zindex-tooltip;
@@ -16,15 +17,10 @@
   font-size: $font-size-small;
 
   @include opacity(0);
-
-  &.in     { @include opacity($tooltip-opacity); }
-  &.top    { margin-top:  -3px; padding: $tooltip-arrow-width 0; }
-  &.right  { margin-left:  3px; padding: 0 $tooltip-arrow-width; }
-  &.bottom { margin-top:   3px; padding: $tooltip-arrow-width 0; }
-  &.left   { margin-left: -3px; padding: 0 $tooltip-arrow-width; }
 }
 
-// Wrapper for the tooltip content
+// Elements
+
 .tooltip-inner {
   max-width: $tooltip-max-width;
   padding: 3px 8px;
@@ -34,7 +30,6 @@
   border-radius: $border-radius-base;
 }
 
-// Arrows
 .tooltip-arrow {
   position: absolute;
   width: 0;
@@ -42,8 +37,17 @@
   border-color: transparent;
   border-style: solid;
 }
+
+// Modificators
+
 // Note: Deprecated .top-left, .top-right, .bottom-left, and .bottom-right as of v3.3.1
 .tooltip {
+  &.in     { @include opacity($tooltip-opacity); }
+  &.top    { margin-top:  -3px; padding: $tooltip-arrow-width 0; }
+  &.right  { margin-left:  3px; padding: 0 $tooltip-arrow-width; }
+  &.bottom { margin-top:   3px; padding: $tooltip-arrow-width 0; }
+  &.left   { margin-left: -3px; padding: 0 $tooltip-arrow-width; }
+
   &.top .tooltip-arrow {
     bottom: 0;
     left: 50%;

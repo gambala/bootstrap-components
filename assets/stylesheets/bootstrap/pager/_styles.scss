@@ -3,12 +3,19 @@
 @import "variables";
 @import "bootstrap/mixins/clearfix";
 
+// Component
+
 .pager {
   padding-left: 0;
   margin: $line-height-computed 0;
   list-style: none;
   text-align: center;
   @include clearfix;
+}
+
+// Elements
+
+.pager {
   li {
     display: inline;
     > a,

@@ -5,27 +5,49 @@
 @import "variables";
 @import "mixins";
 
+// Component
+
 table {
   background-color: $table-bg;
 }
+
+.table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: $line-height-computed;
+}
+
+// Elements
+
 caption {
   padding-top: $table-cell-padding;
   padding-bottom: $table-cell-padding;
   color: $text-muted;
   text-align: left;
 }
+
 th {
   text-align: left;
 }
 
+table {
+  col[class*="col-"] {
+    position: static; // Prevent border hiding in Firefox and IE9-11 (see https://github.com/twbs/bootstrap/issues/11623)
+    float: none;
+    display: table-column;
+  }
 
-// Baseline styles
+  td,
+  th {
+    &[class*="col-"] {
+      position: static; // Prevent border hiding in Firefox and IE9-11 (see https://github.com/twbs/bootstrap/issues/11623)
+      float: none;
+      display: table-cell;
+    }
+  }
+}
 
 .table {
-  width: 100%;
-  max-width: 100%;
-  margin-bottom: $line-height-computed;
-  // Cells
   > thead,
   > tbody,
   > tfoot {
@@ -66,8 +88,7 @@ th {
   }
 }
 
-
-// Condensed table w/ half padding
+// Modificators
 
 .table-condensed {
   > thead,
@@ -82,13 +103,9 @@ th {
   }
 }
 
-
-// Bordered version
-//
-// Add borders all around the table and between all the columns.
-
 .table-bordered {
   border: 1px solid $table-border-color;
+
   > thead,
   > tbody,
   > tfoot {
@@ -107,21 +124,11 @@ th {
   }
 }
 
-
-// Zebra-striping
-//
-// Default zebra-stripe styles (alternating gray and transparent backgrounds)
-
 .table-striped {
   > tbody > tr:nth-of-type(odd) {
     background-color: $table-bg-accent;
   }
 }
-
-
-// Hover effect
-//
-// Placed here since it has to come after the potential zebra striping
 
 .table-hover {
   > tbody > tr:hover {
@@ -129,47 +136,19 @@ th {
   }
 }
 
-
-// Table cell sizing
-//
-// Reset default table behavior
-
-table col[class*="col-"] {
-  position: static; // Prevent border hiding in Firefox and IE9-11 (see https://github.com/twbs/bootstrap/issues/11623)
-  float: none;
-  display: table-column;
-}
-table {
-  td,
-  th {
-    &[class*="col-"] {
-      position: static; // Prevent border hiding in Firefox and IE9-11 (see https://github.com/twbs/bootstrap/issues/11623)
-      float: none;
-      display: table-cell;
-    }
-  }
-}
-
-
-// Table backgrounds
-//
-// Exact selectors below required to override `.table-striped` and prevent
-// inheritance to nested tables.
-
-// Generate the contextual variants
 @include table-row-variant('active', $table-bg-active);
 @include table-row-variant('success', $state-success-bg);
 @include table-row-variant('info', $state-info-bg);
 @include table-row-variant('warning', $state-warning-bg);
 @include table-row-variant('danger', $state-danger-bg);
 
+// Parents
 
 // Responsive tables
 //
 // Wrap your tables in `.table-responsive` and we'll make them mobile friendly
 // by enabling horizontal scrolling. Only applies <768px. Everything above that
 // will display normally.
-
 .table-responsive {
   overflow-x: auto;
   min-height: 0.01%; // Workaround for IE9 bug (see https://github.com/twbs/bootstrap/issues/14837)

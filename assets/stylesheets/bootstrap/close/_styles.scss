@@ -2,6 +2,8 @@
 @import "variables";
 @import "bootstrap/mixins/opacity";
 
+// Component
+
 .close {
   float: right;
   font-size: ($font-size-base * 1.5);
@@ -10,15 +12,15 @@
   color: $close-color;
   text-shadow: $close-text-shadow;
   @include opacity(.2);
+}
 
-  &:hover {
-    color: $close-color;
-    text-decoration: none;
-    cursor: pointer;
-    @include opacity(.5);
-  }
+// Modificators
 
-  // [converter] extracted button& to button.close
+.close:hover {
+  color: $close-color;
+  text-decoration: none;
+  cursor: pointer;
+  @include opacity(.5);
 }
 
 // Additional properties for button version

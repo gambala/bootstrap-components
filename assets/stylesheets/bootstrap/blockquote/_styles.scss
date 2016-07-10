@@ -1,12 +1,18 @@
 @import "bootstrap/base/line-height/variables";
 @import "variables";
 
+// Component
+
 blockquote {
   padding: ($line-height-computed / 2) $line-height-computed;
   margin: 0 0 $line-height-computed;
   font-size: $blockquote-font-size;
   border-left: 5px solid $blockquote-border-color;
+}
 
+// Elements
+
+blockquote {
   p,
   ul,
   ol {
@@ -30,6 +36,8 @@ blockquote {
     }
   }
 }
+
+// Modificators
 
 // Opposite alignment of blockquote
 // Heads up: `blockquote.pull-right` has been deprecated as of v3.1.0.
