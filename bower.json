@@ -1,20 +1,21 @@
 {
-  "name": "bootstrap-sass",
-  "homepage": "https://github.com/twbs/bootstrap-sass",
+  "name": "bootstrap-components",
+  "homepage": "https://github.com/gambala/bootstrap-components",
   "authors": [
+    "Vitaliy Emeliyantsev",
     "Thomas McDonald",
     "Tristan Harward",
     "Peter Gumeson",
     "Gleb Mazovetskiy"
   ],
-  "description": "bootstrap-sass is a Sass-powered version of Bootstrap 3, ready to drop right into your Sass powered applications.",
+  "description": "bootstrap-components is a Componentized and sprockets-optimized version of Bootstrap.",
   "moduleType": "globals",
   "main": [
     "assets/stylesheets/_bootstrap.scss",
     "assets/javascripts/bootstrap.js"
   ],
   "keywords": [
-    "twbs",
+    "gambala",
     "bootstrap",
     "sass"
   ],

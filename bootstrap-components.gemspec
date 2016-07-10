@@ -1,14 +1,14 @@
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'bootstrap-sass/version'
+require 'bootstrap-components/version'
 
 Gem::Specification.new do |s|
-  s.name     = 'bootstrap-sass'
+  s.name     = 'bootstrap-components'
   s.version  = Bootstrap::VERSION
-  s.authors  = ['Thomas McDonald']
-  s.email    = 'tom@conceptcoding.co.uk'
-  s.summary  = 'bootstrap-sass is a Sass-powered version of Bootstrap 3, ready to drop right into your Sass powered applications.'
-  s.homepage = 'https://github.com/twbs/bootstrap-sass'
+  s.authors  = ['Vitaliy Emeliyantsev']
+  s.email    = 'gambala.rus@gmail.com'
+  s.summary  = 'bootstrap-components is a Componentized and sprockets-optimized version of Bootstrap.'
+  s.homepage = 'https://github.com/gambala/bootstrap-components'
   s.license  = 'MIT'
 
   s.add_runtime_dependency 'sass', '>= 3.3.4'

@@ -1,4 +1,4 @@
-require 'bootstrap-sass/version'
+require 'bootstrap-components/version'
 module Bootstrap
   class << self
     # Inspired by Kaminari
@@ -54,7 +54,7 @@ module Bootstrap
     end
 
     def register_rails_engine
-      require 'bootstrap-sass/engine'
+      require 'bootstrap-components/engine'
     end
 
     def register_sprockets
