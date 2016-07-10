@@ -1,0 +1,17 @@
+@import "bootstrap/base/fonr-size/variables";
+@import "bootstrap/base/line-height/variables";
+@import "variables";
+
+// Component
+
+legend {
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin-bottom: $line-height-computed;
+  font-size: ($font-size-base * 1.5);
+  line-height: inherit;
+  color: $legend-color;
+  border: 0;
+  border-bottom: 1px solid $legend-border-color;
+}

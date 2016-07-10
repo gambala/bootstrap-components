@@ -1,0 +1,11 @@
+@mixin bg-variant($parent, $color) {
+  a#{$parent}:hover {
+    background-color: darken($color, 10%);
+  }
+}
+
+@mixin text-emphasis-variant($parent, $color) {
+  a#{$parent}:hover {
+    color: darken($color, 10%);
+  }
+}

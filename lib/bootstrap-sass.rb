@@ -3,12 +3,8 @@ module Bootstrap
   class << self
     # Inspired by Kaminari
     def load!
-      register_compass_extension if compass?
-
       if rails?
         register_rails_engine
-      elsif lotus?
-        register_lotus
       elsif sprockets?
         register_sprockets
       end
@@ -42,16 +38,8 @@ module Bootstrap
       defined?(::Sprockets)
     end
 
-    def compass?
-      defined?(::Compass::Frameworks)
-    end
-
     def rails?
       defined?(::Rails)
-    end
-
-    def lotus?
-      defined?(::Lotus)
     end
 
     private
@@ -65,22 +53,8 @@ module Bootstrap
       ::Sass::Script::Number.precision = [8, ::Sass::Script::Number.precision].max
     end
 
-    def register_compass_extension
-      ::Compass::Frameworks.register(
-          'bootstrap',
-          :version               => Bootstrap::VERSION,
-          :path                  => gem_path,
-          :stylesheets_directory => stylesheets_path,
-          :templates_directory   => File.join(gem_path, 'templates')
-      )
-    end
-
     def register_rails_engine
       require 'bootstrap-sass/engine'
-    end
-
-    def register_lotus
-      Lotus::Assets.sources << assets_path
     end
 
     def register_sprockets

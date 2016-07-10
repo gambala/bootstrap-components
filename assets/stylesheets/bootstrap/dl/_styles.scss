@@ -1,0 +1,62 @@
+@import "bootstrap/base/line-height/variables";
+@import "variables";
+@import "bootstrap/base/mixins";
+@import "bootstrap/base/mixins/clearfix";
+
+// Component
+
+dl {
+  margin-top: 0; // Remove browser default
+  margin-bottom: 0;
+}
+
+// Elements
+
+dt,
+dd {
+  line-height: $line-height-base;
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-left: 0; // Undo browser default
+  position: relative;
+}
+
+// Modificators
+
+.dl-horizontal {
+  dd {
+    @include clearfix; // Clear the floated `dt` if an empty `dd` is present
+  }
+
+  @media (min-width: $dl-horizontal-breakpoint) {
+    dt {
+      float: left;
+      width: ($dl-horizontal-offset - 20);
+      clear: left;
+      text-align: right;
+      @include text-overflow;
+    }
+
+    dd {
+      margin-left: $dl-horizontal-offset;
+    }
+  }
+}
+
+.dl-inline {
+  dt {
+    float: left;
+    clear: left;
+    margin-right: 5px;
+  }
+
+  dd {
+    display: inline-block;
+    margin-left: 0;
+  }
+}

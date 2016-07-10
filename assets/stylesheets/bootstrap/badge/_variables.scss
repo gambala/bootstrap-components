@@ -1,0 +1,12 @@
+@import "bootstrap/base/color/variables";
+@import "bootstrap/link/variables";
+
+$badge-bg:               $gray-light !default;
+$badge-color:            #fff !default;
+$badge-link-hover-color: #fff !default;
+$badge-active-bg:        #fff !default;
+$badge-active-color:     $link-color !default;
+
+$badge-font-weight:      bold !default;
+$badge-line-height:      1 !default;
+$badge-border-radius:    10px !default;
