@@ -1,6 +1,5 @@
 @import "bootstrap/base/border-radius/variables";
 @import "bootstrap/base/grid/variables";
-@import "bootstrap/base/z-index/variables";
 @import "variables";
 @import "bootstrap/mixins/clearfix";
 @import "bootstrap/mixins/opacity";
@@ -15,7 +14,7 @@
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: $zindex-modal;
+  z-index: $modal-z-index;
   -webkit-overflow-scrolling: touch;
 }
 
@@ -43,7 +42,7 @@
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: $zindex-modal-background;
+  z-index: $modal-backdrop-z-index;
   background-color: $modal-backdrop-bg;
 
   &.fade { @include opacity(0); }

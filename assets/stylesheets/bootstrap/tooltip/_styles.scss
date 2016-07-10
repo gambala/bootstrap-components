@@ -1,6 +1,5 @@
 @import "bootstrap/base/border-radius/variables";
 @import "bootstrap/base/font-size/variables";
-@import "bootstrap/base/z-index/variables";
 @import "variables";
 @import "bootstrap/base/mixins";
 @import "bootstrap/mixins/opacity";
@@ -9,7 +8,7 @@
 
 .tooltip {
   position: absolute;
-  z-index: $zindex-tooltip;
+  z-index: $tooltip-z-index;
   display: block;
   // Our parent element can be arbitrary since tooltips are by default inserted as a sibling of their target element.
   // So reset our font and text properties to avoid inheriting weird values.

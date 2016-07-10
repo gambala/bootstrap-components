@@ -1,7 +1,6 @@
 @import "bootstrap/base/border-radius/variables";
 @import "bootstrap/base/grid/variables";
 @import "bootstrap/base/line-height/variables";
-@import "bootstrap/base/z-index/variables";
 @import "bootstrap/caret/variables";
 @import "bootstrap/form/input/variables";
 @import "variables";
@@ -179,7 +178,7 @@
   position: fixed;
   right: 0;
   left: 0;
-  z-index: $zindex-navbar-fixed;
+  z-index: $navbar-fixed-z-index;
 
   // Undo the rounded corners
   @media (min-width: $grid-float-breakpoint) {
@@ -200,7 +199,7 @@
 // bottom of the page.
 // Static top (unfixed, but 100% wide) navbar
 .navbar-static-top {
-  z-index: $zindex-navbar;
+  z-index: $navbar-z-index;
   border-width: 0 0 1px;
 
   @media (min-width: $grid-float-breakpoint) {

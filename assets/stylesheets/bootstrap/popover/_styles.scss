@@ -1,6 +1,5 @@
 @import "bootstrap/base/border-radius/variables";
 @import "bootstrap/base/font-size/variables";
-@import "bootstrap/base/z-index/variables";
 @import "variables";
 @import "bootstrap/base/mixins";
 
@@ -10,7 +9,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  z-index: $zindex-popover;
+  z-index: $popover-z-index;
   display: none;
   max-width: $popover-max-width;
   padding: 1px;

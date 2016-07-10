@@ -3,7 +3,6 @@
 @import "bootstrap/base/font-size/variables";
 @import "bootstrap/base/line-height/variables";
 @import "bootstrap/base/padding/variables";
-@import "bootstrap/base/z-index/variables";
 @import "variables";
 @import "bootstrap/nav/mixins";
 @import "mixins";
@@ -22,7 +21,7 @@
   position: absolute;
   top: 100%;
   left: 0;
-  z-index: $zindex-dropdown;
+  z-index: $dropdown-z-index;
   display: none; // none by default, but block on "open" of the menu
   float: left;
   min-width: 160px;
@@ -112,7 +111,7 @@
   right: 0;
   bottom: 0;
   top: 0;
-  z-index: ($zindex-dropdown - 10);
+  z-index: ($dropdown-z-index - 10);
 }
 
 // Modificators
