@@ -73,6 +73,10 @@
 .text-uppercase      { text-transform: uppercase; }
 .text-capitalize     { text-transform: capitalize; }
 
+// Font-family
+.serif               { font-family: $font-family-serif; }
+.sans                { font-family: $font-family-sans-serif; }
+
 // Font-weight
 .text-regular        { font-weight: normal }
 .text-bold           { font-weight: bold }
@@ -312,5 +316,21 @@ body {
 @at-root {
   @-ms-viewport {
     width: device-width;
+  }
+}
+
+@if $font-family-base-custom != none {
+  .wf-active {
+    body {
+      font-family: $font-family-base-custom, $font-family-base;
+    }
+
+    .serif {
+      font-family: $font-family-serif-custom, $font-family-serif;
+    }
+
+    .sans {
+      font-family: $font-family-sans-serif-custom, $font-family-sans-serif;
+    }
   }
 }

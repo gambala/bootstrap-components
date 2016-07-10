@@ -298,3 +298,11 @@
 .glyphicon-menu-right             { &:before { content: "\e258"; } }
 .glyphicon-menu-down              { &:before { content: "\e259"; } }
 .glyphicon-menu-up                { &:before { content: "\e260"; } }
+
+// Parents
+
+.wf-active {
+  .glyphicon {
+    font-family: "Glyphicons Halflings";
+  }
+}
