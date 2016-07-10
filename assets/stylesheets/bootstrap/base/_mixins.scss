@@ -1,6 +1,9 @@
 @import "bootstrap/base/font-family/variables";
 @import "bootstrap/base/line-height/variables";
-@import "rh/mixins";
+@import "mixins/border-radius";
+@import "mixins/clearfix";
+@import "mixins/rh";
+@import "mixins/rh-margin";
 
 @mixin responsive-visibility($parent) {
   #{$parent} {

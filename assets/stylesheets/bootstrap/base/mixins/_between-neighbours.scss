@@ -1,6 +1,6 @@
 // For neighbours styles
 
-@mixin between_neighbours($selectors) {
+@mixin between-neighbours($selectors) {
   #{$selectors} {
     & + {
       #{$selectors} {

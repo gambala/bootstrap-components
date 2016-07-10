@@ -1,5 +1,5 @@
 @import "bootstrap/base/grid/variables";
-@import "bootstrap/mixins/clearfix";
+@import "bootstrap/base/mixins/clearfix";
 
 @mixin container-fixed($gutter: $grid-gutter-width) {
   margin-right: auto;
