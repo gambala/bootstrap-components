@@ -35,7 +35,7 @@ a.label:hover {
 .label-warning { @include label-variant($label-warning-bg); }
 .label-danger  { @include label-variant($label-danger-bg); }
 
-// Parents
+// Context
 
 .btn .label {
   position: relative;
