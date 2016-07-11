@@ -9,9 +9,7 @@ abbr[data-original-title] {
   cursor: help;
 }
 
-.abbr-acronym,
-// Deprecated, use .abbr-acronym instead
-.initialism {
+.abbr-acronym {
   font-size: 90%;
   text-transform: uppercase;
 }
