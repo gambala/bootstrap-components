@@ -2,7 +2,6 @@
 @import "bootstrap/base/grid/variables";
 @import "variables";
 @import "bootstrap/base/mixins/clearfix";
-@import "bootstrap/base/mixins/opacity";
 
 // Component
 
@@ -45,8 +44,8 @@
   top: 0;
   z-index: $modal-backdrop-z-index;
 
-  &.fade { @include opacity(0); }
-  &.in   { @include opacity($modal-backdrop-opacity); }
+  &.fade { opacity: 0; }
+  &.in   { opacity: $modal-backdrop-opacity; }
 }
 
 .modal-header {

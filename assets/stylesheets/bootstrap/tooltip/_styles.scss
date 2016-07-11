@@ -2,15 +2,14 @@
 @import "bootstrap/base/font-size/variables";
 @import "variables";
 @import "bootstrap/base/mixins";
-@import "bootstrap/base/mixins/opacity";
 
 // Component
 
 .tooltip {
-  @include opacity(0);
   @include text-reset;
   display: block;
   font-size: $font-size-small;
+  opacity: 0;
   position: absolute;
   z-index: $tooltip-z-index;
 }
@@ -38,7 +37,7 @@
 
 // Note: Deprecated .top-left, .top-right, .bottom-left, and .bottom-right as of v3.3.1
 .tooltip {
-  &.in     { @include opacity($tooltip-opacity); }
+  &.in     { opacity: $tooltip-opacity; }
   &.top    { margin-top:  -3px; padding: $tooltip-arrow-width 0; }
   &.right  { margin-left:  3px; padding: 0 $tooltip-arrow-width; }
   &.bottom { margin-top:   3px; padding: $tooltip-arrow-width 0; }

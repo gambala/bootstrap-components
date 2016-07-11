@@ -1,7 +1,6 @@
 @import "bootstrap/base/grid/variables";
 @import "variables";
 @import "bootstrap/img/mixins";
-@import "bootstrap/base/mixins/opacity";
 @import "mixins";
 
 // Component
@@ -93,12 +92,12 @@
 }
 
 .carousel-control {
-  @include opacity($carousel-control-opacity);
   background-color: rgba(0, 0, 0, 0); // Fix IE9 click-thru bug
   bottom: 0;
   color: $carousel-control-color;
   font-size: $carousel-control-font-size;
   left: 0;
+  opacity: $carousel-control-opacity;
   position: absolute;
   text-align: center;
   text-shadow: $carousel-text-shadow;
@@ -116,9 +115,9 @@
   }
 
   &:hover {
-    @include opacity(.9);
     color: $carousel-control-color;
     text-decoration: none;
+    opacity: 0.9;
   }
 
   // Toggles
