@@ -39,9 +39,7 @@ blockquote {
 
 // Modificators
 
-// Heads up: `blockquote.pull-right` has been deprecated as of v3.1.0.
-.blockquote-reverse,
-blockquote.pull-right {
+.blockquote-reverse {
   border-left: 0;
   border-right: 5px solid $blockquote-border-color;
   padding-left: 0;
