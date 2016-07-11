@@ -8,7 +8,6 @@
 
 .form-horizontal {
   // Consistent vertical alignment of radios and checkboxes
-  //
   // Labels also get some reset styles, but that is scoped to a media query below.
   .radio,
   .checkbox,
@@ -40,16 +39,12 @@
     }
   }
 
-  // Validation states
-  //
   // Reposition the icon because it's now within a grid column and columns have
   // `position: relative;` on them. Also accounts for the grid gutter padding.
   .has-feedback .form-control-feedback {
     right: floor(($grid-gutter-width / 2));
   }
 
-  // Form group sizes
-  //
   // Quick utility class for applying `.input-lg` and `.input-sm` styles to the
   // inputs and labels within a `.form-group`.
   .form-group-lg {

@@ -3,7 +3,7 @@
 // Modificators
 
 abbr[title],
-// Add data-* attribute to help out our tooltip plugin, per https://github.com/twbs/bootstrap/issues/5257
+// data-* attribute for tooltip, https://github.com/twbs/bootstrap/issues/5257
 abbr[data-original-title] {
   border-bottom: 1px dotted $abbr-border-color;
   cursor: help;

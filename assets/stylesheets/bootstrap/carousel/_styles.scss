@@ -104,8 +104,6 @@
   text-shadow: $carousel-text-shadow;
   top: 0;
   width: $carousel-control-width;
-  // We can't have this transition here because WebKit cancels the carousel
-  // animation if you trip this while in the middle of another animation.
 
   // Set gradients for backgrounds
   &.left {
@@ -117,7 +115,6 @@
     right: 0;
   }
 
-  // Hover/focus state
   &:hover {
     @include opacity(.9);
     color: $carousel-control-color;
@@ -166,7 +163,6 @@
   }
 }
 
-// Optional indicator pips
 .carousel-indicators {
   bottom: 10px;
   left: 50%;
@@ -207,8 +203,6 @@
   }
 }
 
-// Optional captions
-// -----------------------------
 // Hidden by default for smaller viewports
 .carousel-caption {
   bottom: 20px;
@@ -228,9 +222,7 @@
 
 // Parents
 
-// Scale up controls for tablets and up
 @media screen and (min-width: $screen-sm-min) {
-  // Scale up the controls a smidge
   .carousel-control {
     .glyphicon-chevron-left,
     .glyphicon-chevron-right,
@@ -251,14 +243,12 @@
     }
   }
 
-  // Show and left align the captions
   .carousel-caption {
     left: 20%;
     padding-bottom: 30px;
     right: 20%;
   }
 
-  // Move up the indicators
   .carousel-indicators {
     bottom: 20px;
   }

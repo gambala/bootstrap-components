@@ -26,10 +26,8 @@
 // Elements
 
 .form-control {
-  // Customize the `:focus` state to imitate native WebKit styles.
   @include form-control-focus;
 
-  // Placeholder
   &::placeholder {
     color: $input-color-placeholder
   }
@@ -44,11 +42,6 @@
 // Modificators
 
 .form-control {
-  // Disabled and read-only inputs
-  //
-  // HTML5 says that controls under a fieldset > legend:first-child won't be
-  // disabled if the fieldset is disabled. Due to implementation difficulty, we
-  // don't honor that edge case; we style them as disabled anyway.
   &[disabled],
   &[readonly],
   fieldset[disabled] & {
@@ -62,17 +55,14 @@
   }
 }
 
-// Reset height for `textarea`s
 textarea.form-control {
   height: auto;
 }
 
 // Apply class to a `p` element
 .form-control-static {
-  // Remove default margin from `p`
   margin-bottom: 0;
   min-height: ($line-height-computed + $font-size-base);
-  // Size it appropriately next to real form controls
   padding-bottom: ($padding-base-vertical + 1);
   padding-top: ($padding-base-vertical + 1);
 

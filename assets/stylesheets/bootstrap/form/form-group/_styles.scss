@@ -84,7 +84,7 @@
     cursor: pointer;
     font-weight: normal;
     margin-bottom: 0;
-    min-height: $line-height-computed; // Ensure the input doesn't jump when there is no text
+    min-height: $line-height-computed;
     padding-left: 20px;
   }
 }
@@ -99,7 +99,7 @@
 
 .radio + .radio,
 .checkbox + .checkbox {
-  margin-top: -5px; // Move up sibling radios or checkboxes for tighter spacing
+  margin-top: -5px;
 }
 
 // Radios and checkboxes on same line
@@ -115,7 +115,7 @@
 }
 .radio-inline + .radio-inline,
 .checkbox-inline + .checkbox-inline {
-  margin-left: 10px; // space out consecutive inline controls
+  margin-left: 10px;
   margin-top: 0;
 }
 
@@ -189,7 +189,6 @@ input[type="checkbox"] {
   width: $input-height-small;
 }
 
-// Feedback states
 .has-success {
   @include form-control-validation($state-success-text, $state-success-text, $state-success-bg);
 }

@@ -18,12 +18,10 @@
 
 // Modificators
 
-// Empty labels collapse automatically (not available in IE8)
 .label:empty {
   display: none;
 }
 
-// Add hover effects, but only for links
 a.label:hover {
   color: $label-link-hover-color;
   cursor: pointer;
@@ -39,7 +37,6 @@ a.label:hover {
 
 // Parents
 
-// Quick fix for labels in buttons
 .btn .label {
   position: relative;
   top: -1px;

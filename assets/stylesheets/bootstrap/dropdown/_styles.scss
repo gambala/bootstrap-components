@@ -29,16 +29,14 @@
   font-size: $font-size-base;
   left: 0;
   list-style: none;
-  margin: 2px 0 0; // override default ul
+  margin: 2px 0 0;
   min-width: 160px;
   padding: 5px 0;
   position: absolute;
-  text-align: left; // Ensures proper alignment if parent has it changed (e.g., modal footer)
+  text-align: left;
   top: 100%;
   z-index: $dropdown-z-index;
 
-  // Aligns the dropdown menu to right
-  //
   // Deprecated as of 3.1.0 in favor of `.dropdown-menu-[dir]`
   &.pull-right {
     left: auto;
@@ -50,7 +48,6 @@
     @include nav-divider($dropdown-divider-bg);
   }
 
-  // Links within the dropdown menu
   > li > a {
     clear: both;
     color: $dropdown-link-color;
@@ -58,7 +55,7 @@
     font-weight: normal;
     line-height: $line-height-base;
     padding: 3px 20px;
-    white-space: nowrap; // prevent links from randomly breaking onto new lines
+    white-space: nowrap;
   }
 }
 

@@ -1,4 +1,5 @@
 // Calculate gutter for width in units or for gutter factor
+
 @function gg($width: 1, $qwazi: true, $width-base: $grid-gutter-width) {
   @if (unitless($width)) {
     @return $width * $width-base;

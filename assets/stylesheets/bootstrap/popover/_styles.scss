@@ -6,8 +6,6 @@
 // Component
 
 .popover {
-  // Our parent element can be arbitrary since popovers are by default inserted as a sibling of their target element.
-  // So reset our font and text properties to avoid inheriting weird values.
   @include text-reset;
   background-clip: padding-box;
   background-color: $popover-bg;
@@ -32,7 +30,7 @@
   border-bottom: 1px solid darken($popover-title-bg, 5%);
   border-radius: ($border-radius-large - 1) ($border-radius-large - 1) 0 0;
   font-size: $font-size-base;
-  margin: 0; // reset heading margin
+  margin: 0;
   padding: 8px 14px;
 }
 

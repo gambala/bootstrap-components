@@ -7,15 +7,15 @@
 // Modificator
 
 .form-navbar {
+  @include form-inline;
+  // Vertically center in expanded, horizontal navbar
+  @include navbar-vertical-align($input-height-base);
   border-bottom: 1px solid transparent;
   border-top: 1px solid transparent;
   box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 0 rgba(255,255,255,.1);
   margin-left: -$navbar-padding-horizontal;
   margin-right: -$navbar-padding-horizontal;
   padding: 10px $navbar-padding-horizontal;
-
-  // Mixin behavior for optimum display
-  @include form-inline;
 
   .form-group {
     @media (max-width: $grid-float-breakpoint-max) {
@@ -26,9 +26,6 @@
       }
     }
   }
-
-  // Vertically center in expanded, horizontal navbar
-  @include navbar-vertical-align($input-height-base);
 
   // Undo 100% width for pull classes
   @media (min-width: $grid-float-breakpoint) {

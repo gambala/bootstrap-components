@@ -34,7 +34,6 @@
       }
     }
 
-    // Disabled state sets text to gray and nukes hover/tab effects
     &.disabled > a {
       color: $nav-disabled-link-color;
 
@@ -80,10 +79,8 @@
 
   > li {
     float: left;
-    // Make the list-items overlay the bottom border
     margin-bottom: -1px;
 
-    // Actual tabs (as links)
     > a {
       border-radius: $border-radius-base $border-radius-base 0 0;
       border: 1px solid transparent;
@@ -94,7 +91,6 @@
       }
     }
 
-    // Active state, and its :hover to override normal :hover
     &.active > a {
       &,
       &:hover {
@@ -107,11 +103,8 @@
     }
   }
 
-  // Specific dropdowns
   .dropdown-menu {
-    // Remove the top rounded corners here since there is a hard edge above the menu
     @include border-top-radius(0);
-    // make dropdown border overlap tab border
     margin-top: -1px;
   }
 
@@ -126,7 +119,6 @@
   > li {
     float: left;
 
-    // Links rendered as pills
     > a {
       border-radius: $nav-pills-border-radius;
     }
@@ -134,7 +126,6 @@
       margin-left: 2px;
     }
 
-    // Active state
     &.active > a {
       &,
       &:hover {
