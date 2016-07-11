@@ -39,7 +39,6 @@ blockquote {
 
 // Modificators
 
-// Opposite alignment of blockquote
 // Heads up: `blockquote.pull-right` has been deprecated as of v3.1.0.
 .blockquote-reverse,
 blockquote.pull-right {
@@ -49,7 +48,6 @@ blockquote.pull-right {
   padding-right: 15px;
   text-align: right;
 
-  // Account for citation
   footer,
   small,
   .small {

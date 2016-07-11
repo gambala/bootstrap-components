@@ -28,7 +28,6 @@
 
 // Elements
 
-// Reposition the caret
 .btn {
   .caret {
     margin-left: 0;
@@ -141,7 +140,6 @@ a.btn.disabled {
   margin-top: 5px;
 }
 
-// Specificity overrides
 input[type="submit"],
 input[type="reset"],
 input[type="button"] {

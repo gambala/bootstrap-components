@@ -25,7 +25,6 @@
   padding: 10px 15px;
   position: relative;
 
-  // Round the first and last items
   &:first-child {
     @include border-top-radius($list-group-border-radius);
   }
@@ -46,7 +45,6 @@ button.list-group-item {
     color: $list-group-link-heading-color;
   }
 
-  // Hover state
   &:hover {
     background-color: $list-group-hover-bg;
     color: $list-group-link-hover-color;

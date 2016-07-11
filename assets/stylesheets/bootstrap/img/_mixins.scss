@@ -1,14 +1,11 @@
-// Keep images from scaling beyond the width of their parents.
 @mixin img-responsive($display: block) {
   display: $display;
-  height: auto; // Part 2: Scale the height according to the width, otherwise you get stretching
-  max-width: 100%; // Part 1: Set a maximum relative to the parent
+  height: auto;
+  max-width: 100%;
 }
 
 // Special
 
-// Short retina mixin for setting background-image and -size. Note that the
-// spelling of `min--moz-device-pixel-ratio` is intentional.
 @mixin img-retina($file-1x, $file-2x, $width-1x, $height-1x) {
   background-image: url(image-path("#{$file-1x}"));
 
@@ -23,9 +20,6 @@
     background-size: $width-1x $height-1x;
   }
 }
-
-
-// My (gambala) non adapted yet addons
 
 @mixin background-cover($top:center, $left:center) {
   background-position: $top $left;

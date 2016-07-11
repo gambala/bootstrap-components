@@ -8,8 +8,6 @@
 
 .tooltip {
   @include opacity(0);
-  // Our parent element can be arbitrary since tooltips are by default inserted as a sibling of their target element.
-  // So reset our font and text properties to avoid inheriting weird values.
   @include text-reset;
   display: block;
   font-size: $font-size-small;
