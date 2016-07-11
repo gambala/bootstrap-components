@@ -9,24 +9,24 @@
 // Component
 
 .panel {
-  margin-bottom: $line-height-computed;
   background-color: $panel-bg;
-  border: 1px solid transparent;
   border-radius: $panel-border-radius;
+  border: 1px solid transparent;
   box-shadow: 0 1px 1px rgba(0,0,0,.05);
+  margin-bottom: $line-height-computed;
 }
 
 // Elements
 
 .panel-body {
-  padding: $panel-body-padding;
   @include clearfix;
+  padding: $panel-body-padding;
 }
 
 .panel-heading {
-  padding: $panel-heading-padding;
-  border-bottom: 1px solid transparent;
   @include border-top-radius(($panel-border-radius - 1));
+  border-bottom: 1px solid transparent;
+  padding: $panel-heading-padding;
 
   > .dropdown .dropdown-toggle {
     color: inherit;
@@ -34,10 +34,10 @@
 }
 
 .panel-title {
-  margin-top: 0;
-  margin-bottom: 0;
-  font-size: ceil(($font-size-base * 1.125));
   color: inherit;
+  font-size: ceil(($font-size-base * 1.125));
+  margin-bottom: 0;
+  margin-top: 0;
 
   > a,
   > small,
@@ -49,10 +49,10 @@
 }
 
 .panel-footer {
-  padding: $panel-footer-padding;
+  @include border-bottom-radius(($panel-border-radius - 1));
   background-color: $panel-footer-bg;
   border-top: 1px solid $panel-inner-border;
-  @include border-bottom-radius(($panel-border-radius - 1));
+  padding: $panel-footer-padding;
 }
 
 // List groups in panels
@@ -65,23 +65,23 @@
     margin-bottom: 0;
 
     .list-group-item {
-      border-width: 1px 0;
       border-radius: 0;
+      border-width: 1px 0;
     }
 
     // Add border top radius for first one
     &:first-child {
       .list-group-item:first-child {
-        border-top: 0;
         @include border-top-radius(($panel-border-radius - 1));
+        border-top: 0;
       }
     }
 
     // Add border bottom radius for last one
     &:last-child {
       .list-group-item:last-child {
-        border-bottom: 0;
         @include border-bottom-radius(($panel-border-radius - 1));
+        border-bottom: 0;
       }
     }
   }
@@ -244,8 +244,8 @@
 
   // Tighten up margin so it's only between panels
   .panel {
-    margin-bottom: 0;
     border-radius: $panel-border-radius;
+    margin-bottom: 0;
 
     + .panel {
       margin-top: 5px;

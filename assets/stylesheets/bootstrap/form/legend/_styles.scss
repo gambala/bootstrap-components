@@ -5,13 +5,13 @@
 // Component
 
 legend {
-  display: block;
-  width: 100%;
-  padding: 0;
-  margin-bottom: $line-height-computed;
-  font-size: ($font-size-base * 1.5);
-  line-height: inherit;
-  color: $legend-color;
   border: 0;
   border-bottom: 1px solid $legend-border-color;
+  color: $legend-color;
+  display: block;
+  font-size: ($font-size-base * 1.5);
+  line-height: inherit;
+  margin-bottom: $line-height-computed;
+  padding: 0;
+  width: 100%;
 }

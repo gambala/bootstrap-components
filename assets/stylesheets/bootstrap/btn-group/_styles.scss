@@ -9,8 +9,8 @@
 // Component
 
 .btn-group {
-  position: relative;
   display: inline-block;
+  position: relative;
   vertical-align: middle; // match .btn alignment given font-size hack above
 }
 
@@ -18,8 +18,8 @@
 
 .btn-group {
   > .btn {
-    position: relative;
     float: left;
+    position: relative;
 
     // Bring the "active" button to the front
     &:hover,
@@ -116,8 +116,8 @@
 }
 
 .btn-group-vertical {
-  position: relative;
   display: inline-block;
+  position: relative;
   vertical-align: middle; // match .btn alignment given font-size hack above
 
   > .btn {
@@ -136,8 +136,8 @@
   > .btn-group > .btn {
     display: block;
     float: none;
-    width: 100%;
     max-width: 100%;
+    width: 100%;
   }
 
   // Clear floats so dropdown menus can be properly placed
@@ -153,8 +153,8 @@
   > .btn + .btn-group,
   > .btn-group + .btn,
   > .btn-group + .btn-group {
-    margin-top: -1px;
     margin-left: 0;
+    margin-top: -1px;
   }
 }
 
@@ -163,12 +163,12 @@
     border-radius: 0;
   }
   &:first-child:not(:last-child) {
-    @include border-top-radius($btn-border-radius-base);
     @include border-bottom-radius(0);
+    @include border-top-radius($btn-border-radius-base);
   }
   &:last-child:not(:first-child) {
-    @include border-top-radius(0);
     @include border-bottom-radius($btn-border-radius-base);
+    @include border-top-radius(0);
   }
 }
 
@@ -188,15 +188,15 @@
 }
 
 .btn-group-justified {
-  display: table;
-  width: 100%;
-  table-layout: fixed;
   border-collapse: separate;
+  display: table;
+  table-layout: fixed;
+  width: 100%;
 
   > .btn,
   > .btn-group {
-    float: none;
     display: table-cell;
+    float: none;
     width: 1%;
   }
 
@@ -228,9 +228,9 @@
   > .btn-group > .btn {
     input[type="radio"],
     input[type="checkbox"] {
-      position: absolute;
       clip: rect(0,0,0,0);
       pointer-events: none;
+      position: absolute;
     }
   }
 }

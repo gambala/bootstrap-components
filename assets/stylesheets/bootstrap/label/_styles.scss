@@ -4,16 +4,16 @@
 // Component
 
 .label {
+  border-radius: .25em;
+  color: $label-color;
   display: inline;
-  padding: .2em .6em .3em;
   font-size: 75%;
   font-weight: bold;
   line-height: 1;
-  color: $label-color;
+  padding: .2em .6em .3em;
   text-align: center;
-  white-space: nowrap;
   vertical-align: baseline;
-  border-radius: .25em;
+  white-space: nowrap;
 }
 
 // Modificators
@@ -26,8 +26,8 @@
 // Add hover effects, but only for links
 a.label:hover {
   color: $label-link-hover-color;
-  text-decoration: none;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .label-default { @include label-variant($label-default-bg); }

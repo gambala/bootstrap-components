@@ -6,8 +6,8 @@
 // Component
 
 dl {
-  margin-top: 0; // Remove browser default
   margin-bottom: 0;
+  margin-top: 0; // Remove browser default
 }
 
 // Elements
@@ -35,11 +35,11 @@ dd {
 
   @media (min-width: $dl-horizontal-breakpoint) {
     dt {
-      float: left;
-      width: ($dl-horizontal-offset - 20);
-      clear: left;
-      text-align: right;
       @include text-overflow;
+      clear: left;
+      float: left;
+      text-align: right;
+      width: ($dl-horizontal-offset - 20);
     }
 
     dd {
@@ -50,8 +50,8 @@ dd {
 
 .dl-inline {
   dt {
-    float: left;
     clear: left;
+    float: left;
     margin-right: 5px;
   }
 
