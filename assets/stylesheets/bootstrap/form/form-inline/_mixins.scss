@@ -14,8 +14,8 @@
     // In navbar-form, allow folks to *not* use `.form-group`
     .form-control {
       display: inline-block;
-      width: auto; // Prevent labels from stacking above inputs in `.form-group`
       vertical-align: middle;
+      width: auto; // Prevent labels from stacking above inputs in `.form-group`
     }
 
     // Make static controls behave like regular ones
@@ -49,8 +49,8 @@
     .radio,
     .checkbox {
       display: inline-block;
-      margin-top: 0;
       margin-bottom: 0;
+      margin-top: 0;
       vertical-align: middle;
 
       label {
@@ -59,8 +59,8 @@
     }
     .radio input[type="radio"],
     .checkbox input[type="checkbox"] {
-      position: relative;
       margin-left: 0;
+      position: relative;
     }
 
     // Re-override the feedback icon.

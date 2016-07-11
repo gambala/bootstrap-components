@@ -11,19 +11,19 @@
 // Component
 
 .btn {
-  display: inline-block;
-  margin-bottom: 0; // For input.btn
-  font-weight: $btn-font-weight;
-  line-height: $line-height-computed;
-  text-align: center;
-  vertical-align: middle;
-  touch-action: manipulation;
-  cursor: pointer;
+  @include button-size($padding-base-vertical, $padding-base-horizontal, $font-size-base, $line-height-base, $btn-border-radius-base);
   background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
   border: 1px solid transparent;
-  white-space: nowrap;
-  @include button-size($padding-base-vertical, $padding-base-horizontal, $font-size-base, $line-height-base, $btn-border-radius-base);
+  cursor: pointer;
+  display: inline-block;
+  font-weight: $btn-font-weight;
+  line-height: $line-height-computed;
+  margin-bottom: 0; // For input.btn
+  text-align: center;
+  touch-action: manipulation;
   user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
 }
 
 // Elements
@@ -51,9 +51,9 @@
 
   &.disabled,
   &[disabled] {
-    cursor: $cursor-disabled;
     @include opacity(.65);
     box-shadow: none;
+    cursor: $cursor-disabled;
   }
 }
 
@@ -81,9 +81,9 @@ a.btn.disabled {
 }
 
 .btn-link {
+  border-radius: 0;
   color: $link-color;
   font-weight: normal;
-  border-radius: 0;
 
   &,
   &:active,
@@ -100,9 +100,9 @@ a.btn.disabled {
   }
 
   &:hover {
+    background-color: transparent;
     color: $link-hover-color;
     text-decoration: $link-hover-decoration;
-    background-color: transparent;
   }
 
   &[disabled] {
@@ -154,9 +154,9 @@ input[type="button"] {
 
 fieldset[disabled] {
   .btn {
-    cursor: $cursor-disabled;
     @include opacity(.65);
     box-shadow: none;
+    cursor: $cursor-disabled;
   }
 
   a.btn {

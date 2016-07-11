@@ -4,9 +4,9 @@
   > li {
     > a,
     > span {
-      padding: $padding-vertical $padding-horizontal;
       font-size: $font-size;
       line-height: $line-height;
+      padding: $padding-vertical $padding-horizontal;
     }
     &:first-child {
       > a,

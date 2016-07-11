@@ -1,30 +1,30 @@
 @mixin button-variant($color, $background, $border) {
-  color: $color;
   background-color: $background;
   border-color: $border;
+  color: $color;
 
   &.focus {
-    color: $color;
     background-color: darken($background, 10%);
-        border-color: darken($border, 25%);
+    border-color: darken($border, 25%);
+    color: $color;
   }
   &:hover {
-    color: $color;
     background-color: darken($background, 10%);
-        border-color: darken($border, 12%);
+    border-color: darken($border, 12%);
+    color: $color;
   }
   &:active,
   &.active,
   .open > &.dropdown-toggle {
-    color: $color;
     background-color: darken($background, 10%);
-        border-color: darken($border, 12%);
+    border-color: darken($border, 12%);
+    color: $color;
 
     &:hover,
     &.focus {
-      color: $color;
       background-color: darken($background, 17%);
-          border-color: darken($border, 25%);
+      border-color: darken($border, 25%);
+      color: $color;
     }
   }
   &:active,
@@ -38,19 +38,19 @@
     &:hover,
     &.focus {
       background-color: $background;
-          border-color: $border;
+      border-color: $border;
     }
   }
 
   .badge {
-    color: $background;
     background-color: $color;
+    color: $background;
   }
 }
 
 @mixin button-size($padding-vertical, $padding-horizontal, $font-size, $line-height, $border-radius) {
-  padding: $padding-vertical $padding-horizontal;
+  border-radius: $border-radius;
   font-size: $font-size;
   line-height: $line-height;
-  border-radius: $border-radius;
+  padding: $padding-vertical $padding-horizontal;
 }

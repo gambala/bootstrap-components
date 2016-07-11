@@ -1,7 +1,7 @@
 @mixin list-group-item-variant($state, $background, $color) {
   .list-group-item-#{$state} {
-    color: $color;
     background-color: $background;
+    color: $color;
 
     // [converter] extracted a&, button& to a.list-group-item-#{$state}, button.list-group-item-#{$state}
   }
@@ -15,14 +15,14 @@
     }
 
     &:hover {
-      color: $color;
       background-color: darken($background, 5%);
+      color: $color;
     }
     &.active,
     &.active:hover {
-      color: #fff;
       background-color: $color;
       border-color: $color;
+      color: #fff;
     }
   }
 }

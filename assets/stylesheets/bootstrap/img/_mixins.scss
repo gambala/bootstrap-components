@@ -1,8 +1,8 @@
 // Keep images from scaling beyond the width of their parents.
 @mixin img-responsive($display: block) {
   display: $display;
-  max-width: 100%; // Part 1: Set a maximum relative to the parent
   height: auto; // Part 2: Scale the height according to the width, otherwise you get stretching
+  max-width: 100%; // Part 1: Set a maximum relative to the parent
 }
 
 // Special
@@ -28,8 +28,8 @@
 // My (gambala) non adapted yet addons
 
 @mixin background-cover($top:center, $left:center) {
-  background-repeat: no-repeat;
   background-position: $top $left;
+  background-repeat: no-repeat;
   background-size: cover;
 }
 
@@ -56,8 +56,8 @@
 }
 
 @mixin retina-cover($lq-image, $hq-image) {
-  background-image: image_url($lq-image);
   @include background-cover();
+  background-image: image_url($lq-image);
   @media print,
          (min--moz-device-pixel-ratio: 1.3),
          (-o-min-device-pixel-ratio: 2.6/2),
@@ -82,8 +82,8 @@
 }
 
 @mixin svg-cover($bitmap-image, $svg-image) {
-  background-image: image_url($bitmap-image);
   @include background-cover();
+  background-image: image_url($bitmap-image);
   @media print,
          (min--moz-device-pixel-ratio: 1.3),
          (-o-min-device-pixel-ratio: 2.6/2),

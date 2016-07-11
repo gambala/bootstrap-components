@@ -14,8 +14,8 @@
   .checkbox,
   .radio-inline,
   .checkbox-inline {
-    margin-top: 0;
     margin-bottom: 0;
+    margin-top: 0;
     padding-top: ($padding-base-vertical + 1); // Default padding plus a border
   }
   // Account for padding we're adding to ensure the alignment and of help text
@@ -34,9 +34,9 @@
   // labels on narrow viewports stack the same as a default form example.
   @media (min-width: $screen-sm-min) {
     .control-label {
-      text-align: right;
       margin-bottom: 0;
       padding-top: ($padding-base-vertical + 1); // Default padding plus a border
+      text-align: right;
     }
   }
 
@@ -55,16 +55,16 @@
   .form-group-lg {
     @media (min-width: $screen-sm-min) {
       .control-label {
-        padding-top: ($padding-large-vertical + 1);
         font-size: $font-size-large;
+        padding-top: ($padding-large-vertical + 1);
       }
     }
   }
   .form-group-sm {
     @media (min-width: $screen-sm-min) {
       .control-label {
-        padding-top: ($padding-small-vertical + 1);
         font-size: $font-size-small;
+        padding-top: ($padding-small-vertical + 1);
       }
     }
   }

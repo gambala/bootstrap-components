@@ -11,26 +11,26 @@
 // Component
 
 .nav {
+  @include clearfix;
+  list-style: none;
   margin-bottom: 0;
   padding-left: 0; // Override default ul/ol
-  list-style: none;
-  @include clearfix;
 }
 
 // Elements
 
 .nav {
   > li {
-    position: relative;
     display: block;
+    position: relative;
 
     > a {
-      position: relative;
       display: block;
       padding: $nav-link-padding;
+      position: relative;
       &:hover {
-        text-decoration: none;
         background-color: $nav-link-hover-bg;
+        text-decoration: none;
       }
     }
 
@@ -39,10 +39,10 @@
       color: $nav-disabled-link-color;
 
       &:hover {
-        color: $nav-disabled-link-hover-color;
-        text-decoration: none;
         background-color: transparent;
+        color: $nav-disabled-link-hover-color;
         cursor: $cursor-disabled;
+        text-decoration: none;
       }
     }
   }
@@ -85,10 +85,10 @@
 
     // Actual tabs (as links)
     > a {
-      margin-right: 2px;
-      line-height: $line-height-base;
-      border: 1px solid transparent;
       border-radius: $border-radius-base $border-radius-base 0 0;
+      border: 1px solid transparent;
+      line-height: $line-height-base;
+      margin-right: 2px;
       &:hover {
         border-color: $nav-tabs-link-hover-border-color $nav-tabs-link-hover-border-color $nav-tabs-border-color;
       }
@@ -98,10 +98,10 @@
     &.active > a {
       &,
       &:hover {
-        color: $nav-tabs-active-link-hover-color;
         background-color: $nav-tabs-active-link-hover-bg;
         border: 1px solid $nav-tabs-active-link-hover-border-color;
         border-bottom-color: transparent;
+        color: $nav-tabs-active-link-hover-color;
         cursor: default;
       }
     }
@@ -109,10 +109,10 @@
 
   // Specific dropdowns
   .dropdown-menu {
-    // make dropdown border overlap tab border
-    margin-top: -1px;
     // Remove the top rounded corners here since there is a hard edge above the menu
     @include border-top-radius(0);
+    // make dropdown border overlap tab border
+    margin-top: -1px;
   }
 
   // pulling this in mainly for less shorthand
@@ -138,8 +138,8 @@
     &.active > a {
       &,
       &:hover {
-        color: $nav-pills-active-link-hover-color;
         background-color: $nav-pills-active-link-hover-bg;
+        color: $nav-pills-active-link-hover-color;
       }
     }
   }
@@ -149,8 +149,8 @@
   > li {
     float: none;
     + li {
-      margin-top: 2px;
       margin-left: 0; // no need for this gap between nav items
+      margin-top: 2px;
     }
   }
 }
@@ -161,14 +161,14 @@
   > li {
     float: none;
     > a {
-      text-align: center;
       margin-bottom: 5px;
+      text-align: center;
     }
   }
 
   > .dropdown .dropdown-menu {
-    top: auto;
     left: auto;
+    top: auto;
   }
 
   @media (min-width: $screen-sm-min) {
@@ -186,9 +186,9 @@
   border-bottom: 0;
 
   > li > a {
+    border-radius: $border-radius-base;
     // Override margin from .nav-tabs
     margin-right: 0;
-    border-radius: $border-radius-base;
   }
 
   > .active > a,

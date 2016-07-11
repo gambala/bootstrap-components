@@ -16,24 +16,24 @@ h3, .h3,
 h4, .h4,
 h5, .h5,
 h6, .h6 {
+  color: $headings-color;
   font-family: $headings-font-family;
   font-weight: $headings-font-weight;
   line-height: $headings-line-height;
-  color: $headings-color;
 
   small,
   .small {
+    color: $headings-small-color;
     font-weight: normal;
     line-height: 1;
-    color: $headings-small-color;
   }
 }
 
 h1, .h1,
 h2, .h2,
 h3, .h3 {
-  margin-top: $line-height-computed;
   margin-bottom: ($line-height-computed / 2);
+  margin-top: $line-height-computed;
 
   small,
   .small {
@@ -43,8 +43,8 @@ h3, .h3 {
 h4, .h4,
 h5, .h5,
 h6, .h6 {
-  margin-top: ($line-height-computed / 2);
   margin-bottom: ($line-height-computed / 2);
+  margin-top: ($line-height-computed / 2);
 
   small,
   .small {
@@ -68,10 +68,10 @@ p {
 }
 
 .lead {
-  margin-bottom: $line-height-computed;
   font-size: floor(($font-size-base * 1.15));
   font-weight: 300;
   line-height: 1.4;
+  margin-bottom: $line-height-computed;
 
   @media (min-width: $screen-sm-min) {
     font-size: ($font-size-base * 1.5);
