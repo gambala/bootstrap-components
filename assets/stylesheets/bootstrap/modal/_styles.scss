@@ -29,7 +29,6 @@
   background-clip: padding-box;
   background-color: $modal-content-bg;
   border-radius: $border-radius-large;
-  border: 1px solid $modal-content-fallback-border-color; //old browsers fallback (ie8 etc)
   border: 1px solid $modal-content-border-color;
   box-shadow: 0 3px 9px rgba(0,0,0,.5);
   position: relative;
