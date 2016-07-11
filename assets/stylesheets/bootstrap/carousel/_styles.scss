@@ -1,7 +1,6 @@
 @import "bootstrap/base/grid/variables";
 @import "variables";
 @import "bootstrap/img/mixins";
-@import "mixins";
 
 // Component
 
@@ -106,10 +105,12 @@
 
   // Set gradients for backgrounds
   &.left {
-    @include gradient-horizontal($start-color: rgba(0,0,0,.5), $end-color: rgba(0,0,0,.0001));
+    background-image: linear-gradient(to right, rgba(0,0,0,.5) 0, rgba(0,0,0,.0001) 100%);
+    background-repeat: repeat-x;
   }
   &.right {
-    @include gradient-horizontal($start-color: rgba(0,0,0,.0001), $end-color: rgba(0,0,0,.5));
+    background-image: linear-gradient(to right, rgba(0,0,0,.0001) 0, rgba(0,0,0,.5) 100%);
+    background-repeat: repeat-x;
     left: auto;
     right: 0;
   }
