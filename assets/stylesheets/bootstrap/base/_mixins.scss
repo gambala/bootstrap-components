@@ -1,54 +1,16 @@
 @import "bootstrap/base/font-family/variables";
 @import "bootstrap/base/line-height/variables";
+@import "mixins/between-neighbours";
 @import "mixins/border-radius";
 @import "mixins/clearfix";
-@import "mixins/rh";
+@import "mixins/gg";
+@import "mixins/opacity";
+@import "mixins/responsive-invisibility";
+@import "mixins/responsive-visibility";
 @import "mixins/rh-margin";
-
-@mixin responsive-visibility($parent) {
-  #{$parent} {
-    display: block !important;
-  }
-  table#{$parent}  { display: table !important; }
-  tr#{$parent}     { display: table-row !important; }
-  th#{$parent},
-  td#{$parent}     { display: table-cell !important; }
-}
-
-@mixin responsive-invisibility($parent) {
-  #{$parent} {
-    display: none !important;
-  }
-}
-
-@mixin text-hide() {
-  background-color: transparent;
-  border: 0;
-  color: transparent;
-  font: 0/0 a;
-  text-shadow: none;
-}
-
-@mixin text-overflow() {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-@mixin text-reset() {
-  font-family: $font-family-base;
-  font-style: normal;
-  font-weight: normal;
-  letter-spacing: normal;
-  line-break: auto;
-  line-height: $line-height-base;
-  text-align: left;
-  text-align: start;
-  text-decoration: none;
-  text-shadow: none;
-  text-transform: none;
-  white-space: normal;
-  word-break: normal;
-  word-spacing: normal;
-  word-wrap: normal;
-}
+@import "mixins/rh";
+@import "mixins/scrollbar";
+@import "mixins/square";
+@import "mixins/text-hide";
+@import "mixins/text-overflow";
+@import "mixins/text-reset";
