@@ -5,7 +5,6 @@
 @import "bootstrap/base/padding/variables";
 @import "variables";
 @import "bootstrap/nav/mixins";
-@import "mixins";
 
 // Component
 
@@ -21,7 +20,6 @@
   background-clip: padding-box;
   background-color: $dropdown-bg;
   border-radius: $border-radius-base;
-  border: 1px solid $dropdown-fallback-border; // IE8 fallback
   border: 1px solid $dropdown-border;
   box-shadow: 0 6px 12px rgba(0,0,0,.175);
   display: none; // none by default, but block on "open" of the menu
@@ -83,7 +81,6 @@
   }
 
   &:hover {
-    @include reset-filter;
     background-color: transparent;
     background-image: none; // Remove CSS gradient
     cursor: $cursor-disabled;

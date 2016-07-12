@@ -1,8 +1,6 @@
 @import "bootstrap/base/grid/variables";
 @import "variables";
 @import "bootstrap/img/mixins";
-@import "bootstrap/base/mixins/opacity";
-@import "mixins";
 
 // Component
 
@@ -93,12 +91,12 @@
 }
 
 .carousel-control {
-  @include opacity($carousel-control-opacity);
   background-color: rgba(0, 0, 0, 0); // Fix IE9 click-thru bug
   bottom: 0;
   color: $carousel-control-color;
   font-size: $carousel-control-font-size;
   left: 0;
+  opacity: $carousel-control-opacity;
   position: absolute;
   text-align: center;
   text-shadow: $carousel-text-shadow;
@@ -107,18 +105,20 @@
 
   // Set gradients for backgrounds
   &.left {
-    @include gradient-horizontal($start-color: rgba(0,0,0,.5), $end-color: rgba(0,0,0,.0001));
+    background-image: linear-gradient(to right, rgba(0,0,0,.5) 0, rgba(0,0,0,.0001) 100%);
+    background-repeat: repeat-x;
   }
   &.right {
-    @include gradient-horizontal($start-color: rgba(0,0,0,.0001), $end-color: rgba(0,0,0,.5));
+    background-image: linear-gradient(to right, rgba(0,0,0,.0001) 0, rgba(0,0,0,.5) 100%);
+    background-repeat: repeat-x;
     left: auto;
     right: 0;
   }
 
   &:hover {
-    @include opacity(.9);
     color: $carousel-control-color;
     text-decoration: none;
+    opacity: 0.9;
   }
 
   // Toggles
@@ -175,16 +175,9 @@
   z-index: 15;
 
   li {
-    // IE8-9 hack for event handling
-    //
-    // Internet Explorer 8-9 does not support clicks on elements without a set
-    // `background-color`. We cannot use `filter` since that's not viewed as a
-    // background color by the browser. Thus, a hack is needed.
+    // Internet Explorer 9 does not support clicks on elements without a set
+    // `background-color`. Thus, a hack is needed.
     // See https://developer.mozilla.org/en-US/docs/Web/Events/click#Internet_Explorer
-    //
-    // For IE8, we set solid black as it doesn't support `rgba()`. For IE9, we
-    // set alpha transparency for the best results possible.
-    background-color: #000 \9; // IE8
     background-color: rgba(0,0,0,0); // IE9
     border-radius: 10px;
     border: 1px solid $carousel-indicator-border-color;

@@ -1,25 +1,24 @@
 @import "bootstrap/base/font-size/variables";
 @import "variables";
-@import "bootstrap/base/mixins/opacity";
 
 // Component
 
 .close {
-  @include opacity(.2);
   color: $close-color;
   float: right;
   font-size: ($font-size-base * 1.5);
   font-weight: $close-font-weight;
   line-height: 1;
+  opacity: 0.2;
   text-shadow: $close-text-shadow;
 }
 
 // Modificators
 
 .close:hover {
-  @include opacity(.5);
   color: $close-color;
   cursor: pointer;
+  opacity: 0.5;
   text-decoration: none;
 }
 

@@ -2,7 +2,6 @@
 @import "bootstrap/base/grid/variables";
 @import "variables";
 @import "bootstrap/base/mixins/clearfix";
-@import "bootstrap/base/mixins/opacity";
 
 // Component
 
@@ -30,7 +29,6 @@
   background-clip: padding-box;
   background-color: $modal-content-bg;
   border-radius: $border-radius-large;
-  border: 1px solid $modal-content-fallback-border-color; //old browsers fallback (ie8 etc)
   border: 1px solid $modal-content-border-color;
   box-shadow: 0 3px 9px rgba(0,0,0,.5);
   position: relative;
@@ -45,8 +43,8 @@
   top: 0;
   z-index: $modal-backdrop-z-index;
 
-  &.fade { @include opacity(0); }
-  &.in   { @include opacity($modal-backdrop-opacity); }
+  &.fade { opacity: 0; }
+  &.in   { opacity: $modal-backdrop-opacity; }
 }
 
 .modal-header {

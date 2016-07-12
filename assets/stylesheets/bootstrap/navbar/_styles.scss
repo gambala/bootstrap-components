@@ -285,7 +285,6 @@
 .navbar-fixed-bottom .dropdown {
   .caret {
     border-bottom: $caret-width-base dashed;
-    border-bottom: $caret-width-base solid \9; // IE8
     border-top: 0;
     content: "";
   }
