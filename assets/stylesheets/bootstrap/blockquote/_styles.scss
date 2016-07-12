@@ -21,11 +21,7 @@ blockquote {
     }
   }
 
-  // Note: Deprecated small and .small as of v3.1.0
-  // Context: https://github.com/twbs/bootstrap/issues/11660
-  footer,
-  small,
-  .small {
+  footer {
     color: $blockquote-small-color;
     display: block;
     font-size: 80%; // back to default font-size
@@ -39,18 +35,14 @@ blockquote {
 
 // Modificators
 
-// Heads up: `blockquote.pull-right` has been deprecated as of v3.1.0.
-.blockquote-reverse,
-blockquote.pull-right {
+.blockquote-reverse {
   border-left: 0;
   border-right: 5px solid $blockquote-border-color;
   padding-left: 0;
   padding-right: 15px;
   text-align: right;
 
-  footer,
-  small,
-  .small {
+  footer {
     &:before { content: ''; }
     &:after {
       content: '\00A0 \2014'; // nbsp, em dash

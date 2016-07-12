@@ -35,12 +35,6 @@
   top: 100%;
   z-index: $dropdown-z-index;
 
-  // Deprecated as of 3.1.0 in favor of `.dropdown-menu-[dir]`
-  &.pull-right {
-    left: auto;
-    right: 0;
-  }
-
   // Dividers (basically an hr) within the dropdown
   .divider {
     @include nav-divider($dropdown-divider-bg);
