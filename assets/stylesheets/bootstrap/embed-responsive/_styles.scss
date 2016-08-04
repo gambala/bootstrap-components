@@ -1,4 +1,4 @@
-// Modificators
+// Component
 
 .embed-responsive {
   display: block;
@@ -6,7 +6,11 @@
   overflow: hidden;
   padding: 0;
   position: relative;
+}
 
+// Elements
+
+.embed-responsive {
   .embed-responsive-item,
   iframe,
   embed,
@@ -21,6 +25,8 @@
     width: 100%;
   }
 }
+
+// Modificators
 
 .embed-responsive-16by9 {
   padding-bottom: 56.25%;
