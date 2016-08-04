@@ -1,10 +1,10 @@
 @import "bootstrap/base/color/variables";
 @import "bootstrap/base/border-radius/variables";
 
-$thumbnail-padding:           4px !default;
-$thumbnail-background-color:                $body-bg !default;
-$thumbnail-border:            #ddd !default;
+$thumbnail-background-color:  $body-bg !default;
 $thumbnail-border-radius:     $base-border-radius !default;
+$thumbnail-border:            #ddd !default;
+$thumbnail-padding:           4px !default;
 
 $thumbnail-caption-color:     $text-color !default;
 $thumbnail-caption-padding:   9px !default;
