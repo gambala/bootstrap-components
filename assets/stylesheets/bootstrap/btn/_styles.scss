@@ -168,3 +168,11 @@ fieldset[disabled] {
     }
   }
 }
+
+@media print {
+  .btn {
+    > .caret {
+      border-top-color: #000 !important;
+    }
+  }
+}

@@ -45,3 +45,12 @@ mark,
 .pull-left {
   float: left !important;
 }
+
+// Context
+
+@media print {
+  p {
+    orphans: 3;
+    widows: 3;
+  }
+}

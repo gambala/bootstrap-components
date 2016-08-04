@@ -13,3 +13,11 @@ abbr[data-original-title] {
   font-size: 90%;
   text-transform: uppercase;
 }
+
+// Context
+
+@media print {
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+}

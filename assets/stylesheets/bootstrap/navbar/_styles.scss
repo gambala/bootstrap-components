@@ -200,6 +200,14 @@
   }
 }
 
+// Context
+
+@media print {
+  .navbar {
+    display: none;
+  }
+}
+
 // Special
 
 // Both navbar header and collapse

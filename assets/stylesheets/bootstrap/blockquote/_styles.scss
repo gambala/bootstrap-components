@@ -50,3 +50,12 @@ blockquote {
     }
   }
 }
+
+// Context
+
+@media print {
+  pre {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+}

@@ -211,3 +211,29 @@ table {
     }
   }
 }
+
+@media print {
+  thead {
+    display: table-header-group; // h5bp.com/t
+  }
+
+  tr {
+    page-break-inside: avoid;
+  }
+
+  .table {
+    border-collapse: collapse !important;
+
+    td,
+    th {
+      background-color: #fff !important;
+    }
+  }
+
+  .table-bordered {
+    th,
+    td {
+      border: 1px solid #ddd !important;
+    }
+  }
+}

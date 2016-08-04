@@ -38,3 +38,10 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
+
+@media print {
+  img {
+    max-width: 100% !important;
+    page-break-inside: avoid;
+  }
+}
