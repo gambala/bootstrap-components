@@ -329,13 +329,13 @@
 // Alternate navbars
 
 .navbar-default {
-  background-color: $navbar-default-bg;
-  border-color: $navbar-default-border;
+  background-color: $navbar-default-background-color;
+  border-color: $navbar-default-border-color;
 
   .navbar-brand {
     color: $navbar-default-brand-color;
     &:hover {
-      background-color: $navbar-default-brand-hover-bg;
+      background-color: $navbar-default-brand-hover-background-color;
       color: $navbar-default-brand-hover-color;
     }
   }
@@ -349,21 +349,21 @@
       color: $navbar-default-link-color;
 
       &:hover {
-        background-color: $navbar-default-link-hover-bg;
+        background-color: $navbar-default-link-hover-background-color;
         color: $navbar-default-link-hover-color;
       }
     }
     > .active > a {
       &,
       &:hover {
-        background-color: $navbar-default-link-active-bg;
+        background-color: $navbar-default-link-active-background-color;
         color: $navbar-default-link-active-color;
       }
     }
     > .disabled > a {
       &,
       &:hover {
-        background-color: $navbar-default-link-disabled-bg;
+        background-color: $navbar-default-link-disabled-background-color;
         color: $navbar-default-link-disabled-color;
       }
     }
@@ -372,16 +372,16 @@
   .navbar-toggle {
     border-color: $navbar-default-toggle-border-color;
     &:hover {
-      background-color: $navbar-default-toggle-hover-bg;
+      background-color: $navbar-default-toggle-hover-background-color;
     }
     .icon-bar {
-      background-color: $navbar-default-toggle-icon-bar-bg;
+      background-color: $navbar-default-toggle-icon-bar-background-color;
     }
   }
 
   .navbar-collapse,
   .navbar-form {
-    border-color: $navbar-default-border;
+    border-color: $navbar-default-border-color;
   }
 
   // Dropdown menu items
@@ -389,7 +389,7 @@
     > .open > a {
       &,
       &:hover {
-        background-color: $navbar-default-link-active-bg;
+        background-color: $navbar-default-link-active-background-color;
         color: $navbar-default-link-active-color;
       }
     }
@@ -399,21 +399,21 @@
         > li > a {
           color: $navbar-default-link-color;
           &:hover {
-            background-color: $navbar-default-link-hover-bg;
+            background-color: $navbar-default-link-hover-background-color;
             color: $navbar-default-link-hover-color;
           }
         }
         > .active > a {
           &,
           &:hover {
-            background-color: $navbar-default-link-active-bg;
+            background-color: $navbar-default-link-active-background-color;
             color: $navbar-default-link-active-color;
           }
         }
         > .disabled > a {
           &,
           &:hover {
-            background-color: $navbar-default-link-disabled-bg;
+            background-color: $navbar-default-link-disabled-background-color;
             color: $navbar-default-link-disabled-color;
           }
         }
