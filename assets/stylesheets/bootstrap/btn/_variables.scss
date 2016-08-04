@@ -3,31 +3,31 @@
 
 $btn-font-weight:         normal !default;
 
-$btn-default-bg:          #fff !default;
-$btn-default-border:      #ccc !default;
-$btn-default-color:       #333 !default;
+$btn-default-background-color:    #fff !default;
+$btn-default-border-color:        #ccc !default;
+$btn-default-color:               #333 !default;
 
-$btn-primary-bg:          $brand-primary !default;
-$btn-primary-border:      darken($btn-primary-bg, 5%) !default;
-$btn-primary-color:       #fff !default;
+$btn-primary-background-color:    $brand-primary !default;
+$btn-primary-border-color:        darken($btn-primary-background-color, 5%) !default;
+$btn-primary-color:               #fff !default;
 
-$btn-success-bg:          $brand-success !default;
-$btn-success-border:      darken($btn-success-bg, 5%) !default;
-$btn-success-color:       #fff !default;
+$btn-success-background-color:    $brand-success !default;
+$btn-success-border-color:        darken($btn-success-background-color, 5%) !default;
+$btn-success-color:               #fff !default;
 
-$btn-info-bg:             $brand-info !default;
-$btn-info-border:         darken($btn-info-bg, 5%) !default;
-$btn-info-color:          #fff !default;
+$btn-info-background-color:       $brand-info !default;
+$btn-info-border-color:           darken($btn-info-background-color, 5%) !default;
+$btn-info-color:                  #fff !default;
 
-$btn-warning-bg:          $brand-warning !default;
-$btn-warning-border:      darken($btn-warning-bg, 5%) !default;
-$btn-warning-color:       #fff !default;
+$btn-warning-background-color:    $brand-warning !default;
+$btn-warning-border-color:        darken($btn-warning-background-color, 5%) !default;
+$btn-warning-color:               #fff !default;
 
-$btn-danger-bg:           $brand-danger !default;
-$btn-danger-border:       darken($btn-danger-bg, 5%) !default;
-$btn-danger-color:        #fff !default;
+$btn-danger-background-color:     $brand-danger !default;
+$btn-danger-border-color:         darken($btn-danger-background-color, 5%) !default;
+$btn-danger-color:                #fff !default;
 
-$btn-link-disabled-color: $gray-light !default;
+$btn-link-disabled-color:         $gray-light !default;
 
 $btn-border-radius-base:  $base-border-radius !default;
 $btn-border-radius-large: $base-lg-border-radius !default;
