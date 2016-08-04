@@ -1,35 +1,35 @@
 @import "bootstrap/base/border-radius/variables";
 @import "bootstrap/base/color/variables";
 
-$panel-background-color:                    #fff !default;
-$panel-body-padding:          15px !default;
-$panel-heading-padding:       10px 15px !default;
-$panel-footer-padding:        $panel-heading-padding !default;
+$panel-background-color:      #fff !default;
 $panel-border-radius:         $base-border-radius !default;
 
-$panel-inner-border-color:          #ddd !default;
-$panel-footer-background-color:             #f5f5f5 !default;
+$panel-inner-border-color:           #ddd !default;
+$panel-heading-padding:              10px 15px !default;
+$panel-body-padding:                 15px !default;
+$panel-footer-background-color:      #f5f5f5 !default;
+$panel-footer-padding:               $panel-heading-padding !default;
 
-$panel-default-color:          $gray-dark !default;
-$panel-default-border-color:        #ddd !default;
-$panel-default-heading-background-color:    #f5f5f5 !default;
+$panel-default-border-color:               #ddd !default;
+$panel-default-color:                      $gray-dark !default;
+$panel-default-heading-background-color:   #f5f5f5 !default;
 
-$panel-primary-color:          #fff !default;
-$panel-primary-border-color:        $brand-primary !default;
-$panel-primary-heading-background-color:    $brand-primary !default;
+$panel-primary-border-color:               $brand-primary !default;
+$panel-primary-color:                      #fff !default;
+$panel-primary-heading-background-color:   $brand-primary !default;
 
-$panel-success-color:          $state-success-text !default;
-$panel-success-border-color:        $state-success-border !default;
-$panel-success-heading-background-color:    $state-success-bg !default;
+$panel-success-border-color:               $state-success-border !default;
+$panel-success-color:                      $state-success-text !default;
+$panel-success-heading-background-color:   $state-success-bg !default;
 
-$panel-info-color:             $state-info-text !default;
-$panel-info-border-color:           $state-info-border !default;
-$panel-info-heading-background-color:       $state-info-bg !default;
+$panel-info-border-color:                  $state-info-border !default;
+$panel-info-color:                         $state-info-text !default;
+$panel-info-heading-background-color:      $state-info-bg !default;
 
-$panel-warning-color:          $state-warning-text !default;
-$panel-warning-border-color:        $state-warning-border !default;
-$panel-warning-heading-background-color:    $state-warning-bg !default;
+$panel-warning-border-color:               $state-warning-border !default;
+$panel-warning-color:                      $state-warning-text !default;
+$panel-warning-heading-background-color:   $state-warning-bg !default;
 
-$panel-danger-color:           $state-danger-text !default;
-$panel-danger-border-color:         $state-danger-border !default;
-$panel-danger-heading-background-color:     $state-danger-bg !default;
+$panel-danger-border-color:                $state-danger-border !default;
+$panel-danger-color:                       $state-danger-text !default;
+$panel-danger-heading-background-color:    $state-danger-bg !default;
