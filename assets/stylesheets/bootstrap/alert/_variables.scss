@@ -1,22 +1,23 @@
 @import "bootstrap/base/border-radius/variables";
 @import "bootstrap/base/color/variables";
 
-$alert-padding:          15px !default;
 $alert-border-radius:    $base-border-radius !default;
+$alert-padding:          15px !default;
+
 $alert-link-font-weight: bold !default;
 
-$alert-success-bg:       $state-success-background-color !default;
-$alert-success-border:   $state-success-border-color !default;
-$alert-success-text:     $state-success-color !default;
+$alert-success-background-color:    $state-success-background-color !default;
+$alert-success-border-color:        $state-success-border-color !default;
+$alert-success-color:               $state-success-color !default;
 
-$alert-info-bg:          $state-info-background-color !default;
-$alert-info-border:      $state-info-border-color !default;
-$alert-info-text:        $state-info-color !default;
+$alert-info-background-color:       $state-info-background-color !default;
+$alert-info-border-color:           $state-info-border-color !default;
+$alert-info-color:                  $state-info-color !default;
 
-$alert-warning-bg:       $state-warning-background-color !default;
-$alert-warning-border:   $state-warning-border-color !default;
-$alert-warning-text:     $state-warning-color !default;
+$alert-warning-background-color:    $state-warning-background-color !default;
+$alert-warning-border-color:        $state-warning-border-color !default;
+$alert-warning-color:               $state-warning-color !default;
 
-$alert-danger-bg:        $state-danger-background-color !default;
-$alert-danger-border:    $state-danger-border-color !default;
-$alert-danger-text:      $state-danger-color !default;
+$alert-danger-background-color:     $state-danger-background-color !default;
+$alert-danger-border-color:         $state-danger-border-color !default;
+$alert-danger-color:                $state-danger-color !default;
