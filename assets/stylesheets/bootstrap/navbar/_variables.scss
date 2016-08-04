@@ -3,52 +3,49 @@
 @import "bootstrap/base/grid/variables";
 @import "bootstrap/base/line-height/variables";
 
-$navbar-height:                    50px !default;
-$navbar-margin-bottom:             $base-line-height-px !default;
-$navbar-border-radius:             $base-border-radius !default;
-$navbar-padding-horizontal:        floor(($grid-gutter-width / 2)) !default;
-$navbar-padding-vertical:          (($navbar-height - $base-line-height-px) / 2) !default;
+$navbar-border-radius:           $base-border-radius !default;
+$navbar-height:                  50px !default;
+$navbar-margin-bottom:           $base-line-height-px !default;
+$navbar-padding-horizontal:      floor(($grid-gutter-width / 2)) !default;
+$navbar-padding-vertical:        (($navbar-height - $base-line-height-px) / 2) !default;
+$navbar-z-index:                 1000 !default;
+
 $navbar-collapse-max-height:       340px !default;
 
-$navbar-z-index:            1000 !default;
 $navbar-fixed-z-index:      1030 !default;
 
-$navbar-default-color:             #777 !default;
-$navbar-default-background-color:                #f8f8f8 !default;
-$navbar-default-border-color:            darken($navbar-default-background-color, 6.5%) !default;
+$navbar-default-background-color:                 #f8f8f8 !default;
+$navbar-default-border-color:                     darken($navbar-default-background-color, 6.5%) !default;
+$navbar-default-color:                            #777 !default;
 
-$navbar-default-link-color:                #777 !default;
-$navbar-default-link-hover-color:          #333 !default;
-$navbar-default-link-hover-background-color:             transparent !default;
-$navbar-default-link-active-color:         #555 !default;
-$navbar-default-link-active-background-color:            darken($navbar-default-background-color, 6.5%) !default;
-$navbar-default-link-disabled-color:       #ccc !default;
-$navbar-default-link-disabled-background-color:          transparent !default;
+$navbar-default-link-color:                       #777 !default;
+$navbar-default-link-hover-background-color:      transparent !default;
+$navbar-default-link-hover-color:                 #333 !default;
+$navbar-default-link-active-background-color:     darken($navbar-default-background-color, 6.5%) !default;
+$navbar-default-link-active-color:                #555 !default;
+$navbar-default-link-disabled-background-color:   transparent !default;
+$navbar-default-link-disabled-color:              #ccc !default;
+$navbar-default-brand-color:                      $navbar-default-link-color !default;
+$navbar-default-brand-hover-background-color:     transparent !default;
+$navbar-default-brand-hover-color:                darken($navbar-default-brand-color, 10%) !default;
+$navbar-default-toggle-border-color:              #ddd !default;
+$navbar-default-toggle-icon-bar-background-color: #888 !default;
+$navbar-default-toggle-hover-background-color:    #ddd !default;
 
-$navbar-default-brand-color:               $navbar-default-link-color !default;
-$navbar-default-brand-hover-color:         darken($navbar-default-brand-color, 10%) !default;
-$navbar-default-brand-hover-background-color:            transparent !default;
-
-$navbar-default-toggle-hover-background-color:           #ddd !default;
-$navbar-default-toggle-icon-bar-background-color:        #888 !default;
-$navbar-default-toggle-border-color:       #ddd !default;
-
-$navbar-inverse-color:                      lighten($gray-light, 15%) !default;
-$navbar-inverse-background-color:                         #222 !default;
+$navbar-inverse-background-color:                 #222 !default;
 $navbar-inverse-border-color:                     darken($navbar-inverse-background-color, 10%) !default;
+$navbar-inverse-color:                            lighten($gray-light, 15%) !default;
 
-$navbar-inverse-link-color:                 lighten($gray-light, 15%) !default;
-$navbar-inverse-link-hover-color:           #fff !default;
-$navbar-inverse-link-hover-background-color:              transparent !default;
-$navbar-inverse-link-active-color:          $navbar-inverse-link-hover-color !default;
-$navbar-inverse-link-active-background-color:             darken($navbar-inverse-background-color, 10%) !default;
-$navbar-inverse-link-disabled-color:        #444 !default;
-$navbar-inverse-link-disabled-background-color:           transparent !default;
-
-$navbar-inverse-brand-color:                $navbar-inverse-link-color !default;
-$navbar-inverse-brand-hover-color:          #fff !default;
-$navbar-inverse-brand-hover-background-color:             transparent !default;
-
-$navbar-inverse-toggle-hover-background-color:            #333 !default;
-$navbar-inverse-toggle-icon-bar-background-color:         #fff !default;
-$navbar-inverse-toggle-border-color:        #333 !default;
+$navbar-inverse-link-color:                       lighten($gray-light, 15%) !default;
+$navbar-inverse-link-hover-background-color:      transparent !default;
+$navbar-inverse-link-hover-color:                 #fff !default;
+$navbar-inverse-link-active-background-color:     darken($navbar-inverse-background-color, 10%) !default;
+$navbar-inverse-link-active-color:                $navbar-inverse-link-hover-color !default;
+$navbar-inverse-link-disabled-background-color:   transparent !default;
+$navbar-inverse-link-disabled-color:              #444 !default;
+$navbar-inverse-brand-color:                      $navbar-inverse-link-color !default;
+$navbar-inverse-brand-hover-background-color:     transparent !default;
+$navbar-inverse-brand-hover-color:                #fff !default;
+$navbar-inverse-toggle-border-color:              #333 !default;
+$navbar-inverse-toggle-icon-bar-background-color: #fff !default;
+$navbar-inverse-toggle-hover-background-color:    #333 !default;
