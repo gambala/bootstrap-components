@@ -1,5 +1,4 @@
 @import "bootstrap/base/border-radius/variables";
-@import "bootstrap/base/grid/variables";
 @import "bootstrap/base/line-height/variables";
 @import "bootstrap/caret/variables";
 @import "bootstrap/form/input/variables";
@@ -17,7 +16,7 @@
   min-height: $navbar-height;
   position: relative;
 
-  @media (min-width: $grid-float-breakpoint) {
+  @media (min-width: $navbar-breakpoint-exact) {
     border-radius: $navbar-border-radius;
   }
 }
@@ -28,7 +27,7 @@
 .navbar-header {
   @include clearfix;
 
-  @media (min-width: $grid-float-breakpoint) {
+  @media (min-width: $navbar-breakpoint-exact) {
     float: left;
   }
 }
@@ -56,7 +55,7 @@
     overflow-y: auto;
   }
 
-  @media (min-width: $grid-float-breakpoint) {
+  @media (min-width: $navbar-breakpoint-exact) {
     border-top: 0;
     box-shadow: none;
     width: auto;
@@ -98,7 +97,7 @@
     display: block;
   }
 
-  @media (min-width: $grid-float-breakpoint) {
+  @media (min-width: $navbar-breakpoint-exact) {
     .navbar > .container &,
     .navbar > .container-fluid & {
       margin-left: -$navbar-padding-horizontal;
@@ -129,7 +128,7 @@
     margin-top: 4px;
   }
 
-  @media (min-width: $grid-float-breakpoint) {
+  @media (min-width: $navbar-breakpoint-exact) {
     display: none;
   }
 }
@@ -150,7 +149,7 @@
 .navbar-text {
   @include navbar-vertical-align($base-line-height-px);
 
-  @media (min-width: $grid-float-breakpoint) {
+  @media (min-width: $navbar-breakpoint-exact) {
     float: left;
     margin-left: $navbar-padding-horizontal;
     margin-right: $navbar-padding-horizontal;
@@ -175,7 +174,7 @@
   z-index: $navbar-fixed-z-index;
 
   // Undo the rounded corners
-  @media (min-width: $grid-float-breakpoint) {
+  @media (min-width: $navbar-breakpoint-exact) {
     border-radius: 0;
   }
 }
@@ -196,7 +195,7 @@
   border-width: 0 0 1px;
   z-index: $navbar-z-index;
 
-  @media (min-width: $grid-float-breakpoint) {
+  @media (min-width: $navbar-breakpoint-exact) {
     border-radius: 0;
   }
 }
@@ -212,7 +211,7 @@
     margin-left:  -$navbar-padding-horizontal;
     margin-right: -$navbar-padding-horizontal;
 
-    @media (min-width: $grid-float-breakpoint) {
+    @media (min-width: $navbar-breakpoint-exact) {
       margin-left:  0;
       margin-right: 0;
     }
@@ -230,7 +229,7 @@
     padding-top:    10px;
   }
 
-  @media (max-width: $grid-float-breakpoint-max) {
+  @media (max-width: $navbar-breakpoint-before) {
     .open .dropdown-menu {
       background-color: transparent;
       border: 0;
@@ -253,7 +252,7 @@
   }
 
   // Uncollapse the nav
-  @media (min-width: $grid-float-breakpoint) {
+  @media (min-width: $navbar-breakpoint-exact) {
     float: left;
     margin: 0;
 
@@ -299,7 +298,7 @@
 //
 // Declared after the navbar components to ensure more specificity on the margins.
 
-@media (min-width: $grid-float-breakpoint) {
+@media (min-width: $navbar-breakpoint-exact) {
   .navbar-left {
     float: left !important;
   }
@@ -390,7 +389,7 @@
       }
     }
 
-    @media (max-width: $grid-float-breakpoint-max) {
+    @media (max-width: $navbar-breakpoint-before) {
       .open .dropdown-menu {
         > li > a {
           color: $navbar-default-link-color;
@@ -504,7 +503,7 @@
       }
     }
 
-    @media (max-width: $grid-float-breakpoint-max) {
+    @media (max-width: $navbar-breakpoint-before) {
       .open .dropdown-menu {
         > .dropdown-header {
           border-color: $navbar-inverse-border-color;

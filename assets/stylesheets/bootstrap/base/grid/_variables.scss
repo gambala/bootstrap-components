@@ -14,7 +14,3 @@ $screen-xs-max:       ($screen-sm-min - 1) !default;
 
 $grid-columns:              12 !default;
 $grid-gutter-width:         30px !default;
-
-// Navbar collapse
-$grid-float-breakpoint:     $screen-sm-min !default;
-$grid-float-breakpoint-max: ($grid-float-breakpoint - 1) !default;
