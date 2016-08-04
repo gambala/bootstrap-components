@@ -19,7 +19,7 @@
 .dropdown-menu {
   background-clip: padding-box;
   background-color: $dropdown-bg;
-  border-radius: $border-radius-base;
+  border-radius: $base-border-radius;
   border: 1px solid $dropdown-border;
   box-shadow: 0 6px 12px rgba(0,0,0,.175);
   display: none; // none by default, but block on "open" of the menu

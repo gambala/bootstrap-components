@@ -75,7 +75,7 @@
     margin-bottom: -1px;
 
     > a {
-      border-radius: $border-radius-base $border-radius-base 0 0;
+      border-radius: $base-border-radius $base-border-radius 0 0;
       border: 1px solid transparent;
       line-height: $line-height-base;
       margin-right: 2px;
@@ -170,7 +170,7 @@
   border-bottom: 0;
 
   > li > a {
-    border-radius: $border-radius-base;
+    border-radius: $base-border-radius;
     // Override margin from .nav-tabs
     margin-right: 0;
   }
@@ -183,7 +183,7 @@
   @media (min-width: $screen-sm-min) {
     > li > a {
       border-bottom: 1px solid $nav-tabs-justified-link-border-color;
-      border-radius: $border-radius-base $border-radius-base 0 0;
+      border-radius: $base-border-radius $base-border-radius 0 0;
     }
     > .active > a,
     > .active > a:hover {

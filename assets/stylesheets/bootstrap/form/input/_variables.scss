@@ -9,9 +9,9 @@ $input-bg-disabled:              $gray-lighter !default;
 $input-border:                   #ccc !default;
 $input-color:                    $gray !default;
 
-$input-border-radius:            $border-radius-base !default;
-$input-border-radius-large:      $border-radius-large !default;
-$input-border-radius-small:      $border-radius-small !default;
+$input-border-radius:            $base-border-radius !default;
+$input-border-radius-large:      $base-lg-border-radius !default;
+$input-border-radius-small:      $base-sm-border-radius !default;
 
 $input-border-focus:             #66afe9 !default;
 
