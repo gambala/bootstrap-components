@@ -10,7 +10,7 @@
 // Component
 
 .btn {
-  @include button-size($padding-base-vertical, $padding-base-horizontal, $base-font-size, $base-line-height-unitless, $btn-border-radius-base);
+  @include button-size($base-padding-vertical, $base-padding-horizontal, $base-font-size, $base-line-height-unitless, $btn-border-radius-base);
   background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
   border: 1px solid transparent;
   cursor: pointer;
@@ -113,7 +113,7 @@ a.btn.disabled {
 
 .btn-lg {
   // line-height: ensure even-numbered height of button next to large input
-  @include button-size($padding-large-vertical, $padding-large-horizontal, $base-lg-font-size, $line-height-large, $btn-border-radius-large);
+  @include button-size($base-lg-padding-vertical, $base-lg-padding-horizontal, $base-lg-font-size, $line-height-large, $btn-border-radius-large);
 
   .caret {
     border-width: $caret-width-large $caret-width-large 0;
@@ -123,11 +123,11 @@ a.btn.disabled {
 
 .btn-sm {
   // line-height: ensure proper height of button next to small input
-  @include button-size($padding-small-vertical, $padding-small-horizontal, $base-sm-font-size, $line-height-small, $btn-border-radius-small);
+  @include button-size($base-sm-padding-vertical, $base-sm-padding-horizontal, $base-sm-font-size, $line-height-small, $btn-border-radius-small);
 }
 
 .btn-xs {
-  @include button-size($padding-xs-vertical, $padding-xs-horizontal, $base-sm-font-size, $line-height-small, $btn-border-radius-small);
+  @include button-size($base-xs-padding-vertical, $base-xs-padding-horizontal, $base-sm-font-size, $line-height-small, $btn-border-radius-small);
 }
 
 .btn-block {

@@ -11,7 +11,7 @@ output {
   display: block;
   font-size: $base-font-size;
   line-height: $base-line-height-unitless;
-  padding-top: ($padding-base-vertical + 1);
+  padding-top: ($base-padding-vertical + 1);
 }
 
 .help-block {

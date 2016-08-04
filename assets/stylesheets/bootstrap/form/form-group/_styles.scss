@@ -23,7 +23,7 @@
     font-size: $base-sm-font-size;
     height: $input-height-small;
     line-height: $line-height-small;
-    padding: $padding-small-vertical $padding-small-horizontal;
+    padding: $base-sm-padding-vertical $base-sm-padding-horizontal;
   }
 
   select.form-control {
@@ -41,7 +41,7 @@
     height: $input-height-small;
     line-height: $line-height-small;
     min-height: ($base-line-height-px + $base-sm-font-size);
-    padding: ($padding-small-vertical + 1) $padding-small-horizontal;
+    padding: ($base-sm-padding-vertical + 1) $base-sm-padding-horizontal;
   }
 }
 
@@ -51,7 +51,7 @@
     font-size: $base-lg-font-size;
     height: $input-height-large;
     line-height: $line-height-large;
-    padding: $padding-large-vertical $padding-large-horizontal;
+    padding: $base-lg-padding-vertical $base-lg-padding-horizontal;
   }
 
   select.form-control {
@@ -69,7 +69,7 @@
     height: $input-height-large;
     line-height: $line-height-large;
     min-height: ($base-line-height-px + $base-lg-font-size);
-    padding: ($padding-large-vertical + 1) $padding-large-horizontal;
+    padding: ($base-lg-padding-vertical + 1) $base-lg-padding-horizontal;
   }
 }
 

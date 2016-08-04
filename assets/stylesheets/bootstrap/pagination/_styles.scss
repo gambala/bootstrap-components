@@ -29,7 +29,7 @@
       float: left; // Collapse white-space
       line-height: $base-line-height-unitless;
       margin-left: -1px;
-      padding: $padding-base-vertical $padding-base-horizontal;
+      padding: $base-padding-vertical $base-padding-horizontal;
       position: relative;
       text-decoration: none;
     }
@@ -86,9 +86,9 @@
 // Modificators
 
 .pagination-lg {
-  @include pagination-size($padding-large-vertical, $padding-large-horizontal, $base-lg-font-size, $line-height-large, $base-lg-border-radius);
+  @include pagination-size($base-lg-padding-vertical, $base-lg-padding-horizontal, $base-lg-font-size, $line-height-large, $base-lg-border-radius);
 }
 
 .pagination-sm {
-  @include pagination-size($padding-small-vertical, $padding-small-horizontal, $base-sm-font-size, $line-height-small, $base-sm-border-radius);
+  @include pagination-size($base-sm-padding-vertical, $base-sm-padding-horizontal, $base-sm-font-size, $line-height-small, $base-sm-border-radius);
 }

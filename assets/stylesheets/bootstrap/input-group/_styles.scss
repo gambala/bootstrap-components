@@ -58,19 +58,19 @@
   font-size: $base-font-size;
   font-weight: normal;
   line-height: 1;
-  padding: $padding-base-vertical $padding-base-horizontal;
+  padding: $base-padding-vertical $base-padding-horizontal;
   text-align: center;
 
   &.input-sm {
     border-radius: $input-border-radius-small;
     font-size: $base-sm-font-size;
-    padding: $padding-small-vertical $padding-small-horizontal;
+    padding: $base-sm-padding-vertical $base-sm-padding-horizontal;
   }
 
   &.input-lg {
     border-radius: $input-border-radius-large;
     font-size: $base-lg-font-size;
-    padding: $padding-large-vertical $padding-large-horizontal;
+    padding: $base-lg-padding-vertical $base-lg-padding-horizontal;
   }
 
   // Nuke default margins from checkboxes and radios to vertically center within.
