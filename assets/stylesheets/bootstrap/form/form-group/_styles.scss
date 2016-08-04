@@ -19,7 +19,7 @@
 // issue documented in https://github.com/twbs/bootstrap/issues/15074.
 .form-group-sm {
   .form-control {
-    border-radius: $input-border-radius-small;
+    border-radius: $input-sm-border-radius;
     font-size: $base-sm-font-size;
     height: $input-sm-height;
     line-height: $base-sm-line-height-unitless;
@@ -47,7 +47,7 @@
 
 .form-group-lg {
   .form-control {
-    border-radius: $input-border-radius-large;
+    border-radius: $input-lg-border-radius;
     font-size: $base-lg-font-size;
     height: $input-lg-height;
     line-height: $base-lg-line-height-unitless;

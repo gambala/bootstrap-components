@@ -4,19 +4,18 @@
 @import "bootstrap/base/line-height/variables";
 @import "bootstrap/base/padding/variables";
 
-$input-bg:                       #fff !default;
-$input-bg-disabled:              $gray-lighter !default;
-$input-border:                   #ccc !default;
-$input-color:                    $gray !default;
+$input-background-color:   #fff !default;
+$input-border-color:       #ccc !default;
+$input-border-radius:      $base-border-radius !default;
+$input-color:              $gray !default;
+$input-height:             ($base-line-height-px + ($base-padding-vertical * 2) + 2) !default;
 
-$input-border-radius:            $base-border-radius !default;
-$input-border-radius-large:      $base-lg-border-radius !default;
-$input-border-radius-small:      $base-sm-border-radius !default;
+$input-placeholder-color:     #999 !default;
 
-$input-border-focus:             #66afe9 !default;
+$input-focus-border-color:         #66afe9 !default;
+$input-disabled-background-color:  $gray-lighter !default;
 
-$input-color-placeholder:        #999 !default;
-
-$input-height:              ($base-line-height-px + ($base-padding-vertical * 2) + 2) !default;
-$input-lg-height:             (ceil($base-lg-font-size * $base-lg-line-height-unitless) + ($base-lg-padding-vertical * 2) + 2) !default;
-$input-sm-height:             (floor($base-sm-font-size * $base-sm-line-height-unitless) + ($base-sm-padding-vertical * 2) + 2) !default;
+$input-lg-border-radius:     $base-lg-border-radius !default;
+$input-lg-height:            (ceil($base-lg-font-size * $base-lg-line-height-unitless) + ($base-lg-padding-vertical * 2) + 2) !default;
+$input-sm-border-radius:     $base-sm-border-radius !default;
+$input-sm-height:            (floor($base-sm-font-size * $base-sm-line-height-unitless) + ($base-sm-padding-vertical * 2) + 2) !default;

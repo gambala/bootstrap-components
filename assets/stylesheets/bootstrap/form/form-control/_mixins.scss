@@ -1,6 +1,6 @@
 @import "bootstrap/form/input/variables";
 
-@mixin form-control-focus($color: $input-border-focus) {
+@mixin form-control-focus($color: $input-focus-border-color) {
   $color-rgba: rgba(red($color), green($color), blue($color), .6);
   &:focus {
     border-color: $color;

@@ -62,13 +62,13 @@
   text-align: center;
 
   &.input-sm {
-    border-radius: $input-border-radius-small;
+    border-radius: $input-sm-border-radius;
     font-size: $base-sm-font-size;
     padding: $base-sm-padding-vertical $base-sm-padding-horizontal;
   }
 
   &.input-lg {
-    border-radius: $input-border-radius-large;
+    border-radius: $input-lg-border-radius;
     font-size: $base-lg-font-size;
     padding: $base-lg-padding-vertical $base-lg-padding-horizontal;
   }

@@ -8,10 +8,10 @@
 // Component
 
 .form-control {
-  background-color: $input-bg;
+  background-color: $input-background-color;
   background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
   border-radius: $input-border-radius; // Note: This has no effect on <select>s in some browsers, due to the limited stylability of <select>s in CSS.
-  border: 1px solid $input-border;
+  border: 1px solid $input-border-color;
   box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
   color: $input-color;
   display: block;
@@ -29,7 +29,7 @@
   @include form-control-focus;
 
   &::placeholder {
-    color: $input-color-placeholder
+    color: $input-placeholder-color
   }
 
   // Unstyle the caret on `<select>`s in IE10+.
@@ -45,7 +45,7 @@
   &[disabled],
   &[readonly],
   fieldset[disabled] & {
-    background-color: $input-bg-disabled;
+    background-color: $input-disabled-background-color;
     opacity: 1; // iOS fix for unreadable disabled content; see https://github.com/twbs/bootstrap/issues/11655
   }
 
@@ -73,8 +73,8 @@ textarea.form-control {
   }
 }
 
-@include input-size('.input-sm', $input-sm-height, $base-sm-padding-vertical, $base-sm-padding-horizontal, $base-sm-font-size, $base-sm-line-height-unitless, $input-border-radius-small);
-@include input-size('.input-lg', $input-lg-height, $base-lg-padding-vertical, $base-lg-padding-horizontal, $base-lg-font-size, $base-lg-line-height-unitless, $input-border-radius-large);
+@include input-size('.input-sm', $input-sm-height, $base-sm-padding-vertical, $base-sm-padding-horizontal, $base-sm-font-size, $base-sm-line-height-unitless, $input-sm-border-radius);
+@include input-size('.input-lg', $input-lg-height, $base-lg-padding-vertical, $base-lg-padding-horizontal, $base-lg-font-size, $base-lg-line-height-unitless, $input-lg-border-radius);
 
 .form-control.text-center {
   text-align: center
