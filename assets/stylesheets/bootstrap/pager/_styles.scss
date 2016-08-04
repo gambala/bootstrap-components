@@ -20,15 +20,15 @@
     display: inline;
     > a,
     > span {
-      background-color: $pager-bg;
+      background-color: $pager-background-color;
       border-radius: $pager-border-radius;
-      border: 1px solid $pager-border;
+      border: 1px solid $pager-border-color;
       display: inline-block;
       padding: 5px 14px;
     }
 
     > a:hover {
-      background-color: $pager-hover-bg;
+      background-color: $pager-hover-background-color;
       text-decoration: none;
     }
   }
@@ -51,7 +51,7 @@
     > a,
     > a:hover,
     > span {
-      background-color: $pager-bg;
+      background-color: $pager-background-color;
       color: $pager-disabled-color;
       cursor: $base-disabled-cursor;
     }
