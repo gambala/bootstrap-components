@@ -11,27 +11,28 @@ $brand-info:            #5bc0de !default;
 $brand-warning:         #f0ad4e !default;
 $brand-danger:          #d9534f !default;
 
-$body-bg:               #fff !default;
-$text-color:            $gray-dark !default;
-$text-muted:            $gray-light !default;
+$body-background-color:  #fff !default;
 
-$component-active-color:    #fff !default;
-$component-active-background-color:       $brand-primary !default;
+$text-color:             $gray-dark !default;
+$text-muted-color:       $gray-light !default;
+
+$component-active-background-color:     $brand-primary !default;
+$component-active-color:                #fff !default;
 
 //== Form states and alerts
 
-$state-success-text:             #3c763d !default;
-$state-success-bg:               #dff0d8 !default;
-$state-success-border:           darken(adjust-hue($state-success-bg, -10), 5%) !default;
+$state-success-background-color:  #dff0d8 !default;
+$state-success-border-color:      darken(adjust-hue($state-success-background-color, -10), 5%) !default;
+$state-success-color:             #3c763d !default;
 
-$state-info-text:                #31708f !default;
-$state-info-bg:                  #d9edf7 !default;
-$state-info-border:              darken(adjust-hue($state-info-bg, -10), 7%) !default;
+$state-info-background-color:     #d9edf7 !default;
+$state-info-border-color:         darken(adjust-hue($state-info-background-color, -10), 7%) !default;
+$state-info-color:                #31708f !default;
 
-$state-warning-text:             #8a6d3b !default;
-$state-warning-bg:               #fcf8e3 !default;
-$state-warning-border:           darken(adjust-hue($state-warning-bg, -10), 5%) !default;
+$state-warning-background-color:  #fcf8e3 !default;
+$state-warning-border-color:      darken(adjust-hue($state-warning-background-color, -10), 5%) !default;
+$state-warning-color:             #8a6d3b !default;
 
-$state-danger-text:              #a94442 !default;
-$state-danger-bg:                #f2dede !default;
-$state-danger-border:            darken(adjust-hue($state-danger-bg, -10), 5%) !default;
+$state-danger-background-color:   #f2dede !default;
+$state-danger-border-color:       darken(adjust-hue($state-danger-background-color, -10), 5%) !default;
+$state-danger-color:              #a94442 !default;

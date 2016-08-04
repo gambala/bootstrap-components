@@ -10,7 +10,7 @@ code,
 kbd,
 pre,
 samp {
-  font-family: $font-family-monospace;
+  font-family: $monospace-font-family;
 }
 
 code {
@@ -69,13 +69,13 @@ pre {
 
 // Context
 
-@if $font-family-monospace-custom != none {
+@if $monospace-font-family-custom != none {
   .wf-active {
     code,
     kbd,
     pre,
     samp {
-      font-family: $font-family-monospace-custom, $font-family-monospace;
+      font-family: $monospace-font-family-custom, $monospace-font-family;
     }
   }
 }

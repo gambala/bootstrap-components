@@ -10,7 +10,7 @@ $h5-font-size:            $base-font-size !default;
 $h6-font-size:            ceil(($base-font-size * 0.85)) !default; // ~12px
 
 $headings-color:               inherit !default;
-$headings-font-family-custom:  $font-family-base-custom !default;
+$headings-font-family-custom:  $base-font-family-custom !default;
 $headings-font-family:         inherit !default;
 $headings-font-weight:         500 !default;
 $headings-line-height:         1.1 !default;

@@ -1,11 +1,9 @@
-$font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif !default;
-$font-family-serif:       Georgia, "Times New Roman", Times, serif !default;
-$font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace !default;
+$sans-serif-font-family:         "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$sans-serif-font-family-custom:  none !default;
+$serif-font-family:              Georgia, "Times New Roman", Times, serif !default;
+$serif-font-family-custom:       none !default;
+$monospace-font-family:          Menlo, Monaco, Consolas, "Courier New", monospace !default;
+$monospace-font-family-custom:   none !default;
 
-$font-family-base:        $font-family-sans-serif !default;
-
-$font-family-sans-serif-custom: none !default;
-$font-family-serif-custom:      none !default;
-$font-family-monospace-custom:  none !default;
-
-$font-family-base-custom:       $font-family-sans-serif-custom !default;
+$base-font-family:               $sans-serif-font-family !default;
+$base-font-family-custom:        $sans-serif-font-family-custom !default;

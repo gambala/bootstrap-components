@@ -19,19 +19,19 @@
 }
 
 .bg-success {
-  background-color: $state-success-bg;
+  background-color: $state-success-background-color;
 }
 
 .bg-info {
-  background-color: $state-info-bg;
+  background-color: $state-info-background-color;
 }
 
 .bg-warning {
-  background-color: $state-warning-bg;
+  background-color: $state-warning-background-color;
 }
 
 .bg-danger {
-  background-color: $state-danger-bg;
+  background-color: $state-danger-background-color;
 }
 
 .text-primary {
@@ -39,23 +39,23 @@
 }
 
 .text-success {
-  color: $state-success-text;
+  color: $state-success-color;
 }
 
 .text-info {
-  color: $state-info-text;
+  color: $state-info-color;
 }
 
 .text-warning {
-  color: $state-warning-text;
+  color: $state-warning-color;
 }
 
 .text-danger {
-  color: $state-danger-text;
+  color: $state-danger-color;
 }
 
 .text-muted {
-  color: $text-muted;
+  color: $text-muted-color;
 }
 
 // Text modificators
@@ -73,8 +73,8 @@
 .text-capitalize     { text-transform: capitalize; }
 
 // Font-family
-.serif               { font-family: $font-family-serif; }
-.sans                { font-family: $font-family-sans-serif; }
+.serif               { font-family: $serif-font-family; }
+.sans                { font-family: $sans-serif-font-family; }
 
 // Font-weight
 .text-regular        { font-weight: normal }
@@ -290,9 +290,9 @@ html {
 }
 
 body {
-  background-color: $body-bg;
+  background-color: $body-background-color;
   color: $text-color;
-  font-family: $font-family-base;
+  font-family: $base-font-family;
   font-size: $base-font-size;
   line-height: $base-line-height-unitless;
 }
@@ -318,18 +318,18 @@ body {
   }
 }
 
-@if $font-family-base-custom != none {
+@if $base-font-family-custom != none {
   .wf-active {
     body {
-      font-family: $font-family-base-custom, $font-family-base;
+      font-family: $base-font-family-custom, $base-font-family;
     }
 
     .serif {
-      font-family: $font-family-serif-custom, $font-family-serif;
+      font-family: $serif-font-family-custom, $serif-font-family;
     }
 
     .sans {
-      font-family: $font-family-sans-serif-custom, $font-family-sans-serif;
+      font-family: $sans-serif-font-family-custom, $sans-serif-font-family;
     }
   }
 }

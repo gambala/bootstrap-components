@@ -190,13 +190,13 @@ input[type="checkbox"] {
 }
 
 .has-success {
-  @include form-control-validation($state-success-text, $state-success-text, $state-success-bg);
+  @include form-control-validation($state-success-color, $state-success-color, $state-success-background-color);
 }
 .has-warning {
-  @include form-control-validation($state-warning-text, $state-warning-text, $state-warning-bg);
+  @include form-control-validation($state-warning-color, $state-warning-color, $state-warning-background-color);
 }
 .has-error {
-  @include form-control-validation($state-danger-text, $state-danger-text, $state-danger-bg);
+  @include form-control-validation($state-danger-color, $state-danger-color, $state-danger-background-color);
 }
 
 // Reposition feedback icon if input has visible label above
