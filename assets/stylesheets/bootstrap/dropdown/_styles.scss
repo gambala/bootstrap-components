@@ -18,9 +18,9 @@
 // The dropdown menu (ul)
 .dropdown-menu {
   background-clip: padding-box;
-  background-color: $dropdown-bg;
+  background-color: $dropdown-background-color;
   border-radius: $base-border-radius;
-  border: 1px solid $dropdown-border;
+  border: 1px solid $dropdown-border-color;
   box-shadow: 0 6px 12px rgba(0,0,0,.175);
   display: none; // none by default, but block on "open" of the menu
   float: left;
@@ -37,7 +37,7 @@
 
   // Dividers (basically an hr) within the dropdown
   .divider {
-    @include nav-divider($dropdown-divider-bg);
+    @include nav-divider($dropdown-divider-background-color);
   }
 
   > li > a {
