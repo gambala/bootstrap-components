@@ -80,7 +80,8 @@
       line-height: $base-line-height-unitless;
       margin-right: 2px;
       &:hover {
-        border-color: $nav-tabs-link-hover-border-color $nav-tabs-link-hover-border-color $nav-tabs-border-color;
+        border-color: $nav-tabs-link-hover-border-color;
+        border-bottom-color: $nav-tabs-border-color;
       }
     }
 
