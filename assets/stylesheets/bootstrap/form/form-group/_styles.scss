@@ -22,7 +22,7 @@
     border-radius: $input-border-radius-small;
     font-size: $base-sm-font-size;
     height: $input-height-small;
-    line-height: $line-height-small;
+    line-height: $base-sm-line-height-unitless;
     padding: $base-sm-padding-vertical $base-sm-padding-horizontal;
   }
 
@@ -39,7 +39,7 @@
   .form-control-static {
     font-size: $base-sm-font-size;
     height: $input-height-small;
-    line-height: $line-height-small;
+    line-height: $base-sm-line-height-unitless;
     min-height: ($base-line-height-px + $base-sm-font-size);
     padding: ($base-sm-padding-vertical + 1) $base-sm-padding-horizontal;
   }
@@ -50,7 +50,7 @@
     border-radius: $input-border-radius-large;
     font-size: $base-lg-font-size;
     height: $input-height-large;
-    line-height: $line-height-large;
+    line-height: $base-lg-line-height-unitless;
     padding: $base-lg-padding-vertical $base-lg-padding-horizontal;
   }
 
@@ -67,7 +67,7 @@
   .form-control-static {
     font-size: $base-lg-font-size;
     height: $input-height-large;
-    line-height: $line-height-large;
+    line-height: $base-lg-line-height-unitless;
     min-height: ($base-line-height-px + $base-lg-font-size);
     padding: ($base-lg-padding-vertical + 1) $base-lg-padding-horizontal;
   }

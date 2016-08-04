@@ -73,8 +73,8 @@ textarea.form-control {
   }
 }
 
-@include input-size('.input-sm', $input-height-small, $base-sm-padding-vertical, $base-sm-padding-horizontal, $base-sm-font-size, $line-height-small, $input-border-radius-small);
-@include input-size('.input-lg', $input-height-large, $base-lg-padding-vertical, $base-lg-padding-horizontal, $base-lg-font-size, $line-height-large, $input-border-radius-large);
+@include input-size('.input-sm', $input-height-small, $base-sm-padding-vertical, $base-sm-padding-horizontal, $base-sm-font-size, $base-sm-line-height-unitless, $input-border-radius-small);
+@include input-size('.input-lg', $input-height-large, $base-lg-padding-vertical, $base-lg-padding-horizontal, $base-lg-font-size, $base-lg-line-height-unitless, $input-border-radius-large);
 
 .form-control.text-center {
   text-align: center

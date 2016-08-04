@@ -113,7 +113,7 @@ a.btn.disabled {
 
 .btn-lg {
   // line-height: ensure even-numbered height of button next to large input
-  @include button-size($base-lg-padding-vertical, $base-lg-padding-horizontal, $base-lg-font-size, $line-height-large, $btn-border-radius-large);
+  @include button-size($base-lg-padding-vertical, $base-lg-padding-horizontal, $base-lg-font-size, $base-lg-line-height-unitless, $btn-border-radius-large);
 
   .caret {
     border-width: $caret-width-large $caret-width-large 0;
@@ -123,11 +123,11 @@ a.btn.disabled {
 
 .btn-sm {
   // line-height: ensure proper height of button next to small input
-  @include button-size($base-sm-padding-vertical, $base-sm-padding-horizontal, $base-sm-font-size, $line-height-small, $btn-border-radius-small);
+  @include button-size($base-sm-padding-vertical, $base-sm-padding-horizontal, $base-sm-font-size, $base-sm-line-height-unitless, $btn-border-radius-small);
 }
 
 .btn-xs {
-  @include button-size($base-xs-padding-vertical, $base-xs-padding-horizontal, $base-sm-font-size, $line-height-small, $btn-border-radius-small);
+  @include button-size($base-xs-padding-vertical, $base-xs-padding-horizontal, $base-sm-font-size, $base-sm-line-height-unitless, $btn-border-radius-small);
 }
 
 .btn-block {
