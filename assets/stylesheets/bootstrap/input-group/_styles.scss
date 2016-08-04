@@ -55,7 +55,7 @@
   border-radius: $input-border-radius;
   border: 1px solid $input-group-addon-border-color;
   color: $input-color;
-  font-size: $font-size-base;
+  font-size: $base-font-size;
   font-weight: normal;
   line-height: 1;
   padding: $padding-base-vertical $padding-base-horizontal;
@@ -63,13 +63,13 @@
 
   &.input-sm {
     border-radius: $input-border-radius-small;
-    font-size: $font-size-small;
+    font-size: $base-sm-font-size;
     padding: $padding-small-vertical $padding-small-horizontal;
   }
 
   &.input-lg {
     border-radius: $input-border-radius-large;
-    font-size: $font-size-large;
+    font-size: $base-lg-font-size;
     padding: $padding-large-vertical $padding-large-horizontal;
   }
 

@@ -3,4 +3,4 @@
 $line-height-base:        1.428571429 !default; // 20/14
 $line-height-large:       1.3333333 !default; // extra decimals for Win 8.1 Chrome
 $line-height-small:       1.5 !default;
-$line-height-computed:    floor(($font-size-base * $line-height-base)) !default; // ~20px
+$line-height-computed:    floor(($base-font-size * $line-height-base)) !default; // ~20px

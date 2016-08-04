@@ -13,7 +13,7 @@
   border: 1px solid $popover-border-color;
   box-shadow: 0 5px 10px rgba(0,0,0,.2);
   display: none;
-  font-size: $font-size-base;
+  font-size: $base-font-size;
   left: 0;
   max-width: $popover-max-width;
   padding: 1px;
@@ -28,7 +28,7 @@
   background-color: $popover-title-bg;
   border-bottom: 1px solid darken($popover-title-bg, 5%);
   border-radius: ($base-lg-border-radius - 1) ($base-lg-border-radius - 1) 0 0;
-  font-size: $font-size-base;
+  font-size: $base-font-size;
   margin: 0;
   padding: 8px 14px;
 }

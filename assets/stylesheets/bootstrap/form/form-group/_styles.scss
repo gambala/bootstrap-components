@@ -20,7 +20,7 @@
 .form-group-sm {
   .form-control {
     border-radius: $input-border-radius-small;
-    font-size: $font-size-small;
+    font-size: $base-sm-font-size;
     height: $input-height-small;
     line-height: $line-height-small;
     padding: $padding-small-vertical $padding-small-horizontal;
@@ -37,10 +37,10 @@
   }
 
   .form-control-static {
-    font-size: $font-size-small;
+    font-size: $base-sm-font-size;
     height: $input-height-small;
     line-height: $line-height-small;
-    min-height: ($line-height-computed + $font-size-small);
+    min-height: ($line-height-computed + $base-sm-font-size);
     padding: ($padding-small-vertical + 1) $padding-small-horizontal;
   }
 }
@@ -48,7 +48,7 @@
 .form-group-lg {
   .form-control {
     border-radius: $input-border-radius-large;
-    font-size: $font-size-large;
+    font-size: $base-lg-font-size;
     height: $input-height-large;
     line-height: $line-height-large;
     padding: $padding-large-vertical $padding-large-horizontal;
@@ -65,10 +65,10 @@
   }
 
   .form-control-static {
-    font-size: $font-size-large;
+    font-size: $base-lg-font-size;
     height: $input-height-large;
     line-height: $line-height-large;
-    min-height: ($line-height-computed + $font-size-large);
+    min-height: ($line-height-computed + $base-lg-font-size);
     padding: ($padding-large-vertical + 1) $padding-large-horizontal;
   }
 }

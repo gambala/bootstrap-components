@@ -50,7 +50,7 @@
   .form-group-lg {
     @media (min-width: $screen-sm-min) {
       .control-label {
-        font-size: $font-size-large;
+        font-size: $base-lg-font-size;
         padding-top: ($padding-large-vertical + 1);
       }
     }
@@ -58,7 +58,7 @@
   .form-group-sm {
     @media (min-width: $screen-sm-min) {
       .control-label {
-        font-size: $font-size-small;
+        font-size: $base-sm-font-size;
         padding-top: ($padding-small-vertical + 1);
       }
     }

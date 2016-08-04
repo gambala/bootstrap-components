@@ -15,7 +15,7 @@
   box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
   color: $input-color;
   display: block;
-  font-size: $font-size-base;
+  font-size: $base-font-size;
   height: $input-height-base; // Make inputs at least the height of their button counterpart (base line-height + padding + border)
   line-height: $line-height-computed;
   padding: $padding-base-vertical $padding-base-horizontal;
@@ -62,7 +62,7 @@ textarea.form-control {
 // Apply class to a `p` element
 .form-control-static {
   margin-bottom: 0;
-  min-height: ($line-height-computed + $font-size-base);
+  min-height: ($line-height-computed + $base-font-size);
   padding-bottom: ($padding-base-vertical + 1);
   padding-top: ($padding-base-vertical + 1);
 
@@ -73,8 +73,8 @@ textarea.form-control {
   }
 }
 
-@include input-size('.input-sm', $input-height-small, $padding-small-vertical, $padding-small-horizontal, $font-size-small, $line-height-small, $input-border-radius-small);
-@include input-size('.input-lg', $input-height-large, $padding-large-vertical, $padding-large-horizontal, $font-size-large, $line-height-large, $input-border-radius-large);
+@include input-size('.input-sm', $input-height-small, $padding-small-vertical, $padding-small-horizontal, $base-sm-font-size, $line-height-small, $input-border-radius-small);
+@include input-size('.input-lg', $input-height-large, $padding-large-vertical, $padding-large-horizontal, $base-lg-font-size, $line-height-large, $input-border-radius-large);
 
 .form-control.text-center {
   text-align: center

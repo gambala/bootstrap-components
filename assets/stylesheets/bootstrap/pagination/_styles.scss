@@ -86,9 +86,9 @@
 // Modificators
 
 .pagination-lg {
-  @include pagination-size($padding-large-vertical, $padding-large-horizontal, $font-size-large, $line-height-large, $base-lg-border-radius);
+  @include pagination-size($padding-large-vertical, $padding-large-horizontal, $base-lg-font-size, $line-height-large, $base-lg-border-radius);
 }
 
 .pagination-sm {
-  @include pagination-size($padding-small-vertical, $padding-small-horizontal, $font-size-small, $line-height-small, $base-sm-border-radius);
+  @include pagination-size($padding-small-vertical, $padding-small-horizontal, $base-sm-font-size, $line-height-small, $base-sm-border-radius);
 }
