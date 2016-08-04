@@ -20,8 +20,8 @@ table {
 
 caption {
   color: $text-muted;
-  padding-bottom: $table-cell-padding;
-  padding-top: $table-cell-padding;
+  padding-bottom: $table-padding;
+  padding-top: $table-padding;
   text-align: left;
 }
 
@@ -55,7 +55,7 @@ table {
       > td {
         border-top: 1px solid $table-border-color;
         line-height: $base-line-height-unitless;
-        padding: $table-cell-padding;
+        padding: $table-padding;
         vertical-align: top;
       }
     }
@@ -96,7 +96,7 @@ table {
     > tr {
       > th,
       > td {
-        padding: $table-condensed-cell-padding;
+        padding: $table-condensed-padding;
       }
     }
   }
