@@ -1,4 +1,4 @@
-@import "bootstrap/base/grid/variables";
+@import "bootstrap/base/variables";
 @import "variables";
 
 @mixin make-grid-columns($i: 1, $list: ".col-xs-#{$i}, .col-sm-#{$i}, .col-md-#{$i}, .col-lg-#{$i}") {

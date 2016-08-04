@@ -1,4 +1,4 @@
-@import "bootstrap/base/line-height/variables";
+@import "bootstrap/base/variables";
 
 @function rh($height: 1, $qwazi: true, $line-height-base: $base-line-height-computed) {
   @if (unitless($height)) {
