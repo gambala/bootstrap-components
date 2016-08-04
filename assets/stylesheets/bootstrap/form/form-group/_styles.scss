@@ -5,6 +5,7 @@
 @import "bootstrap/base/padding/variables";
 @import "bootstrap/form/input/variables";
 @import "variables";
+@import "bootstrap/base/mixins/rh";
 @import "mixins";
 
 // Component
@@ -40,7 +41,7 @@
     font-size: $base-sm-font-size;
     height: $input-sm-height;
     line-height: $base-sm-line-height-unitless;
-    min-height: ($base-line-height-computed + $base-sm-font-size);
+    min-height: (rh() + $base-sm-font-size);
     padding: ($base-sm-padding-vertical + 1) $base-sm-padding-horizontal;
   }
 }
@@ -68,7 +69,7 @@
     font-size: $base-lg-font-size;
     height: $input-lg-height;
     line-height: $base-lg-line-height-unitless;
-    min-height: ($base-line-height-computed + $base-lg-font-size);
+    min-height: (rh() + $base-lg-font-size);
     padding: ($base-lg-padding-vertical + 1) $base-lg-padding-horizontal;
   }
 }
@@ -84,7 +85,7 @@
     cursor: pointer;
     font-weight: normal;
     margin-bottom: 0;
-    min-height: $base-line-height-computed;
+    min-height: rh();
     padding-left: 20px;
   }
 }
@@ -203,7 +204,7 @@ input[type="checkbox"] {
 .has-feedback label {
 
   & ~ .form-control-feedback {
-    top: ($base-line-height-computed + 5); // Height of the `label` and its margin
+    top: (rh() + 5); // Height of the `label` and its margin
   }
   &.sr-only ~ .form-control-feedback {
     top: 0;

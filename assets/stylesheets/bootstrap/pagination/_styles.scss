@@ -5,6 +5,7 @@
 @import "bootstrap/base/padding/variables";
 @import "bootstrap/base/mixins/border-radius";
 @import "variables";
+@import "bootstrap/base/mixins/rh";
 @import "mixins";
 
 // Component
@@ -12,7 +13,7 @@
 .pagination {
   border-radius: $base-border-radius;
   display: inline-block;
-  margin: $base-line-height-computed 0;
+  margin: rh() 0;
   padding-left: 0;
 }
 

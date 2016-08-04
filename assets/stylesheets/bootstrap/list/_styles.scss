@@ -1,11 +1,11 @@
-@import "bootstrap/base/line-height/variables";
+@import "bootstrap/base/mixins/rh";
 @import "mixins";
 
 // Components
 
 ul,
 ol {
-  margin-bottom: ($base-line-height-computed / 2);
+  margin-bottom: rh(0.5);
   margin-top: 0;
 }
 

@@ -2,13 +2,14 @@
 @import "bootstrap/base/cursor/variables";
 @import "variables";
 @import "bootstrap/base/mixins/clearfix";
+@import "bootstrap/base/mixins/rh";
 
 // Component
 
 .pager {
   @include clearfix;
   list-style: none;
-  margin: $base-line-height-computed 0;
+  margin: rh() 0;
   padding-left: 0;
   text-align: center;
 }

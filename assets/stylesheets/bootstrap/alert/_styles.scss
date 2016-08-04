@@ -1,5 +1,5 @@
-@import "bootstrap/base/line-height/variables";
 @import "variables";
+@import "bootstrap/base/mixins/rh";
 @import "mixins";
 
 // Component
@@ -7,7 +7,7 @@
 .alert {
   border-radius: $alert-border-radius;
   border: 1px solid transparent;
-  margin-bottom: $base-line-height-computed;
+  margin-bottom: rh();
   padding: $alert-padding;
 }
 

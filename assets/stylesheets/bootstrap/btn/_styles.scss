@@ -5,6 +5,7 @@
 @import "bootstrap/caret/variables";
 @import "bootstrap/link/variables";
 @import "variables";
+@import "bootstrap/base/mixins/rh";
 @import "mixins";
 
 // Component
@@ -16,7 +17,7 @@
   cursor: pointer;
   display: inline-block;
   font-weight: $btn-font-weight;
-  line-height: $base-line-height-computed;
+  line-height: rh();
   margin-bottom: 0; // For input.btn
   text-align: center;
   touch-action: manipulation;

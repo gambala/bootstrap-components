@@ -1,5 +1,6 @@
+@import "bootstrap/base/line-height/variables";
 @import "rh";
 
-@function rh-margin($height, $qwazi: true, $base-line-height-unitless: $base-line-height-computed) {
-  @return rh($height, $qwazi, $base-line-height-unitless) - $height;
+@function rh-margin($height, $qwazi: true, $line-height-base: $base-line-height-computed) {
+  @return rh($height, $qwazi, $line-height-base) - $height;
 }

@@ -1,6 +1,7 @@
 @import "bootstrap/base/line-height/variables";
 @import "bootstrap/link/variables";
 @import "variables";
+@import "bootstrap/base/mixins/rh";
 @import "bootstrap/img/mixins";
 
 // Component
@@ -11,7 +12,7 @@
   border: 1px solid $thumbnail-border;
   display: block;
   line-height: $base-line-height-unitless;
-  margin-bottom: $base-line-height-computed;
+  margin-bottom: rh();
   padding: $thumbnail-padding;
   transition: border .2s ease-in-out;
 }

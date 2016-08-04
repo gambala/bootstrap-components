@@ -1,9 +1,10 @@
 @import "bootstrap/base/line-height/variables";
+@import "bootstrap/base/mixins/rh";
 
 // Component
 
 address {
   font-style: normal;
   line-height: $base-line-height-unitless;
-  margin-bottom: $base-line-height-computed;
+  margin-bottom: rh();
 }

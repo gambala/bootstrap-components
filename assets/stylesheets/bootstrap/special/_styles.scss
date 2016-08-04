@@ -2,9 +2,9 @@
 @import "bootstrap/base/font-family/variables";
 @import "bootstrap/base/font-size/variables";
 @import "bootstrap/base/grid/variables";
-@import "bootstrap/base/line-height/variables";
 @import "variables";
 @import "bootstrap/base/mixins/clearfix";
+@import "bootstrap/base/mixins/rh";
 @import "mixins";
 
 // Headings
@@ -32,8 +32,8 @@ h6, .h6 {
 h1, .h1,
 h2, .h2,
 h3, .h3 {
-  margin-bottom: ($base-line-height-computed / 2);
-  margin-top: $base-line-height-computed;
+  margin-bottom: rh(0.5);
+  margin-top: rh();
 
   small,
   .small {
@@ -43,8 +43,8 @@ h3, .h3 {
 h4, .h4,
 h5, .h5,
 h6, .h6 {
-  margin-bottom: ($base-line-height-computed / 2);
-  margin-top: ($base-line-height-computed / 2);
+  margin-bottom: rh(0.5);
+  margin-top: rh(0.5);
 
   small,
   .small {
@@ -64,14 +64,14 @@ h6, .h6 { font-size: $h6-font-size; }
 // -------------------------
 
 p {
-  margin: 0 0 ($base-line-height-computed / 2);
+  margin: 0 0 rh(0.5);
 }
 
 .lead {
   font-size: floor(($base-font-size * 1.15));
   font-weight: 300;
   line-height: 1.4;
-  margin-bottom: $base-line-height-computed;
+  margin-bottom: rh();
 
   @media (min-width: $screen-sm-min) {
     font-size: ($base-font-size * 1.5);

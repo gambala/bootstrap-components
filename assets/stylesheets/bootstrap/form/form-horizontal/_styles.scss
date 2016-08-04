@@ -1,7 +1,7 @@
 @import "bootstrap/base/font-size/variables";
 @import "bootstrap/base/grid/variables";
-@import "bootstrap/base/line-height/variables";
 @import "bootstrap/base/padding/variables";
+@import "bootstrap/base/mixins/rh";
 @import "bootstrap/grid/row/mixins";
 
 // Modificator
@@ -21,7 +21,7 @@
   // and other content below items
   .radio,
   .checkbox {
-    min-height: ($base-line-height-computed + ($base-padding-vertical + 1));
+    min-height: (rh() + ($base-padding-vertical + 1));
   }
 
   // Make form groups behave like rows

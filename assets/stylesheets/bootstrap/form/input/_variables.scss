@@ -3,12 +3,13 @@
 @import "bootstrap/base/font-size/variables";
 @import "bootstrap/base/line-height/variables";
 @import "bootstrap/base/padding/variables";
+@import "bootstrap/base/mixins/rh";
 
 $input-background-color:   #fff !default;
 $input-border-color:       #ccc !default;
 $input-border-radius:      $base-border-radius !default;
 $input-color:              #555 !default;
-$input-height:             ($base-line-height-computed + ($base-padding-vertical * 2) + 2) !default;
+$input-height:             (rh() + ($base-padding-vertical * 2) + 2) !default;
 
 $input-placeholder-color:     #999 !default;
 

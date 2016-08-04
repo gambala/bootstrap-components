@@ -1,9 +1,9 @@
 @import "bootstrap/base/font-size/variables";
-@import "bootstrap/base/line-height/variables";
 @import "bootstrap/table/variables";
 @import "variables";
 @import "bootstrap/base/mixins/border-radius";
 @import "bootstrap/base/mixins/clearfix";
+@import "bootstrap/base/mixins/rh";
 @import "mixins";
 
 // Component
@@ -13,7 +13,7 @@
   border-radius: $panel-border-radius;
   border: 1px solid transparent;
   box-shadow: 0 1px 1px rgba(0,0,0,.05);
-  margin-bottom: $base-line-height-computed;
+  margin-bottom: rh();
 }
 
 // Elements
@@ -251,7 +251,7 @@
 
 // Collapsable panels (aka, accordion)
 .panel-group {
-  margin-bottom: $base-line-height-computed;
+  margin-bottom: rh();
 
   .panel {
     border-radius: $panel-border-radius;

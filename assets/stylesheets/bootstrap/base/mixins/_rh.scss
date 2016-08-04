@@ -1,8 +1,10 @@
-@function rh($height: 1, $qwazi: true, $base-line-height-unitless: $base-line-height-computed) {
+@import "bootstrap/base/line-height/variables";
+
+@function rh($height: 1, $qwazi: true, $line-height-base: $base-line-height-computed) {
   @if (unitless($height)) {
-    @return $height * $base-line-height-unitless;
+    @return $height * $line-height-base;
   } @else {
-    $line-height: if($qwazi, $base-line-height-unitless/2, $base-line-height-unitless);
+    $line-height: if($qwazi, $line-height-base/2, $line-height-base);
     @return ceil($height / $line-height) * $line-height;
   }
 }

@@ -1,6 +1,7 @@
 @import "bootstrap/base/line-height/variables";
 @import "bootstrap/base/border-radius/variables";
 @import "variables";
+@import "bootstrap/base/mixins/rh";
 
 // Component
 
@@ -8,7 +9,7 @@
   background-color: $breadcrumb-background-color;
   border-radius: $base-border-radius;
   list-style: none;
-  margin-bottom: $base-line-height-computed;
+  margin-bottom: rh();
   padding: $breadcrumb-padding-vertical $breadcrumb-padding-horizontal;
 }
 

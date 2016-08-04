@@ -1,10 +1,10 @@
 @import "bootstrap/base/border-radius/variables";
-@import "bootstrap/base/line-height/variables";
 @import "bootstrap/caret/variables";
 @import "bootstrap/form/input/variables";
 @import "variables";
 @import "bootstrap/base/mixins/border-radius";
 @import "bootstrap/base/mixins/clearfix";
+@import "bootstrap/base/mixins/rh";
 @import "mixins";
 
 // Component
@@ -86,7 +86,7 @@
   float: left;
   font-size: $base-lg-font-size;
   height: $navbar-height;
-  line-height: $base-line-height-computed;
+  line-height: rh();
   padding: $navbar-padding-vertical $navbar-padding-horizontal;
 
   &:hover {
@@ -147,7 +147,7 @@
 
 // Add a class to make any element properly align itself vertically within the navbars.
 .navbar-text {
-  @include navbar-vertical-align($base-line-height-computed);
+  @include navbar-vertical-align(rh());
 
   @media (min-width: $navbar-breakpoint-exact) {
     float: left;
@@ -224,7 +224,7 @@
   margin: ($navbar-padding-vertical / 2) (-$navbar-padding-horizontal);
 
   > li > a {
-    line-height: $base-line-height-computed;
+    line-height: rh();
     padding-bottom: 10px;
     padding-top:    10px;
   }
@@ -243,7 +243,7 @@
         padding: 5px 15px 5px 25px;
       }
       > li > a {
-        line-height: $base-line-height-computed;
+        line-height: rh();
         &:hover {
           background-image: none;
         }

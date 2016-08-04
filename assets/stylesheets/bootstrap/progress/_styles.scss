@@ -1,6 +1,6 @@
-@import "bootstrap/base/line-height/variables";
 @import "bootstrap/base/font-size/variables";
 @import "variables";
+@import "bootstrap/base/mixins/rh";
 @import "mixins";
 
 @-webkit-keyframes progress-bar-stripes {
@@ -19,8 +19,8 @@
   background-color: $progress-background-color;
   border-radius: $progress-border-radius;
   box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
-  height: $base-line-height-computed;
-  margin-bottom: $base-line-height-computed;
+  height: rh();
+  margin-bottom: rh();
   overflow: hidden;
 }
 
@@ -33,7 +33,7 @@
   float: left;
   font-size: $base-sm-font-size;
   height: 100%;
-  line-height: $base-line-height-computed;
+  line-height: rh();
   text-align: center;
   transition: width .6s ease;
   width: 0%;

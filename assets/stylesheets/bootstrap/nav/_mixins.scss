@@ -1,6 +1,8 @@
+@import "bootstrap/base/mixins/rh";
+
 @mixin nav-divider($background-color: #e5e5e5) {
   background-color: $background-color;
   height: 1px;
-  margin: (($base-line-height-computed / 2) - 1) 0;
+  margin: (rh(0.5) - 1) 0;
   overflow: hidden;
 }

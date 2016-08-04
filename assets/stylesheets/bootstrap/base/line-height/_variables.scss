@@ -1,7 +1,7 @@
 @import "bootstrap/base/font-size/variables";
 
 $base-line-height-unitless:    1.428571429 !default; // 20/14
-$base-line-height-computed:          floor(($base-font-size * $base-line-height-unitless)) !default; // ~20px
+$base-line-height-computed:    floor(($base-font-size * $base-line-height-unitless)) !default; // ~20px
 
 $base-lg-line-height-unitless: 1.3333333 !default; // extra decimals for Win 8.1 Chrome
 $base-sm-line-height-unitless: 1.5 !default;

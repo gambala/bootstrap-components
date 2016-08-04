@@ -3,6 +3,7 @@
 @import "bootstrap/base/line-height/variables";
 @import "bootstrap/base/padding/variables";
 @import "bootstrap/form/input/variables";
+@import "bootstrap/base/mixins/rh";
 @import "mixins";
 
 // Component
@@ -17,7 +18,7 @@
   display: block;
   font-size: $base-font-size;
   height: $input-height; // Make inputs at least the height of their button counterpart (base line-height + padding + border)
-  line-height: $base-line-height-computed;
+  line-height: rh();
   padding: $base-padding-vertical $base-padding-horizontal;
   transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   width: 100%;
@@ -62,7 +63,7 @@ textarea.form-control {
 // Apply class to a `p` element
 .form-control-static {
   margin-bottom: 0;
-  min-height: ($base-line-height-computed + $base-font-size);
+  min-height: (rh() + $base-font-size);
   padding-bottom: ($base-padding-vertical + 1);
   padding-top: ($base-padding-vertical + 1);
 
