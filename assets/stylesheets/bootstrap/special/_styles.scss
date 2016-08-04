@@ -108,7 +108,7 @@ mark,
 
 // Context
 
-@if $headings-font-family-custom != none {
+@if $headings-custom-font-family != none {
   .wf-active {
     h1, .h1,
     h2, .h2,
@@ -116,7 +116,7 @@ mark,
     h4, .h4,
     h5, .h5,
     h6, .h6 {
-      font-family: $headings-font-family-custom, $headings-font-family;
+      font-family: $headings-custom-font-family, $headings-font-family;
     }
   }
 }

@@ -318,18 +318,18 @@ body {
   }
 }
 
-@if $base-font-family-custom != none {
+@if $base-custom-font-family != none {
   .wf-active {
     body {
-      font-family: $base-font-family-custom, $base-font-family;
+      font-family: $base-custom-font-family, $base-font-family;
     }
 
     .serif {
-      font-family: $serif-font-family-custom, $serif-font-family;
+      font-family: $serif-custom-font-family, $serif-font-family;
     }
 
     .sans {
-      font-family: $sans-serif-font-family-custom, $sans-serif-font-family;
+      font-family: $sans-serif-custom-font-family, $sans-serif-font-family;
     }
   }
 }
