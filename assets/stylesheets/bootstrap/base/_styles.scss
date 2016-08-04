@@ -14,48 +14,48 @@
 // Color modificators
 
 .bg-primary {
-  background-color: $brand-primary;
+  background-color: $base-primary-background-color;
   color: #fff;
 }
 
 .bg-success {
-  background-color: $state-success-bg;
+  background-color: $base-success-muted-background-color;
 }
 
 .bg-info {
-  background-color: $state-info-bg;
+  background-color: $base-info-muted-background-color;
 }
 
 .bg-warning {
-  background-color: $state-warning-bg;
+  background-color: $base-warning-muted-background-color;
 }
 
 .bg-danger {
-  background-color: $state-danger-bg;
+  background-color: $base-danger-muted-background-color;
 }
 
 .text-primary {
-  color: $brand-primary;
+  color: $base-primary-background-color;
 }
 
 .text-success {
-  color: $state-success-text;
+  color: $base-success-muted-color;
 }
 
 .text-info {
-  color: $state-info-text;
+  color: $base-info-muted-color;
 }
 
 .text-warning {
-  color: $state-warning-text;
+  color: $base-warning-muted-color;
 }
 
 .text-danger {
-  color: $state-danger-text;
+  color: $base-danger-muted-color;
 }
 
 .text-muted {
-  color: $text-muted;
+  color: $base-muted-color;
 }
 
 // Text modificators
@@ -73,8 +73,8 @@
 .text-capitalize     { text-transform: capitalize; }
 
 // Font-family
-.serif               { font-family: $font-family-serif; }
-.sans                { font-family: $font-family-sans-serif; }
+.serif               { font-family: $serif-font-family; }
+.sans                { font-family: $sans-serif-font-family; }
 
 // Font-weight
 .text-regular        { font-weight: normal }
@@ -290,11 +290,11 @@ html {
 }
 
 body {
-  background-color: $body-bg;
-  color: $text-color;
-  font-family: $font-family-base;
-  font-size: $font-size-base;
-  line-height: $line-height-base;
+  background-color: $base-background-color;
+  color: $base-color;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height-unitless;
 }
 
 // IE10 in Windows (Phone) 8
@@ -318,18 +318,18 @@ body {
   }
 }
 
-@if $font-family-base-custom != none {
+@if $base-custom-font-family != none {
   .wf-active {
     body {
-      font-family: $font-family-base-custom, $font-family-base;
+      font-family: $base-custom-font-family, $base-font-family;
     }
 
     .serif {
-      font-family: $font-family-serif-custom, $font-family-serif;
+      font-family: $serif-custom-font-family, $serif-font-family;
     }
 
     .sans {
-      font-family: $font-family-sans-serif-custom, $font-family-sans-serif;
+      font-family: $sans-serif-custom-font-family, $sans-serif-font-family;
     }
   }
 }

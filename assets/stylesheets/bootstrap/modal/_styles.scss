@@ -27,15 +27,15 @@
 
 .modal-content {
   background-clip: padding-box;
-  background-color: $modal-content-bg;
-  border-radius: $border-radius-large;
+  background-color: $modal-content-background-color;
+  border-radius: $base-lg-border-radius;
   border: 1px solid $modal-content-border-color;
   box-shadow: 0 3px 9px rgba(0,0,0,.5);
   position: relative;
 }
 
 .modal-backdrop {
-  background-color: $modal-backdrop-bg;
+  background-color: $modal-backdrop-background-color;
   bottom: 0;
   left: 0;
   position: fixed;
@@ -63,14 +63,14 @@
 }
 
 .modal-body {
-  padding: $modal-inner-padding;
+  padding: $modal-body-padding;
   position: relative;
 }
 
 .modal-footer {
   @include clearfix; // clear it in case folks use .pull-* classes on buttons
   border-top: 1px solid $modal-footer-border-color;
-  padding: $modal-inner-padding;
+  padding: $modal-footer-padding;
   text-align: right; // right align buttons
 
   // Properly space out buttons
@@ -104,18 +104,18 @@
 @media (min-width: $screen-sm-min) {
   .modal-dialog {
     margin: 30px auto;
-    width: $modal-md;
+    width: $modal-dialog-width;
   }
 
   .modal-content {
     box-shadow: 0 5px 15px rgba(0,0,0,.5);
   }
 
-  .modal-sm { width: $modal-sm; }
+  .modal-sm { width: $modal-dialog-sm-width; }
 }
 
 @media (min-width: $screen-md-min) {
-  .modal-lg { width: $modal-lg; }
+  .modal-lg { width: $modal-dialog-lg-width; }
 }
 
 // Context

@@ -8,12 +8,12 @@
 .popover {
   @include text-reset;
   background-clip: padding-box;
-  background-color: $popover-bg;
-  border-radius: $border-radius-large;
+  background-color: $popover-background-color;
+  border-radius: $base-lg-border-radius;
   border: 1px solid $popover-border-color;
   box-shadow: 0 5px 10px rgba(0,0,0,.2);
   display: none;
-  font-size: $font-size-base;
+  font-size: $base-font-size;
   left: 0;
   max-width: $popover-max-width;
   padding: 1px;
@@ -25,10 +25,10 @@
 // Elements
 
 .popover-title {
-  background-color: $popover-title-bg;
-  border-bottom: 1px solid darken($popover-title-bg, 5%);
-  border-radius: ($border-radius-large - 1) ($border-radius-large - 1) 0 0;
-  font-size: $font-size-base;
+  background-color: $popover-title-background-color;
+  border-bottom: 1px solid darken($popover-title-background-color, 5%);
+  border-radius: ($base-lg-border-radius - 1) ($base-lg-border-radius - 1) 0 0;
+  font-size: $base-font-size;
   margin: 0;
   padding: 8px 14px;
 }

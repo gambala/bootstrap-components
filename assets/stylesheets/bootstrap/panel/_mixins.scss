@@ -1,24 +1,24 @@
 // Panels
 
-@mixin panel-variant($border, $heading-text-color, $heading-bg-color, $heading-border) {
-  border-color: $border;
+@mixin panel-variant($border-color, $heading-color, $heading-background-color, $heading-border-color) {
+  border-color: $border-color;
 
   & > .panel-heading {
-    background-color: $heading-bg-color;
-    border-color: $heading-border;
-    color: $heading-text-color;
+    background-color: $heading-background-color;
+    border-color: $heading-border-color;
+    color: $heading-color;
 
     + .panel-collapse > .panel-body {
-      border-top-color: $border;
+      border-top-color: $border-color;
     }
     .badge {
-      background-color: $heading-text-color;
-      color: $heading-bg-color;
+      background-color: $heading-color;
+      color: $heading-background-color;
     }
   }
   & > .panel-footer {
     + .panel-collapse > .panel-body {
-      border-bottom-color: $border;
+      border-bottom-color: $border-color;
     }
   }
 }

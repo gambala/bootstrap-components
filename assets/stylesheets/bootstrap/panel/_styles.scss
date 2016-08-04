@@ -9,11 +9,11 @@
 // Component
 
 .panel {
-  background-color: $panel-bg;
+  background-color: $panel-background-color;
   border-radius: $panel-border-radius;
   border: 1px solid transparent;
   box-shadow: 0 1px 1px rgba(0,0,0,.05);
-  margin-bottom: $line-height-computed;
+  margin-bottom: $base-line-height-computed;
 }
 
 // Elements
@@ -35,7 +35,7 @@
 
 .panel-title {
   color: inherit;
-  font-size: ceil(($font-size-base * 1.125));
+  font-size: ceil(($base-font-size * 1.125));
   margin-bottom: 0;
   margin-top: 0;
 
@@ -50,8 +50,8 @@
 
 .panel-footer {
   @include border-bottom-radius(($panel-border-radius - 1));
-  background-color: $panel-footer-bg;
-  border-top: 1px solid $panel-inner-border;
+  background-color: $panel-footer-background-color;
+  border-top: 1px solid $panel-inner-border-color;
   padding: $panel-footer-padding;
 }
 
@@ -211,29 +211,47 @@
 // Modificators
 
 .panel-default {
-  @include panel-variant($panel-default-border, $panel-default-text, $panel-default-heading-bg, $panel-default-border);
+  @include panel-variant($panel-default-border-color,
+                         $panel-default-color,
+                         $panel-default-heading-background-color,
+                         $panel-default-border-color);
 }
 .panel-primary {
-  @include panel-variant($panel-primary-border, $panel-primary-text, $panel-primary-heading-bg, $panel-primary-border);
+  @include panel-variant($panel-primary-border-color,
+                         $panel-primary-color,
+                         $panel-primary-heading-background-color,
+                         $panel-primary-border-color);
 }
 .panel-success {
-  @include panel-variant($panel-success-border, $panel-success-text, $panel-success-heading-bg, $panel-success-border);
+  @include panel-variant($panel-success-border-color,
+                         $panel-success-color,
+                         $panel-success-heading-background-color,
+                         $panel-success-border-color);
 }
 .panel-info {
-  @include panel-variant($panel-info-border, $panel-info-text, $panel-info-heading-bg, $panel-info-border);
+  @include panel-variant($panel-info-border-color,
+                         $panel-info-color,
+                         $panel-info-heading-background-color,
+                         $panel-info-border-color);
 }
 .panel-warning {
-  @include panel-variant($panel-warning-border, $panel-warning-text, $panel-warning-heading-bg, $panel-warning-border);
+  @include panel-variant($panel-warning-border-color,
+                         $panel-warning-color,
+                         $panel-warning-heading-background-color,
+                         $panel-warning-border-color);
 }
 .panel-danger {
-  @include panel-variant($panel-danger-border, $panel-danger-text, $panel-danger-heading-bg, $panel-danger-border);
+  @include panel-variant($panel-danger-border-color,
+                         $panel-danger-color,
+                         $panel-danger-heading-background-color,
+                         $panel-danger-border-color);
 }
 
 // Context
 
 // Collapsable panels (aka, accordion)
 .panel-group {
-  margin-bottom: $line-height-computed;
+  margin-bottom: $base-line-height-computed;
 
   .panel {
     border-radius: $panel-border-radius;
@@ -249,14 +267,14 @@
 
     + .panel-collapse > .panel-body,
     + .panel-collapse > .list-group {
-      border-top: 1px solid $panel-inner-border;
+      border-top: 1px solid $panel-inner-border-color;
     }
   }
 
   .panel-footer {
     border-top: 0;
     + .panel-collapse .panel-body {
-      border-bottom: 1px solid $panel-inner-border;
+      border-bottom: 1px solid $panel-inner-border-color;
     }
   }
 }

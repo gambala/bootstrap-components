@@ -9,13 +9,13 @@
 output {
   color: $input-color;
   display: block;
-  font-size: $font-size-base;
-  line-height: $line-height-base;
-  padding-top: ($padding-base-vertical + 1);
+  font-size: $base-font-size;
+  line-height: $base-line-height-unitless;
+  padding-top: ($base-padding-vertical + 1);
 }
 
 .help-block {
-  color: lighten($text-color, 25%);
+  color: lighten($base-color, 25%);
   display: block;
   margin-bottom: 10px;
   margin-top: 5px;

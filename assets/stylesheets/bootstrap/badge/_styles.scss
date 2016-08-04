@@ -4,11 +4,11 @@
 // Component
 
 .badge {
-  background-color: $badge-bg;
+  background-color: $badge-background-color;
   border-radius: $badge-border-radius;
   color: $badge-color;
   display: inline-block;
-  font-size: $font-size-small;
+  font-size: $base-sm-font-size;
   font-weight: $badge-font-weight;
   line-height: $badge-line-height;
   min-width: 10px;
@@ -48,7 +48,7 @@ a.badge {
 
   .list-group-item.active > &,
   .nav-pills > .active > a > & {
-    background-color: $badge-active-bg;
+    background-color: $badge-active-background-color;
     color: $badge-active-color;
   }
 

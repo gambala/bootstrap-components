@@ -1,5 +1,4 @@
 @import "bootstrap/base/border-radius/variables";
-@import "bootstrap/base/grid/variables";
 @import "bootstrap/base/line-height/variables";
 @import "bootstrap/caret/variables";
 @import "bootstrap/form/input/variables";
@@ -17,7 +16,7 @@
   min-height: $navbar-height;
   position: relative;
 
-  @media (min-width: $grid-float-breakpoint) {
+  @media (min-width: $navbar-breakpoint-exact) {
     border-radius: $navbar-border-radius;
   }
 }
@@ -28,7 +27,7 @@
 .navbar-header {
   @include clearfix;
 
-  @media (min-width: $grid-float-breakpoint) {
+  @media (min-width: $navbar-breakpoint-exact) {
     float: left;
   }
 }
@@ -56,7 +55,7 @@
     overflow-y: auto;
   }
 
-  @media (min-width: $grid-float-breakpoint) {
+  @media (min-width: $navbar-breakpoint-exact) {
     border-top: 0;
     box-shadow: none;
     width: auto;
@@ -85,9 +84,9 @@
 
 .navbar-brand {
   float: left;
-  font-size: $font-size-large;
+  font-size: $base-lg-font-size;
   height: $navbar-height;
-  line-height: $line-height-computed;
+  line-height: $base-line-height-computed;
   padding: $navbar-padding-vertical $navbar-padding-horizontal;
 
   &:hover {
@@ -98,7 +97,7 @@
     display: block;
   }
 
-  @media (min-width: $grid-float-breakpoint) {
+  @media (min-width: $navbar-breakpoint-exact) {
     .navbar > .container &,
     .navbar > .container-fluid & {
       margin-left: -$navbar-padding-horizontal;
@@ -111,7 +110,7 @@
   @include navbar-vertical-align(34px);
   background-color: transparent;
   background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
-  border-radius: $border-radius-base;
+  border-radius: $base-border-radius;
   border: 1px solid transparent;
   float: right;
   margin-right: $navbar-padding-horizontal;
@@ -129,17 +128,17 @@
     margin-top: 4px;
   }
 
-  @media (min-width: $grid-float-breakpoint) {
+  @media (min-width: $navbar-breakpoint-exact) {
     display: none;
   }
 }
 
 // Vertically center a button within a navbar (when *not* in a form).
 .navbar-btn {
-  @include navbar-vertical-align($input-height-base);
+  @include navbar-vertical-align($input-height);
 
   &.btn-sm {
-    @include navbar-vertical-align($input-height-small);
+    @include navbar-vertical-align($input-sm-height);
   }
   &.btn-xs {
     @include navbar-vertical-align(22);
@@ -148,9 +147,9 @@
 
 // Add a class to make any element properly align itself vertically within the navbars.
 .navbar-text {
-  @include navbar-vertical-align($line-height-computed);
+  @include navbar-vertical-align($base-line-height-computed);
 
-  @media (min-width: $grid-float-breakpoint) {
+  @media (min-width: $navbar-breakpoint-exact) {
     float: left;
     margin-left: $navbar-padding-horizontal;
     margin-right: $navbar-padding-horizontal;
@@ -163,10 +162,6 @@
 .navbar-fixed-bottom {
   .navbar-collapse {
     max-height: $navbar-collapse-max-height;
-
-    @media (max-device-width: $screen-xs-min) and (orientation: landscape) {
-      max-height: 200px;
-    }
   }
 }
 
@@ -179,7 +174,7 @@
   z-index: $navbar-fixed-z-index;
 
   // Undo the rounded corners
-  @media (min-width: $grid-float-breakpoint) {
+  @media (min-width: $navbar-breakpoint-exact) {
     border-radius: 0;
   }
 }
@@ -200,7 +195,7 @@
   border-width: 0 0 1px;
   z-index: $navbar-z-index;
 
-  @media (min-width: $grid-float-breakpoint) {
+  @media (min-width: $navbar-breakpoint-exact) {
     border-radius: 0;
   }
 }
@@ -216,7 +211,7 @@
     margin-left:  -$navbar-padding-horizontal;
     margin-right: -$navbar-padding-horizontal;
 
-    @media (min-width: $grid-float-breakpoint) {
+    @media (min-width: $navbar-breakpoint-exact) {
       margin-left:  0;
       margin-right: 0;
     }
@@ -229,12 +224,12 @@
   margin: ($navbar-padding-vertical / 2) (-$navbar-padding-horizontal);
 
   > li > a {
-    line-height: $line-height-computed;
+    line-height: $base-line-height-computed;
     padding-bottom: 10px;
     padding-top:    10px;
   }
 
-  @media (max-width: $grid-float-breakpoint-max) {
+  @media (max-width: $navbar-breakpoint-before) {
     .open .dropdown-menu {
       background-color: transparent;
       border: 0;
@@ -248,7 +243,7 @@
         padding: 5px 15px 5px 25px;
       }
       > li > a {
-        line-height: $line-height-computed;
+        line-height: $base-line-height-computed;
         &:hover {
           background-image: none;
         }
@@ -257,7 +252,7 @@
   }
 
   // Uncollapse the nav
-  @media (min-width: $grid-float-breakpoint) {
+  @media (min-width: $navbar-breakpoint-exact) {
     float: left;
     margin: 0;
 
@@ -284,7 +279,7 @@
 }
 .navbar-fixed-bottom .dropdown {
   .caret {
-    border-bottom: $caret-width-base dashed;
+    border-bottom: $caret-width dashed;
     border-top: 0;
     content: "";
   }
@@ -303,7 +298,7 @@
 //
 // Declared after the navbar components to ensure more specificity on the margins.
 
-@media (min-width: $grid-float-breakpoint) {
+@media (min-width: $navbar-breakpoint-exact) {
   .navbar-left {
     float: left !important;
   }
@@ -329,13 +324,13 @@
 // Alternate navbars
 
 .navbar-default {
-  background-color: $navbar-default-bg;
-  border-color: $navbar-default-border;
+  background-color: $navbar-default-background-color;
+  border-color: $navbar-default-border-color;
 
   .navbar-brand {
     color: $navbar-default-brand-color;
     &:hover {
-      background-color: $navbar-default-brand-hover-bg;
+      background-color: $navbar-default-brand-hover-background-color;
       color: $navbar-default-brand-hover-color;
     }
   }
@@ -349,21 +344,21 @@
       color: $navbar-default-link-color;
 
       &:hover {
-        background-color: $navbar-default-link-hover-bg;
+        background-color: $navbar-default-link-hover-background-color;
         color: $navbar-default-link-hover-color;
       }
     }
     > .active > a {
       &,
       &:hover {
-        background-color: $navbar-default-link-active-bg;
+        background-color: $navbar-default-link-active-background-color;
         color: $navbar-default-link-active-color;
       }
     }
     > .disabled > a {
       &,
       &:hover {
-        background-color: $navbar-default-link-disabled-bg;
+        background-color: $navbar-default-link-disabled-background-color;
         color: $navbar-default-link-disabled-color;
       }
     }
@@ -372,16 +367,16 @@
   .navbar-toggle {
     border-color: $navbar-default-toggle-border-color;
     &:hover {
-      background-color: $navbar-default-toggle-hover-bg;
+      background-color: $navbar-default-toggle-hover-background-color;
     }
     .icon-bar {
-      background-color: $navbar-default-toggle-icon-bar-bg;
+      background-color: $navbar-default-toggle-icon-bar-background-color;
     }
   }
 
   .navbar-collapse,
   .navbar-form {
-    border-color: $navbar-default-border;
+    border-color: $navbar-default-border-color;
   }
 
   // Dropdown menu items
@@ -389,31 +384,31 @@
     > .open > a {
       &,
       &:hover {
-        background-color: $navbar-default-link-active-bg;
+        background-color: $navbar-default-link-active-background-color;
         color: $navbar-default-link-active-color;
       }
     }
 
-    @media (max-width: $grid-float-breakpoint-max) {
+    @media (max-width: $navbar-breakpoint-before) {
       .open .dropdown-menu {
         > li > a {
           color: $navbar-default-link-color;
           &:hover {
-            background-color: $navbar-default-link-hover-bg;
+            background-color: $navbar-default-link-hover-background-color;
             color: $navbar-default-link-hover-color;
           }
         }
         > .active > a {
           &,
           &:hover {
-            background-color: $navbar-default-link-active-bg;
+            background-color: $navbar-default-link-active-background-color;
             color: $navbar-default-link-active-color;
           }
         }
         > .disabled > a {
           &,
           &:hover {
-            background-color: $navbar-default-link-disabled-bg;
+            background-color: $navbar-default-link-disabled-background-color;
             color: $navbar-default-link-disabled-color;
           }
         }
@@ -443,13 +438,13 @@
 }
 
 .navbar-inverse {
-  background-color: $navbar-inverse-bg;
-  border-color: $navbar-inverse-border;
+  background-color: $navbar-inverse-background-color;
+  border-color: $navbar-inverse-border-color;
 
   .navbar-brand {
     color: $navbar-inverse-brand-color;
     &:hover {
-      background-color: $navbar-inverse-brand-hover-bg;
+      background-color: $navbar-inverse-brand-hover-background-color;
       color: $navbar-inverse-brand-hover-color;
     }
   }
@@ -463,21 +458,21 @@
       color: $navbar-inverse-link-color;
 
       &:hover {
-        background-color: $navbar-inverse-link-hover-bg;
+        background-color: $navbar-inverse-link-hover-background-color;
         color: $navbar-inverse-link-hover-color;
       }
     }
     > .active > a {
       &,
       &:hover {
-        background-color: $navbar-inverse-link-active-bg;
+        background-color: $navbar-inverse-link-active-background-color;
         color: $navbar-inverse-link-active-color;
       }
     }
     > .disabled > a {
       &,
       &:hover {
-        background-color: $navbar-inverse-link-disabled-bg;
+        background-color: $navbar-inverse-link-disabled-background-color;
         color: $navbar-inverse-link-disabled-color;
       }
     }
@@ -486,16 +481,16 @@
   .navbar-toggle {
     border-color: $navbar-inverse-toggle-border-color;
     &:hover {
-      background-color: $navbar-inverse-toggle-hover-bg;
+      background-color: $navbar-inverse-toggle-hover-background-color;
     }
     .icon-bar {
-      background-color: $navbar-inverse-toggle-icon-bar-bg;
+      background-color: $navbar-inverse-toggle-icon-bar-background-color;
     }
   }
 
   .navbar-collapse,
   .navbar-form {
-    border-color: darken($navbar-inverse-bg, 7%);
+    border-color: darken($navbar-inverse-background-color, 7%);
   }
 
   // Dropdowns
@@ -503,37 +498,37 @@
     > .open > a {
       &,
       &:hover {
-        background-color: $navbar-inverse-link-active-bg;
+        background-color: $navbar-inverse-link-active-background-color;
         color: $navbar-inverse-link-active-color;
       }
     }
 
-    @media (max-width: $grid-float-breakpoint-max) {
+    @media (max-width: $navbar-breakpoint-before) {
       .open .dropdown-menu {
         > .dropdown-header {
-          border-color: $navbar-inverse-border;
+          border-color: $navbar-inverse-border-color;
         }
         .divider {
-          background-color: $navbar-inverse-border;
+          background-color: $navbar-inverse-border-color;
         }
         > li > a {
           color: $navbar-inverse-link-color;
           &:hover {
-            background-color: $navbar-inverse-link-hover-bg;
+            background-color: $navbar-inverse-link-hover-background-color;
             color: $navbar-inverse-link-hover-color;
           }
         }
         > .active > a {
           &,
           &:hover {
-            background-color: $navbar-inverse-link-active-bg;
+            background-color: $navbar-inverse-link-active-background-color;
             color: $navbar-inverse-link-active-color;
           }
         }
         > .disabled > a {
           &,
           &:hover {
-            background-color: $navbar-inverse-link-disabled-bg;
+            background-color: $navbar-inverse-link-disabled-background-color;
             color: $navbar-inverse-link-disabled-color;
           }
         }

@@ -1,10 +1,5 @@
 @import "bootstrap/base/grid/variables";
 
-$container-tablet:             (720px + $grid-gutter-width) !default;
-$container-sm:                 $container-tablet !default;
-
-$container-desktop:            (940px + $grid-gutter-width) !default;
-$container-md:                 $container-desktop !default;
-
-$container-large-desktop:      (1140px + $grid-gutter-width) !default;
-$container-lg:                 $container-large-desktop !default;
+$container-sm-width:   (720px + $grid-gutter-width) !default;
+$container-md-width:   (940px + $grid-gutter-width) !default;
+$container-lg-width:   (1140px + $grid-gutter-width) !default;

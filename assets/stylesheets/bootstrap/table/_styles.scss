@@ -7,11 +7,11 @@
 // Component
 
 table {
-  background-color: $table-bg;
+  background-color: $table-background-color;
 }
 
 .table {
-  margin-bottom: $line-height-computed;
+  margin-bottom: $base-line-height-computed;
   max-width: 100%;
   width: 100%;
 }
@@ -19,9 +19,9 @@ table {
 // Elements
 
 caption {
-  color: $text-muted;
-  padding-bottom: $table-cell-padding;
-  padding-top: $table-cell-padding;
+  color: $base-muted-color;
+  padding-bottom: $table-padding;
+  padding-top: $table-padding;
   text-align: left;
 }
 
@@ -54,8 +54,8 @@ table {
       > th,
       > td {
         border-top: 1px solid $table-border-color;
-        line-height: $line-height-base;
-        padding: $table-cell-padding;
+        line-height: $base-line-height-unitless;
+        padding: $table-padding;
         vertical-align: top;
       }
     }
@@ -83,7 +83,7 @@ table {
 
   // Nesting
   .table {
-    background-color: $body-bg;
+    background-color: $base-background-color;
   }
 }
 
@@ -96,7 +96,7 @@ table {
     > tr {
       > th,
       > td {
-        padding: $table-condensed-cell-padding;
+        padding: $table-condensed-padding;
       }
     }
   }
@@ -125,21 +125,21 @@ table {
 
 .table-striped {
   > tbody > tr:nth-of-type(odd) {
-    background-color: $table-bg-accent;
+    background-color: $table-accent-background-color;
   }
 }
 
 .table-hover {
   > tbody > tr:hover {
-    background-color: $table-bg-hover;
+    background-color: $table-hover-background-color;
   }
 }
 
-@include table-row-variant('active', $table-bg-active);
-@include table-row-variant('success', $state-success-bg);
-@include table-row-variant('info', $state-info-bg);
-@include table-row-variant('warning', $state-warning-bg);
-@include table-row-variant('danger', $state-danger-bg);
+@include table-row-variant('active', $table-active-background-color);
+@include table-row-variant('success', $base-success-muted-background-color);
+@include table-row-variant('info', $base-info-muted-background-color);
+@include table-row-variant('warning', $base-warning-muted-background-color);
+@include table-row-variant('danger', $base-danger-muted-background-color);
 
 // Context
 
@@ -155,7 +155,7 @@ table {
   @media screen and (max-width: $screen-xs-max) {
     -ms-overflow-style: -ms-autohiding-scrollbar;
     border: 1px solid $table-border-color;
-    margin-bottom: ($line-height-computed * 0.75);
+    margin-bottom: ($base-line-height-computed * 0.75);
     overflow-y: hidden;
     width: 100%;
 

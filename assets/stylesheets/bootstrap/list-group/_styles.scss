@@ -17,8 +17,8 @@
 
 // Use on `li`s or `div`s within the `.list-group` parent.
 .list-group-item {
-  background-color: $list-group-bg;
-  border: 1px solid $list-group-border;
+  background-color: $list-group-background-color;
+  border: 1px solid $list-group-border-color;
   display: block;
   // Place the border on the list items and negative margin up for better styling
   margin-bottom: -1px;
@@ -42,11 +42,11 @@ button.list-group-item {
   color: $list-group-link-color;
 
   .list-group-item-heading {
-    color: $list-group-link-heading-color;
+    color: $list-group-link-item-heading-color;
   }
 
   &:hover {
-    background-color: $list-group-hover-bg;
+    background-color: $list-group-hover-background-color;
     color: $list-group-link-hover-color;
     text-decoration: none;
   }
@@ -60,23 +60,23 @@ button.list-group-item {
 .list-group-item {
   &.disabled,
   &.disabled:hover {
-    background-color: $list-group-disabled-bg;
+    background-color: $list-group-disabled-background-color;
     color: $list-group-disabled-color;
-    cursor: $cursor-disabled;
+    cursor: $base-disabled-cursor;
 
     // Force color to inherit for custom content
     .list-group-item-heading {
       color: inherit;
     }
     .list-group-item-text {
-      color: $list-group-disabled-text-color;
+      color: $list-group-disabled-item-text-color;
     }
   }
 
   &.active,
   &.active:hover {
-    background-color: $list-group-active-bg;
-    border-color: $list-group-active-border;
+    background-color: $list-group-active-background-color;
+    border-color: $list-group-active-border-color;
     color: $list-group-active-color;
     z-index: 2; // Place active items above their siblings for proper border styling
 
@@ -87,7 +87,7 @@ button.list-group-item {
       color: inherit;
     }
     .list-group-item-text {
-      color: $list-group-active-text-color;
+      color: $list-group-active-item-text-color;
     }
   }
 }
@@ -104,7 +104,7 @@ button.list-group-item {
 
 // Modificators
 
-@include list-group-item-variant(success, $state-success-bg, $state-success-text);
-@include list-group-item-variant(info, $state-info-bg, $state-info-text);
-@include list-group-item-variant(warning, $state-warning-bg, $state-warning-text);
-@include list-group-item-variant(danger, $state-danger-bg, $state-danger-text);
+@include list-group-item-variant(success, $base-success-muted-background-color, $base-success-muted-color);
+@include list-group-item-variant(info, $base-info-muted-background-color, $base-info-muted-color);
+@include list-group-item-variant(warning, $base-warning-muted-background-color, $base-warning-muted-color);
+@include list-group-item-variant(danger, $base-danger-muted-background-color, $base-danger-muted-color);

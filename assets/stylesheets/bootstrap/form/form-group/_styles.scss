@@ -19,16 +19,16 @@
 // issue documented in https://github.com/twbs/bootstrap/issues/15074.
 .form-group-sm {
   .form-control {
-    border-radius: $input-border-radius-small;
-    font-size: $font-size-small;
-    height: $input-height-small;
-    line-height: $line-height-small;
-    padding: $padding-small-vertical $padding-small-horizontal;
+    border-radius: $input-sm-border-radius;
+    font-size: $base-sm-font-size;
+    height: $input-sm-height;
+    line-height: $base-sm-line-height-unitless;
+    padding: $base-sm-padding-vertical $base-sm-padding-horizontal;
   }
 
   select.form-control {
-    height: $input-height-small;
-    line-height: $input-height-small;
+    height: $input-sm-height;
+    line-height: $input-sm-height;
   }
 
   textarea.form-control,
@@ -37,26 +37,26 @@
   }
 
   .form-control-static {
-    font-size: $font-size-small;
-    height: $input-height-small;
-    line-height: $line-height-small;
-    min-height: ($line-height-computed + $font-size-small);
-    padding: ($padding-small-vertical + 1) $padding-small-horizontal;
+    font-size: $base-sm-font-size;
+    height: $input-sm-height;
+    line-height: $base-sm-line-height-unitless;
+    min-height: ($base-line-height-computed + $base-sm-font-size);
+    padding: ($base-sm-padding-vertical + 1) $base-sm-padding-horizontal;
   }
 }
 
 .form-group-lg {
   .form-control {
-    border-radius: $input-border-radius-large;
-    font-size: $font-size-large;
-    height: $input-height-large;
-    line-height: $line-height-large;
-    padding: $padding-large-vertical $padding-large-horizontal;
+    border-radius: $input-lg-border-radius;
+    font-size: $base-lg-font-size;
+    height: $input-lg-height;
+    line-height: $base-lg-line-height-unitless;
+    padding: $base-lg-padding-vertical $base-lg-padding-horizontal;
   }
 
   select.form-control {
-    height: $input-height-large;
-    line-height: $input-height-large;
+    height: $input-lg-height;
+    line-height: $input-lg-height;
   }
 
   textarea.form-control,
@@ -65,11 +65,11 @@
   }
 
   .form-control-static {
-    font-size: $font-size-large;
-    height: $input-height-large;
-    line-height: $line-height-large;
-    min-height: ($line-height-computed + $font-size-large);
-    padding: ($padding-large-vertical + 1) $padding-large-horizontal;
+    font-size: $base-lg-font-size;
+    height: $input-lg-height;
+    line-height: $base-lg-line-height-unitless;
+    min-height: ($base-line-height-computed + $base-lg-font-size);
+    padding: ($base-lg-padding-vertical + 1) $base-lg-padding-horizontal;
   }
 }
 
@@ -84,7 +84,7 @@
     cursor: pointer;
     font-weight: normal;
     margin-bottom: 0;
-    min-height: $line-height-computed;
+    min-height: $base-line-height-computed;
     padding-left: 20px;
   }
 }
@@ -128,7 +128,7 @@ input[type="checkbox"] {
   &[disabled],
   &.disabled,
   fieldset[disabled] & {
-    cursor: $cursor-disabled;
+    cursor: $base-disabled-cursor;
   }
 }
 // These classes are used directly on <label>s
@@ -136,7 +136,7 @@ input[type="checkbox"] {
 .checkbox-inline {
   &.disabled,
   fieldset[disabled] & {
-    cursor: $cursor-disabled;
+    cursor: $base-disabled-cursor;
   }
 }
 // These classes are used on elements with <label> descendants
@@ -145,7 +145,7 @@ input[type="checkbox"] {
   &.disabled,
   fieldset[disabled] & {
     label {
-      cursor: $cursor-disabled;
+      cursor: $base-disabled-cursor;
     }
   }
 }
@@ -158,52 +158,52 @@ input[type="checkbox"] {
 
   // Ensure icons don't overlap text
   .form-control {
-    padding-right: ($input-height-base * 1.25);
+    padding-right: ($input-height * 1.25);
   }
 }
 // Feedback icon (requires .glyphicon classes)
 .form-control-feedback {
   display: block;
-  height: $input-height-base;
-  line-height: $input-height-base;
+  height: $input-height;
+  line-height: $input-height;
   pointer-events: none;
   position: absolute;
   right: 0;
   text-align: center;
   top: 0;
-  width: $input-height-base;
+  width: $input-height;
   z-index: 2; // Ensure icon is above input groups
 }
 .input-lg + .form-control-feedback,
 .input-group-lg + .form-control-feedback,
 .form-group-lg .form-control + .form-control-feedback {
-  height: $input-height-large;
-  line-height: $input-height-large;
-  width: $input-height-large;
+  height: $input-lg-height;
+  line-height: $input-lg-height;
+  width: $input-lg-height;
 }
 .input-sm + .form-control-feedback,
 .input-group-sm + .form-control-feedback,
 .form-group-sm .form-control + .form-control-feedback {
-  height: $input-height-small;
-  line-height: $input-height-small;
-  width: $input-height-small;
+  height: $input-sm-height;
+  line-height: $input-sm-height;
+  width: $input-sm-height;
 }
 
 .has-success {
-  @include form-control-validation($state-success-text, $state-success-text, $state-success-bg);
+  @include form-control-validation($base-success-muted-color, $base-success-muted-color, $base-success-muted-background-color);
 }
 .has-warning {
-  @include form-control-validation($state-warning-text, $state-warning-text, $state-warning-bg);
+  @include form-control-validation($base-warning-muted-color, $base-warning-muted-color, $base-warning-muted-background-color);
 }
 .has-error {
-  @include form-control-validation($state-danger-text, $state-danger-text, $state-danger-bg);
+  @include form-control-validation($base-danger-muted-color, $base-danger-muted-color, $base-danger-muted-background-color);
 }
 
 // Reposition feedback icon if input has visible label above
 .has-feedback label {
 
   & ~ .form-control-feedback {
-    top: ($line-height-computed + 5); // Height of the `label` and its margin
+    top: ($base-line-height-computed + 5); // Height of the `label` and its margin
   }
   &.sr-only ~ .form-control-feedback {
     top: 0;

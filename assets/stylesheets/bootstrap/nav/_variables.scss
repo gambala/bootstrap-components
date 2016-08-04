@@ -1,26 +1,20 @@
 @import "bootstrap/base/color/variables";
 @import "bootstrap/base/border-radius/variables";
 
-//=== Shared nav styles
-$nav-link-padding:                          10px 15px !default;
-$nav-link-hover-bg:                         $gray-lighter !default;
+$nav-link-padding:                             10px 15px !default;
+$nav-link-hover-background-color:              $base-light-color !default;
 
-$nav-disabled-link-color:                   $gray-light !default;
-$nav-disabled-link-hover-color:             $gray-light !default;
+$nav-disabled-link-color:                      $base-muted-color !default;
+$nav-disabled-link-hover-color:                $base-muted-color !default;
 
-//== Tabs
-$nav-tabs-border-color:                     #ddd !default;
+$nav-tabs-border-color:                        #ddd !default;
+$nav-tabs-link-hover-border-color:             $base-light-color !default;
+$nav-tabs-active-link-hover-background-color:  $base-background-color !default;
+$nav-tabs-active-link-hover-border-color:      #ddd !default;
+$nav-tabs-active-link-hover-color:             #555 !default;
+$nav-tabs-justified-link-border-color:         #ddd !default;
+$nav-tabs-justified-active-link-border-color:  $base-background-color !default;
 
-$nav-tabs-link-hover-border-color:          $gray-lighter !default;
-
-$nav-tabs-active-link-hover-bg:             $body-bg !default;
-$nav-tabs-active-link-hover-color:          $gray !default;
-$nav-tabs-active-link-hover-border-color:   #ddd !default;
-
-$nav-tabs-justified-link-border-color:            #ddd !default;
-$nav-tabs-justified-active-link-border-color:     $body-bg !default;
-
-//== Pills
-$nav-pills-border-radius:                   $border-radius-base !default;
-$nav-pills-active-link-hover-bg:            $component-active-bg !default;
-$nav-pills-active-link-hover-color:         $component-active-color !default;
+$nav-pills-border-radius:                      $base-border-radius !default;
+$nav-pills-active-link-hover-background-color: $base-active-background-color !default;
+$nav-pills-active-link-hover-color:            $base-active-color !default;

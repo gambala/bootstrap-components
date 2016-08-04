@@ -5,7 +5,7 @@
 
 hr {
   border: 0;
-  border-top: 1px solid $hr-border;
-  margin-bottom: $line-height-computed;
-  margin-top:    $line-height-computed;
+  border-top: 1px solid $hr-border-color;
+  margin-bottom: $base-line-height-computed;
+  margin-top:    $base-line-height-computed;
 }

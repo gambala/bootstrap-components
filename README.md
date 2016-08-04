@@ -54,9 +54,9 @@ gem 'bootstrap-components', github: 'gambala/bootstrap-components'
 
 ```
 ...
-$body-bg: #f0f3fa;
-$text-color: #424759;
-$text-muted: #aeb5d1;
+$base-background-color: #f0f3fa;
+$base-color: #424759;
+$base-muted-color: #aeb5d1;
 $legend-color: #868daa;
 ...
 ```

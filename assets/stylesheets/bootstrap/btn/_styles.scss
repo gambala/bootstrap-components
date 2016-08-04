@@ -10,13 +10,13 @@
 // Component
 
 .btn {
-  @include button-size($padding-base-vertical, $padding-base-horizontal, $font-size-base, $line-height-base, $btn-border-radius-base);
+  @include button-size($base-padding-vertical, $base-padding-horizontal, $base-font-size, $base-line-height-unitless, $btn-border-radius);
   background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
   border: 1px solid transparent;
   cursor: pointer;
   display: inline-block;
   font-weight: $btn-font-weight;
-  line-height: $line-height-computed;
+  line-height: $base-line-height-computed;
   margin-bottom: 0; // For input.btn
   text-align: center;
   touch-action: manipulation;
@@ -50,7 +50,7 @@
   &.disabled,
   &[disabled] {
     box-shadow: none;
-    cursor: $cursor-disabled;
+    cursor: $base-disabled-cursor;
     opacity: 0.65;
   }
 }
@@ -60,22 +60,22 @@ a.btn.disabled {
 }
 
 .btn-default {
-  @include button-variant($btn-default-color, $btn-default-bg, $btn-default-border);
+  @include button-variant($btn-default-color, $btn-default-background-color, $btn-default-border-color);
 }
 .btn-primary {
-  @include button-variant($btn-primary-color, $btn-primary-bg, $btn-primary-border);
+  @include button-variant($btn-primary-color, $btn-primary-background-color, $btn-primary-border-color);
 }
 .btn-success {
-  @include button-variant($btn-success-color, $btn-success-bg, $btn-success-border);
+  @include button-variant($btn-success-color, $btn-success-background-color, $btn-success-border-color);
 }
 .btn-info {
-  @include button-variant($btn-info-color, $btn-info-bg, $btn-info-border);
+  @include button-variant($btn-info-color, $btn-info-background-color, $btn-info-border-color);
 }
 .btn-warning {
-  @include button-variant($btn-warning-color, $btn-warning-bg, $btn-warning-border);
+  @include button-variant($btn-warning-color, $btn-warning-background-color, $btn-warning-border-color);
 }
 .btn-danger {
-  @include button-variant($btn-danger-color, $btn-danger-bg, $btn-danger-border);
+  @include button-variant($btn-danger-color, $btn-danger-background-color, $btn-danger-border-color);
 }
 
 .btn-link {
@@ -100,7 +100,7 @@ a.btn.disabled {
   &:hover {
     background-color: transparent;
     color: $link-hover-color;
-    text-decoration: $link-hover-decoration;
+    text-decoration: $link-hover-text-decoration;
   }
 
   &[disabled] {
@@ -113,21 +113,21 @@ a.btn.disabled {
 
 .btn-lg {
   // line-height: ensure even-numbered height of button next to large input
-  @include button-size($padding-large-vertical, $padding-large-horizontal, $font-size-large, $line-height-large, $btn-border-radius-large);
+  @include button-size($base-lg-padding-vertical, $base-lg-padding-horizontal, $base-lg-font-size, $base-lg-line-height-unitless, $btn-lg-border-radius);
 
   .caret {
-    border-width: $caret-width-large $caret-width-large 0;
+    border-width: $caret-lg-width $caret-lg-width 0;
     border-bottom-width: 0;
   }
 }
 
 .btn-sm {
   // line-height: ensure proper height of button next to small input
-  @include button-size($padding-small-vertical, $padding-small-horizontal, $font-size-small, $line-height-small, $btn-border-radius-small);
+  @include button-size($base-sm-padding-vertical, $base-sm-padding-horizontal, $base-sm-font-size, $base-sm-line-height-unitless, $btn-sm-border-radius);
 }
 
 .btn-xs {
-  @include button-size($padding-xs-vertical, $padding-xs-horizontal, $font-size-small, $line-height-small, $btn-border-radius-small);
+  @include button-size($base-xs-padding-vertical, $base-xs-padding-horizontal, $base-sm-font-size, $base-sm-line-height-unitless, $btn-sm-border-radius);
 }
 
 .btn-block {
@@ -152,7 +152,7 @@ input[type="button"] {
 fieldset[disabled] {
   .btn {
     box-shadow: none;
-    cursor: $cursor-disabled;
+    cursor: $base-disabled-cursor;
     opacity: 0.65;
   }
 

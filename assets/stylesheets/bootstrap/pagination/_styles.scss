@@ -10,9 +10,9 @@
 // Component
 
 .pagination {
-  border-radius: $border-radius-base;
+  border-radius: $base-border-radius;
   display: inline-block;
-  margin: $line-height-computed 0;
+  margin: $base-line-height-computed 0;
   padding-left: 0;
 }
 
@@ -23,27 +23,27 @@
     display: inline; // Remove list-style and block-level defaults
     > a,
     > span {
-      background-color: $pagination-bg;
-      border: 1px solid $pagination-border;
+      background-color: $pagination-background-color;
+      border: 1px solid $pagination-border-color;
       color: $pagination-color;
       float: left; // Collapse white-space
-      line-height: $line-height-base;
+      line-height: $base-line-height-unitless;
       margin-left: -1px;
-      padding: $padding-base-vertical $padding-base-horizontal;
+      padding: $base-padding-vertical $base-padding-horizontal;
       position: relative;
       text-decoration: none;
     }
     &:first-child {
       > a,
       > span {
-        @include border-left-radius($border-radius-base);
+        @include border-left-radius($base-border-radius);
         margin-left: 0;
       }
     }
     &:last-child {
       > a,
       > span {
-        @include border-right-radius($border-radius-base);
+        @include border-right-radius($base-border-radius);
       }
     }
   }
@@ -51,8 +51,8 @@
   > li > a,
   > li > span {
     &:hover {
-      background-color: $pagination-hover-bg;
-      border-color: $pagination-hover-border;
+      background-color: $pagination-hover-background-color;
+      border-color: $pagination-hover-border-color;
       color: $pagination-hover-color;
       z-index: 2;
     }
@@ -62,8 +62,8 @@
   > .active > span {
     &,
     &:hover {
-      background-color: $pagination-active-bg;
-      border-color: $pagination-active-border;
+      background-color: $pagination-active-background-color;
+      border-color: $pagination-active-border-color;
       color: $pagination-active-color;
       cursor: default;
       z-index: 3;
@@ -75,10 +75,10 @@
     > span:hover,
     > a,
     > a:hover {
-      background-color: $pagination-disabled-bg;
-      border-color: $pagination-disabled-border;
+      background-color: $pagination-disabled-background-color;
+      border-color: $pagination-disabled-border-color;
       color: $pagination-disabled-color;
-      cursor: $cursor-disabled;
+      cursor: $base-disabled-cursor;
     }
   }
 }
@@ -86,9 +86,17 @@
 // Modificators
 
 .pagination-lg {
-  @include pagination-size($padding-large-vertical, $padding-large-horizontal, $font-size-large, $line-height-large, $border-radius-large);
+  @include pagination-size($base-lg-padding-vertical,
+                           $base-lg-padding-horizontal,
+                           $base-lg-font-size,
+                           $base-lg-line-height-unitless,
+                           $base-lg-border-radius);
 }
 
 .pagination-sm {
-  @include pagination-size($padding-small-vertical, $padding-small-horizontal, $font-size-small, $line-height-small, $border-radius-small);
+  @include pagination-size($base-sm-padding-vertical,
+                           $base-sm-padding-horizontal,
+                           $base-sm-font-size,
+                           $base-sm-line-height-unitless,
+                           $base-sm-border-radius);
 }

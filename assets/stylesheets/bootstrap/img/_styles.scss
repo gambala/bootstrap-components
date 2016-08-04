@@ -20,15 +20,15 @@ img {
 }
 
 .img-rounded {
-  border-radius: $border-radius-large;
+  border-radius: $base-lg-border-radius;
 }
 
 .img-thumbnail {
   @include img-responsive(inline-block);
-  background-color: $thumbnail-bg;
+  background-color: $thumbnail-background-color;
   border-radius: $thumbnail-border-radius;
   border: 1px solid $thumbnail-border;
-  line-height: $line-height-base;
+  line-height: $base-line-height-unitless;
   padding: $thumbnail-padding;
   transition: all .2s ease-in-out;
 }

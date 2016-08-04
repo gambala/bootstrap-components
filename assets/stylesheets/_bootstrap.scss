@@ -5,51 +5,51 @@
  */
 
 // Reset and dependencies
-@import "bootstrap/reset";
-@import "bootstrap/glyphicon";
+@import "bootstrap/reset/_styles";
+@import "bootstrap/glyphicon/_styles";
 
 // Core CSS
-@import "bootstrap/base";
-@import "bootstrap/special";
-@import "bootstrap/abbr";
-@import "bootstrap/link";
-@import "bootstrap/hr";
-@import "bootstrap/list";
-@import "bootstrap/dl";
-@import "bootstrap/address";
-@import "bootstrap/blockquote";
-@import "bootstrap/code";
-@import "bootstrap/grid";
-@import "bootstrap/table";
-@import "bootstrap/caret";
-@import "bootstrap/form";
-@import "bootstrap/btn";
+@import "bootstrap/base/_styles";
+@import "bootstrap/special/_styles";
+@import "bootstrap/abbr/_styles";
+@import "bootstrap/link/_styles";
+@import "bootstrap/hr/_styles";
+@import "bootstrap/list/_styles";
+@import "bootstrap/dl/_styles";
+@import "bootstrap/address/_styles";
+@import "bootstrap/blockquote/_styles";
+@import "bootstrap/code/_styles";
+@import "bootstrap/grid/_styles";
+@import "bootstrap/table/_styles";
+@import "bootstrap/caret/_styles";
+@import "bootstrap/form/_styles";
+@import "bootstrap/btn/_styles";
 
 // Components
-@import "bootstrap/collapse";
-@import "bootstrap/dropdown";
-@import "bootstrap/btn-group";
-@import "bootstrap/input-group";
-@import "bootstrap/nav";
-@import "bootstrap/navbar";
-@import "bootstrap/breadcrumb";
-@import "bootstrap/pagination";
-@import "bootstrap/pager";
-@import "bootstrap/label";
-@import "bootstrap/badge";
-@import "bootstrap/jumbotron";
-@import "bootstrap/thumbnail";
-@import "bootstrap/alert";
-@import "bootstrap/progress";
-@import "bootstrap/media";
-@import "bootstrap/list-group";
-@import "bootstrap/panel";
-@import "bootstrap/embed";
-@import "bootstrap/well";
-@import "bootstrap/close";
+@import "bootstrap/collapse/_styles";
+@import "bootstrap/dropdown/_styles";
+@import "bootstrap/btn-group/_styles";
+@import "bootstrap/input-group/_styles";
+@import "bootstrap/nav/_styles";
+@import "bootstrap/navbar/_styles";
+@import "bootstrap/breadcrumb/_styles";
+@import "bootstrap/pagination/_styles";
+@import "bootstrap/pager/_styles";
+@import "bootstrap/label/_styles";
+@import "bootstrap/badge/_styles";
+@import "bootstrap/jumbotron/_styles";
+@import "bootstrap/thumbnail/_styles";
+@import "bootstrap/alert/_styles";
+@import "bootstrap/progress/_styles";
+@import "bootstrap/media/_styles";
+@import "bootstrap/list-group/_styles";
+@import "bootstrap/panel/_styles";
+@import "bootstrap/embed/_styles";
+@import "bootstrap/well/_styles";
+@import "bootstrap/close/_styles";
 
 // Components w/ JavaScript
-@import "bootstrap/modal";
-@import "bootstrap/tooltip";
-@import "bootstrap/popover";
-@import "bootstrap/carousel";
+@import "bootstrap/modal/_styles";
+@import "bootstrap/tooltip/_styles";
+@import "bootstrap/popover/_styles";
+@import "bootstrap/carousel/_styles";

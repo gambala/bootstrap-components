@@ -9,9 +9,9 @@ legend {
   border-bottom: 1px solid $legend-border-color;
   color: $legend-color;
   display: block;
-  font-size: ($font-size-base * 1.5);
+  font-size: ($base-font-size * 1.5);
   line-height: inherit;
-  margin-bottom: $line-height-computed;
+  margin-bottom: $base-line-height-computed;
   padding: 0;
   width: 100%;
 }
