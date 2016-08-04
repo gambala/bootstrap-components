@@ -46,17 +46,17 @@ input[type="range"] {
   input[type="datetime-local"],
   input[type="month"] {
     &.form-control {
-      line-height: $input-height-base;
+      line-height: $input-height;
     }
 
     &.input-sm,
     .input-group-sm & {
-      line-height: $input-height-small;
+      line-height: $input-sm-height;
     }
 
     &.input-lg,
     .input-group-lg & {
-      line-height: $input-height-large;
+      line-height: $input-lg-height;
     }
   }
 }

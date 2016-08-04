@@ -21,14 +21,14 @@
   .form-control {
     border-radius: $input-border-radius-small;
     font-size: $base-sm-font-size;
-    height: $input-height-small;
+    height: $input-sm-height;
     line-height: $base-sm-line-height-unitless;
     padding: $base-sm-padding-vertical $base-sm-padding-horizontal;
   }
 
   select.form-control {
-    height: $input-height-small;
-    line-height: $input-height-small;
+    height: $input-sm-height;
+    line-height: $input-sm-height;
   }
 
   textarea.form-control,
@@ -38,7 +38,7 @@
 
   .form-control-static {
     font-size: $base-sm-font-size;
-    height: $input-height-small;
+    height: $input-sm-height;
     line-height: $base-sm-line-height-unitless;
     min-height: ($base-line-height-px + $base-sm-font-size);
     padding: ($base-sm-padding-vertical + 1) $base-sm-padding-horizontal;
@@ -49,14 +49,14 @@
   .form-control {
     border-radius: $input-border-radius-large;
     font-size: $base-lg-font-size;
-    height: $input-height-large;
+    height: $input-lg-height;
     line-height: $base-lg-line-height-unitless;
     padding: $base-lg-padding-vertical $base-lg-padding-horizontal;
   }
 
   select.form-control {
-    height: $input-height-large;
-    line-height: $input-height-large;
+    height: $input-lg-height;
+    line-height: $input-lg-height;
   }
 
   textarea.form-control,
@@ -66,7 +66,7 @@
 
   .form-control-static {
     font-size: $base-lg-font-size;
-    height: $input-height-large;
+    height: $input-lg-height;
     line-height: $base-lg-line-height-unitless;
     min-height: ($base-line-height-px + $base-lg-font-size);
     padding: ($base-lg-padding-vertical + 1) $base-lg-padding-horizontal;
@@ -158,35 +158,35 @@ input[type="checkbox"] {
 
   // Ensure icons don't overlap text
   .form-control {
-    padding-right: ($input-height-base * 1.25);
+    padding-right: ($input-height * 1.25);
   }
 }
 // Feedback icon (requires .glyphicon classes)
 .form-control-feedback {
   display: block;
-  height: $input-height-base;
-  line-height: $input-height-base;
+  height: $input-height;
+  line-height: $input-height;
   pointer-events: none;
   position: absolute;
   right: 0;
   text-align: center;
   top: 0;
-  width: $input-height-base;
+  width: $input-height;
   z-index: 2; // Ensure icon is above input groups
 }
 .input-lg + .form-control-feedback,
 .input-group-lg + .form-control-feedback,
 .form-group-lg .form-control + .form-control-feedback {
-  height: $input-height-large;
-  line-height: $input-height-large;
-  width: $input-height-large;
+  height: $input-lg-height;
+  line-height: $input-lg-height;
+  width: $input-lg-height;
 }
 .input-sm + .form-control-feedback,
 .input-group-sm + .form-control-feedback,
 .form-group-sm .form-control + .form-control-feedback {
-  height: $input-height-small;
-  line-height: $input-height-small;
-  width: $input-height-small;
+  height: $input-sm-height;
+  line-height: $input-sm-height;
+  width: $input-sm-height;
 }
 
 .has-success {

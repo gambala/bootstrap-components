@@ -16,7 +16,7 @@
   color: $input-color;
   display: block;
   font-size: $base-font-size;
-  height: $input-height-base; // Make inputs at least the height of their button counterpart (base line-height + padding + border)
+  height: $input-height; // Make inputs at least the height of their button counterpart (base line-height + padding + border)
   line-height: $base-line-height-px;
   padding: $base-padding-vertical $base-padding-horizontal;
   transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
@@ -73,8 +73,8 @@ textarea.form-control {
   }
 }
 
-@include input-size('.input-sm', $input-height-small, $base-sm-padding-vertical, $base-sm-padding-horizontal, $base-sm-font-size, $base-sm-line-height-unitless, $input-border-radius-small);
-@include input-size('.input-lg', $input-height-large, $base-lg-padding-vertical, $base-lg-padding-horizontal, $base-lg-font-size, $base-lg-line-height-unitless, $input-border-radius-large);
+@include input-size('.input-sm', $input-sm-height, $base-sm-padding-vertical, $base-sm-padding-horizontal, $base-sm-font-size, $base-sm-line-height-unitless, $input-border-radius-small);
+@include input-size('.input-lg', $input-lg-height, $base-lg-padding-vertical, $base-lg-padding-horizontal, $base-lg-font-size, $base-lg-line-height-unitless, $input-border-radius-large);
 
 .form-control.text-center {
   text-align: center
