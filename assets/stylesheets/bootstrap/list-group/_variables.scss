@@ -11,8 +11,8 @@ $list-group-active-border-color:        $list-group-active-background-color !def
 $list-group-active-color:               $base-active-color !default;
 $list-group-active-item-text-color:     lighten($list-group-active-background-color, 40%) !default;
 
-$list-group-disabled-background-color:  $gray-lighter !default;
-$list-group-disabled-color:             $gray-light !default;
+$list-group-disabled-background-color:  $base-light-color !default;
+$list-group-disabled-color:             $base-muted-color !default;
 $list-group-disabled-item-text-color:   $list-group-disabled-color !default;
 
 $list-group-link-color:                 #555 !default;

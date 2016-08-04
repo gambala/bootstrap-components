@@ -37,9 +37,9 @@ $navbar-default-toggle-hover-background-color:    #ddd !default;
 
 $navbar-inverse-background-color:                 #222 !default;
 $navbar-inverse-border-color:                     darken($navbar-inverse-background-color, 10%) !default;
-$navbar-inverse-color:                            lighten($gray-light, 15%) !default;
+$navbar-inverse-color:                            lighten($base-muted-color, 15%) !default;
 
-$navbar-inverse-link-color:                       lighten($gray-light, 15%) !default;
+$navbar-inverse-link-color:                       lighten($base-muted-color, 15%) !default;
 $navbar-inverse-link-hover-background-color:      transparent !default;
 $navbar-inverse-link-hover-color:                 #fff !default;
 $navbar-inverse-link-active-background-color:     darken($navbar-inverse-background-color, 10%) !default;

@@ -7,13 +7,13 @@
 $input-background-color:   #fff !default;
 $input-border-color:       #ccc !default;
 $input-border-radius:      $base-border-radius !default;
-$input-color:              $gray !default;
+$input-color:              #555 !default;
 $input-height:             ($base-line-height-computed + ($base-padding-vertical * 2) + 2) !default;
 
 $input-placeholder-color:     #999 !default;
 
 $input-focus-border-color:         #66afe9 !default;
-$input-disabled-background-color:  $gray-lighter !default;
+$input-disabled-background-color:  $base-light-color !default;
 
 $input-lg-border-radius:     $base-lg-border-radius !default;
 $input-lg-height:            (ceil($base-lg-font-size * $base-lg-line-height-unitless) + ($base-lg-padding-vertical * 2) + 2) !default;
