@@ -7,7 +7,7 @@
 // Component
 
 table {
-  background-color: $table-bg;
+  background-color: $table-background-color;
 }
 
 .table {
@@ -125,17 +125,17 @@ table {
 
 .table-striped {
   > tbody > tr:nth-of-type(odd) {
-    background-color: $table-bg-accent;
+    background-color: $table-background-color-accent;
   }
 }
 
 .table-hover {
   > tbody > tr:hover {
-    background-color: $table-bg-hover;
+    background-color: $table-background-color-hover;
   }
 }
 
-@include table-row-variant('active', $table-bg-active);
+@include table-row-variant('active', $table-background-color-active);
 @include table-row-variant('success', $state-success-bg);
 @include table-row-variant('info', $state-info-bg);
 @include table-row-variant('warning', $state-warning-bg);
