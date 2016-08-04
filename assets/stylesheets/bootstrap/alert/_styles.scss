@@ -7,7 +7,7 @@
 .alert {
   border-radius: $alert-border-radius;
   border: 1px solid transparent;
-  margin-bottom: $line-height-computed;
+  margin-bottom: $base-line-height-px;
   padding: $alert-padding;
 }
 

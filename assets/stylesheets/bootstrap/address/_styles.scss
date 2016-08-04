@@ -4,6 +4,6 @@
 
 address {
   font-style: normal;
-  line-height: $line-height-base;
-  margin-bottom: $line-height-computed;
+  line-height: $base-line-height-unitless;
+  margin-bottom: $base-line-height-px;
 }

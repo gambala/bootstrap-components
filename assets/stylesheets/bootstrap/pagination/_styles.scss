@@ -12,7 +12,7 @@
 .pagination {
   border-radius: $base-border-radius;
   display: inline-block;
-  margin: $line-height-computed 0;
+  margin: $base-line-height-px 0;
   padding-left: 0;
 }
 
@@ -27,7 +27,7 @@
       border: 1px solid $pagination-border;
       color: $pagination-color;
       float: left; // Collapse white-space
-      line-height: $line-height-base;
+      line-height: $base-line-height-unitless;
       margin-left: -1px;
       padding: $padding-base-vertical $padding-base-horizontal;
       position: relative;

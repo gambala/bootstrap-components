@@ -10,8 +10,8 @@
   border-radius: $thumbnail-border-radius;
   border: 1px solid $thumbnail-border;
   display: block;
-  line-height: $line-height-base;
-  margin-bottom: $line-height-computed;
+  line-height: $base-line-height-unitless;
+  margin-bottom: $base-line-height-px;
   padding: $thumbnail-padding;
   transition: border .2s ease-in-out;
 }

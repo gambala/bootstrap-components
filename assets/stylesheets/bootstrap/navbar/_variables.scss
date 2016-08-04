@@ -4,10 +4,10 @@
 @import "bootstrap/base/line-height/variables";
 
 $navbar-height:                    50px !default;
-$navbar-margin-bottom:             $line-height-computed !default;
+$navbar-margin-bottom:             $base-line-height-px !default;
 $navbar-border-radius:             $base-border-radius !default;
 $navbar-padding-horizontal:        floor(($grid-gutter-width / 2)) !default;
-$navbar-padding-vertical:          (($navbar-height - $line-height-computed) / 2) !default;
+$navbar-padding-vertical:          (($navbar-height - $base-line-height-px) / 2) !default;
 $navbar-collapse-max-height:       340px !default;
 
 $navbar-z-index:            1000 !default;

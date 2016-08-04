@@ -294,7 +294,7 @@ body {
   color: $text-color;
   font-family: $font-family-base;
   font-size: $base-font-size;
-  line-height: $line-height-base;
+  line-height: $base-line-height-unitless;
 }
 
 // IE10 in Windows (Phone) 8

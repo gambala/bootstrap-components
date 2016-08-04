@@ -1,8 +1,8 @@
-@function rh($height: 1, $qwazi: true, $line-height-base: $line-height-computed) {
+@function rh($height: 1, $qwazi: true, $base-line-height-unitless: $base-line-height-px) {
   @if (unitless($height)) {
-    @return $height * $line-height-base;
+    @return $height * $base-line-height-unitless;
   } @else {
-    $line-height: if($qwazi, $line-height-base/2, $line-height-base);
+    $line-height: if($qwazi, $base-line-height-unitless/2, $base-line-height-unitless);
     @return ceil($height / $line-height) * $line-height;
   }
 }

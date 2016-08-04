@@ -77,7 +77,7 @@
     > a {
       border-radius: $base-border-radius $base-border-radius 0 0;
       border: 1px solid transparent;
-      line-height: $line-height-base;
+      line-height: $base-line-height-unitless;
       margin-right: 2px;
       &:hover {
         border-color: $nav-tabs-link-hover-border-color $nav-tabs-link-hover-border-color $nav-tabs-border-color;

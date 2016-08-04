@@ -8,7 +8,7 @@
 .pager {
   @include clearfix;
   list-style: none;
-  margin: $line-height-computed 0;
+  margin: $base-line-height-px 0;
   padding-left: 0;
   text-align: center;
 }

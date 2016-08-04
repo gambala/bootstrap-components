@@ -40,7 +40,7 @@
     font-size: $base-sm-font-size;
     height: $input-height-small;
     line-height: $line-height-small;
-    min-height: ($line-height-computed + $base-sm-font-size);
+    min-height: ($base-line-height-px + $base-sm-font-size);
     padding: ($padding-small-vertical + 1) $padding-small-horizontal;
   }
 }
@@ -68,7 +68,7 @@
     font-size: $base-lg-font-size;
     height: $input-height-large;
     line-height: $line-height-large;
-    min-height: ($line-height-computed + $base-lg-font-size);
+    min-height: ($base-line-height-px + $base-lg-font-size);
     padding: ($padding-large-vertical + 1) $padding-large-horizontal;
   }
 }
@@ -84,7 +84,7 @@
     cursor: pointer;
     font-weight: normal;
     margin-bottom: 0;
-    min-height: $line-height-computed;
+    min-height: $base-line-height-px;
     padding-left: 20px;
   }
 }
@@ -203,7 +203,7 @@ input[type="checkbox"] {
 .has-feedback label {
 
   & ~ .form-control-feedback {
-    top: ($line-height-computed + 5); // Height of the `label` and its margin
+    top: ($base-line-height-px + 5); // Height of the `label` and its margin
   }
   &.sr-only ~ .form-control-feedback {
     top: 0;

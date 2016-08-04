@@ -10,7 +10,7 @@ output {
   color: $input-color;
   display: block;
   font-size: $base-font-size;
-  line-height: $line-height-base;
+  line-height: $base-line-height-unitless;
   padding-top: ($padding-base-vertical + 1);
 }
 
