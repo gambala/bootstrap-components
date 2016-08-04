@@ -9,7 +9,7 @@
 // Component
 
 .panel {
-  background-color: $panel-bg;
+  background-color: $panel-background-color;
   border-radius: $panel-border-radius;
   border: 1px solid transparent;
   box-shadow: 0 1px 1px rgba(0,0,0,.05);
@@ -50,7 +50,7 @@
 
 .panel-footer {
   @include border-bottom-radius(($panel-border-radius - 1));
-  background-color: $panel-footer-bg;
+  background-color: $panel-footer-background-color;
   border-top: 1px solid $panel-inner-border;
   padding: $panel-footer-padding;
 }
