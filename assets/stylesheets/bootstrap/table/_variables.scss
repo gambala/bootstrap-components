@@ -2,8 +2,8 @@ $table-cell-padding:            8px !default;
 $table-condensed-cell-padding:  5px !default;
 
 $table-background-color:                      transparent !default;
-$table-background-color-accent:               #f9f9f9 !default;
-$table-background-color-hover:                #f5f5f5 !default;
-$table-background-color-active:               $table-background-color-hover !default;
+$table-accent-background-color:               #f9f9f9 !default;
+$table-hover-background-color:                #f5f5f5 !default;
+$table-active-background-color:               $table-hover-background-color !default;
 
 $table-border-color:            #ddd !default;

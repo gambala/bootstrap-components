@@ -125,17 +125,17 @@ table {
 
 .table-striped {
   > tbody > tr:nth-of-type(odd) {
-    background-color: $table-background-color-accent;
+    background-color: $table-accent-background-color;
   }
 }
 
 .table-hover {
   > tbody > tr:hover {
-    background-color: $table-background-color-hover;
+    background-color: $table-hover-background-color;
   }
 }
 
-@include table-row-variant('active', $table-background-color-active);
+@include table-row-variant('active', $table-active-background-color);
 @include table-row-variant('success', $state-success-bg);
 @include table-row-variant('info', $state-info-bg);
 @include table-row-variant('warning', $state-warning-bg);
