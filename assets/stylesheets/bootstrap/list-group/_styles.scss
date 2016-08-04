@@ -17,8 +17,8 @@
 
 // Use on `li`s or `div`s within the `.list-group` parent.
 .list-group-item {
-  background-color: $list-group-bg;
-  border: 1px solid $list-group-border;
+  background-color: $list-group-background-color;
+  border: 1px solid $list-group-border-color;
   display: block;
   // Place the border on the list items and negative margin up for better styling
   margin-bottom: -1px;
@@ -42,7 +42,7 @@ button.list-group-item {
   color: $list-group-link-color;
 
   .list-group-item-heading {
-    color: $list-group-link-heading-color;
+    color: $list-group-link-item-heading-color;
   }
 
   &:hover {
@@ -69,14 +69,14 @@ button.list-group-item {
       color: inherit;
     }
     .list-group-item-text {
-      color: $list-group-disabled-text-color;
+      color: $list-group-disabled-item-text-color;
     }
   }
 
   &.active,
   &.active:hover {
     background-color: $list-group-active-background-color;
-    border-color: $list-group-active-border;
+    border-color: $list-group-active-border-color;
     color: $list-group-active-color;
     z-index: 2; // Place active items above their siblings for proper border styling
 
@@ -87,7 +87,7 @@ button.list-group-item {
       color: inherit;
     }
     .list-group-item-text {
-      color: $list-group-active-text-color;
+      color: $list-group-active-item-text-color;
     }
   }
 }
