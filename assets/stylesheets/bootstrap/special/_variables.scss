@@ -1,14 +1,17 @@
 @import "bootstrap/base/color/variables";
+@import "bootstrap/base/font-family/variables";
 @import "bootstrap/base/font-size/variables";
 
-$font-size-h1:            floor(($base-font-size * 2.6)) !default; // ~36px
-$font-size-h2:            floor(($base-font-size * 2.15)) !default; // ~30px
-$font-size-h3:            ceil(($base-font-size * 1.7)) !default; // ~24px
-$font-size-h4:            ceil(($base-font-size * 1.25)) !default; // ~18px
-$font-size-h5:            $base-font-size !default;
-$font-size-h6:            ceil(($base-font-size * 0.85)) !default; // ~12px
+$h1-font-size:            floor(($base-font-size * 2.6)) !default; // ~36px
+$h2-font-size:            floor(($base-font-size * 2.15)) !default; // ~30px
+$h3-font-size:            ceil(($base-font-size * 1.7)) !default; // ~24px
+$h4-font-size:            ceil(($base-font-size * 1.25)) !default; // ~18px
+$h5-font-size:            $base-font-size !default;
+$h6-font-size:            ceil(($base-font-size * 0.85)) !default; // ~12px
 
-$headings-font-weight:    500 !default;
-$headings-line-height:    1.1 !default;
-$headings-color:          inherit !default;
-$headings-small-color:    $gray-light !default;
+$headings-color:               inherit !default;
+$headings-font-family-custom:  $font-family-base-custom !default;
+$headings-font-family:         inherit !default;
+$headings-font-weight:         500 !default;
+$headings-line-height:         1.1 !default;
+$headings-small-color:         $gray-light !default;
