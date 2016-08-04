@@ -23,8 +23,8 @@
     display: inline; // Remove list-style and block-level defaults
     > a,
     > span {
-      background-color: $pagination-bg;
-      border: 1px solid $pagination-border;
+      background-color: $pagination-background-color;
+      border: 1px solid $pagination-border-color;
       color: $pagination-color;
       float: left; // Collapse white-space
       line-height: $base-line-height-unitless;
