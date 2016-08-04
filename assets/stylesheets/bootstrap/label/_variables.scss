@@ -1,11 +1,11 @@
 @import "bootstrap/base/color/variables";
 
 $label-default-background-color:       $gray-light !default;
-$label-primary-background-color:       $brand-primary !default;
-$label-success-background-color:       $brand-success !default;
-$label-info-background-color:          $brand-info !default;
-$label-warning-background-color:       $brand-warning !default;
-$label-danger-background-color:        $brand-danger !default;
+$label-primary-background-color:       $base-primary-background-color !default;
+$label-success-background-color:       $base-success-background-color !default;
+$label-info-background-color:          $base-info-background-color !default;
+$label-warning-background-color:       $base-warning-background-color !default;
+$label-danger-background-color:        $base-danger-background-color !default;
 
 $label-color:                #fff !default;
 $label-link-hover-color:     #fff !default;

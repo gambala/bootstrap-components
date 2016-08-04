@@ -1,6 +1,6 @@
 @import "bootstrap/base/color/variables";
 
-$link-color:            $brand-primary !default;
+$link-color:            $base-primary-background-color !default;
 
 $link-hover-color:             darken($link-color, 15%) !default;
 $link-hover-text-decoration:   underline !default;

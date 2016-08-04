@@ -20,13 +20,13 @@ a.bg-primary:hover {
   color: #fff;
 }
 
-@include bg-variant('.bg-primary', $brand-primary);
+@include bg-variant('.bg-primary', $base-primary-background-color);
 @include bg-variant('.bg-success', $state-success-background-color);
 @include bg-variant('.bg-info', $state-info-background-color);
 @include bg-variant('.bg-warning', $state-warning-background-color);
 @include bg-variant('.bg-danger', $state-danger-background-color);
 
-@include text-emphasis-variant('.text-primary', $brand-primary);
+@include text-emphasis-variant('.text-primary', $base-primary-background-color);
 @include text-emphasis-variant('.text-success', $state-success-color);
 @include text-emphasis-variant('.text-info', $state-info-color);
 @include text-emphasis-variant('.text-warning', $state-warning-color);
