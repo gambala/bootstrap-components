@@ -8,7 +8,7 @@
   background-color: $breadcrumb-background-color;
   border-radius: $base-border-radius;
   list-style: none;
-  margin-bottom: $base-line-height-px;
+  margin-bottom: $base-line-height-computed;
   padding: $breadcrumb-padding-vertical $breadcrumb-padding-horizontal;
 }
 

@@ -11,7 +11,7 @@ legend {
   display: block;
   font-size: ($base-font-size * 1.5);
   line-height: inherit;
-  margin-bottom: $base-line-height-px;
+  margin-bottom: $base-line-height-computed;
   padding: 0;
   width: 100%;
 }

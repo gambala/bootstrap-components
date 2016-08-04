@@ -1,4 +1,4 @@
-@function rh($height: 1, $qwazi: true, $base-line-height-unitless: $base-line-height-px) {
+@function rh($height: 1, $qwazi: true, $base-line-height-unitless: $base-line-height-computed) {
   @if (unitless($height)) {
     @return $height * $base-line-height-unitless;
   } @else {

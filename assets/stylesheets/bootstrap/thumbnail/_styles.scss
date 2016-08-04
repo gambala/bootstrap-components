@@ -11,7 +11,7 @@
   border: 1px solid $thumbnail-border;
   display: block;
   line-height: $base-line-height-unitless;
-  margin-bottom: $base-line-height-px;
+  margin-bottom: $base-line-height-computed;
   padding: $thumbnail-padding;
   transition: border .2s ease-in-out;
 }

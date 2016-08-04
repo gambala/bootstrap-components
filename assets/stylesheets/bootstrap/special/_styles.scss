@@ -32,8 +32,8 @@ h6, .h6 {
 h1, .h1,
 h2, .h2,
 h3, .h3 {
-  margin-bottom: ($base-line-height-px / 2);
-  margin-top: $base-line-height-px;
+  margin-bottom: ($base-line-height-computed / 2);
+  margin-top: $base-line-height-computed;
 
   small,
   .small {
@@ -43,8 +43,8 @@ h3, .h3 {
 h4, .h4,
 h5, .h5,
 h6, .h6 {
-  margin-bottom: ($base-line-height-px / 2);
-  margin-top: ($base-line-height-px / 2);
+  margin-bottom: ($base-line-height-computed / 2);
+  margin-top: ($base-line-height-computed / 2);
 
   small,
   .small {
@@ -64,14 +64,14 @@ h6, .h6 { font-size: $h6-font-size; }
 // -------------------------
 
 p {
-  margin: 0 0 ($base-line-height-px / 2);
+  margin: 0 0 ($base-line-height-computed / 2);
 }
 
 .lead {
   font-size: floor(($base-font-size * 1.15));
   font-weight: 300;
   line-height: 1.4;
-  margin-bottom: $base-line-height-px;
+  margin-bottom: $base-line-height-computed;
 
   @media (min-width: $screen-sm-min) {
     font-size: ($base-font-size * 1.5);

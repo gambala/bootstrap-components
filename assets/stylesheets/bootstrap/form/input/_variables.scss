@@ -8,7 +8,7 @@ $input-background-color:   #fff !default;
 $input-border-color:       #ccc !default;
 $input-border-radius:      $base-border-radius !default;
 $input-color:              $gray !default;
-$input-height:             ($base-line-height-px + ($base-padding-vertical * 2) + 2) !default;
+$input-height:             ($base-line-height-computed + ($base-padding-vertical * 2) + 2) !default;
 
 $input-placeholder-color:     #999 !default;
 

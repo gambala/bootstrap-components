@@ -5,9 +5,9 @@
 
 $navbar-border-radius:           $base-border-radius !default;
 $navbar-height:                  50px !default;
-$navbar-margin-bottom:           $base-line-height-px !default;
+$navbar-margin-bottom:           $base-line-height-computed !default;
 $navbar-padding-horizontal:      floor(($grid-gutter-width / 2)) !default;
-$navbar-padding-vertical:        (($navbar-height - $base-line-height-px) / 2) !default;
+$navbar-padding-vertical:        (($navbar-height - $base-line-height-computed) / 2) !default;
 $navbar-z-index:                 1000 !default;
 
 $navbar-collapse-max-height:       340px !default;

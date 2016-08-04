@@ -21,7 +21,7 @@
   // and other content below items
   .radio,
   .checkbox {
-    min-height: ($base-line-height-px + ($base-padding-vertical + 1));
+    min-height: ($base-line-height-computed + ($base-padding-vertical + 1));
   }
 
   // Make form groups behave like rows

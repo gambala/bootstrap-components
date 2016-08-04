@@ -86,7 +86,7 @@
   float: left;
   font-size: $base-lg-font-size;
   height: $navbar-height;
-  line-height: $base-line-height-px;
+  line-height: $base-line-height-computed;
   padding: $navbar-padding-vertical $navbar-padding-horizontal;
 
   &:hover {
@@ -147,7 +147,7 @@
 
 // Add a class to make any element properly align itself vertically within the navbars.
 .navbar-text {
-  @include navbar-vertical-align($base-line-height-px);
+  @include navbar-vertical-align($base-line-height-computed);
 
   @media (min-width: $navbar-breakpoint-exact) {
     float: left;
@@ -224,7 +224,7 @@
   margin: ($navbar-padding-vertical / 2) (-$navbar-padding-horizontal);
 
   > li > a {
-    line-height: $base-line-height-px;
+    line-height: $base-line-height-computed;
     padding-bottom: 10px;
     padding-top:    10px;
   }
@@ -243,7 +243,7 @@
         padding: 5px 15px 5px 25px;
       }
       > li > a {
-        line-height: $base-line-height-px;
+        line-height: $base-line-height-computed;
         &:hover {
           background-image: none;
         }

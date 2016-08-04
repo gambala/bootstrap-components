@@ -13,7 +13,7 @@
   border-radius: $panel-border-radius;
   border: 1px solid transparent;
   box-shadow: 0 1px 1px rgba(0,0,0,.05);
-  margin-bottom: $base-line-height-px;
+  margin-bottom: $base-line-height-computed;
 }
 
 // Elements
@@ -251,7 +251,7 @@
 
 // Collapsable panels (aka, accordion)
 .panel-group {
-  margin-bottom: $base-line-height-px;
+  margin-bottom: $base-line-height-computed;
 
   .panel {
     border-radius: $panel-border-radius;

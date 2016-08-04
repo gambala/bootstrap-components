@@ -16,7 +16,7 @@
   cursor: pointer;
   display: inline-block;
   font-weight: $btn-font-weight;
-  line-height: $base-line-height-px;
+  line-height: $base-line-height-computed;
   margin-bottom: 0; // For input.btn
   text-align: center;
   touch-action: manipulation;
