@@ -1,18 +1,18 @@
 @import "bootstrap/base/color/variables";
 @import "bootstrap/link/variables";
 
-$pagination-color:                     $link-color !default;
-$pagination-background-color:                        #fff !default;
-$pagination-border-color:                    #ddd !default;
+$pagination-background-color:             #fff !default;
+$pagination-border-color:                 #ddd !default;
+$pagination-color:                        $link-color !default;
 
-$pagination-hover-color:               $link-hover-color !default;
-$pagination-hover-background-color:                  $gray-lighter !default;
-$pagination-hover-border-color:              #ddd !default;
+$pagination-hover-background-color:       $gray-lighter !default;
+$pagination-hover-border-color:           #ddd !default;
+$pagination-hover-color:                  $link-hover-color !default;
 
-$pagination-active-color:              #fff !default;
-$pagination-active-background-color:                 $brand-primary !default;
-$pagination-active-border-color:             $brand-primary !default;
+$pagination-active-background-color:      $brand-primary !default;
+$pagination-active-border-color:          $brand-primary !default;
+$pagination-active-color:                 #fff !default;
 
-$pagination-disabled-color:            $gray-light !default;
-$pagination-disabled-background-color:               #fff !default;
-$pagination-disabled-border-color:           #ddd !default;
+$pagination-disabled-background-color:    #fff !default;
+$pagination-disabled-border-color:        #ddd !default;
+$pagination-disabled-color:               $gray-light !default;
