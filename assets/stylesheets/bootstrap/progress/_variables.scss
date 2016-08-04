@@ -1,12 +1,13 @@
 @import "bootstrap/base/border-radius/variables";
 @import "bootstrap/base/color/variables";
 
-$progress-bg:                 #f5f5f5 !default;
-$progress-bar-color:          #fff !default;
-$progress-border-radius:      $base-border-radius !default;
+$progress-background-color:    #f5f5f5 !default;
+$progress-border-radius:       $base-border-radius !default;
 
-$progress-bar-bg:             $brand-primary !default;
-$progress-bar-success-bg:     $brand-success !default;
-$progress-bar-warning-bg:     $brand-warning !default;
-$progress-bar-danger-bg:      $brand-danger !default;
-$progress-bar-info-bg:        $brand-info !default;
+$progress-bar-background-color:      $brand-primary !default;
+$progress-bar-color:                 #fff !default;
+
+$progress-bar-success-background-color:     $brand-success !default;
+$progress-bar-info-background-color:        $brand-info !default;
+$progress-bar-warning-background-color:     $brand-warning !default;
+$progress-bar-danger-background-color:      $brand-danger !default;
