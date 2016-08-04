@@ -100,7 +100,7 @@ a.btn.disabled {
   &:hover {
     background-color: transparent;
     color: $link-hover-color;
-    text-decoration: $link-hover-decoration;
+    text-decoration: $link-hover-text-decoration;
   }
 
   &[disabled] {
