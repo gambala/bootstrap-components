@@ -55,7 +55,7 @@
 }
 
 .text-muted {
-  color: $text-muted-color;
+  color: $base-muted-color;
 }
 
 // Text modificators
@@ -291,7 +291,7 @@ html {
 
 body {
   background-color: $body-background-color;
-  color: $text-color;
+  color: $base-color;
   font-family: $base-font-family;
   font-size: $base-font-size;
   line-height: $base-line-height-unitless;
