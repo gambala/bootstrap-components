@@ -1,8 +1,10 @@
 @import "bootstrap/base/color/variables";
 
-$breadcrumb-padding-vertical:   8px !default;
-$breadcrumb-padding-horizontal: 15px !default;
-$breadcrumb-bg:                 #f5f5f5 !default;
+$breadcrumb-background-color:   #f5f5f5 !default;
 $breadcrumb-color:              #ccc !default;
-$breadcrumb-active-color:       $gray-light !default;
+$breadcrumb-padding-horizontal: 15px !default;
+$breadcrumb-padding-vertical:   8px !default;
+
 $breadcrumb-separator:          "/" !default;
+
+$breadcrumb-active-color:       $gray-light !default;
