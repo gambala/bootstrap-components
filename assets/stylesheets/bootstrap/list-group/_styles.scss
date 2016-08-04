@@ -46,7 +46,7 @@ button.list-group-item {
   }
 
   &:hover {
-    background-color: $list-group-hover-bg;
+    background-color: $list-group-hover-background-color;
     color: $list-group-link-hover-color;
     text-decoration: none;
   }
@@ -60,7 +60,7 @@ button.list-group-item {
 .list-group-item {
   &.disabled,
   &.disabled:hover {
-    background-color: $list-group-disabled-bg;
+    background-color: $list-group-disabled-background-color;
     color: $list-group-disabled-color;
     cursor: $base-disabled-cursor;
 
@@ -75,7 +75,7 @@ button.list-group-item {
 
   &.active,
   &.active:hover {
-    background-color: $list-group-active-bg;
+    background-color: $list-group-active-background-color;
     border-color: $list-group-active-border;
     color: $list-group-active-color;
     z-index: 2; // Place active items above their siblings for proper border styling

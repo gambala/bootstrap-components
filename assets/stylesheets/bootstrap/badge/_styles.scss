@@ -48,7 +48,7 @@ a.badge {
 
   .list-group-item.active > &,
   .nav-pills > .active > a > & {
-    background-color: $badge-active-bg;
+    background-color: $badge-active-background-color;
     color: $badge-active-color;
   }
 

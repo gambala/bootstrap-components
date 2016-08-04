@@ -53,7 +53,7 @@
 
 .dropdown-menu > li > a {
   &:hover {
-    background-color: $dropdown-link-hover-bg;
+    background-color: $dropdown-link-hover-background-color;
     color: $dropdown-link-hover-color;
     text-decoration: none;
   }
@@ -62,7 +62,7 @@
 .dropdown-menu > .active > a {
   &,
   &:hover {
-    background-color: $dropdown-link-active-bg;
+    background-color: $dropdown-link-active-background-color;
     color: $dropdown-link-active-color;
     text-decoration: none;
   }
