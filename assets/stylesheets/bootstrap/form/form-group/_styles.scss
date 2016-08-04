@@ -128,7 +128,7 @@ input[type="checkbox"] {
   &[disabled],
   &.disabled,
   fieldset[disabled] & {
-    cursor: $cursor-disabled;
+    cursor: $base-disabled-cursor;
   }
 }
 // These classes are used directly on <label>s
@@ -136,7 +136,7 @@ input[type="checkbox"] {
 .checkbox-inline {
   &.disabled,
   fieldset[disabled] & {
-    cursor: $cursor-disabled;
+    cursor: $base-disabled-cursor;
   }
 }
 // These classes are used on elements with <label> descendants
@@ -145,7 +145,7 @@ input[type="checkbox"] {
   &.disabled,
   fieldset[disabled] & {
     label {
-      cursor: $cursor-disabled;
+      cursor: $base-disabled-cursor;
     }
   }
 }

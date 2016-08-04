@@ -40,7 +40,7 @@
       &:hover {
         background-color: transparent;
         color: $nav-disabled-link-hover-color;
-        cursor: $cursor-disabled;
+        cursor: $base-disabled-cursor;
         text-decoration: none;
       }
     }
