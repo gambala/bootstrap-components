@@ -51,8 +51,8 @@
   > li > a,
   > li > span {
     &:hover {
-      background-color: $pagination-hover-bg;
-      border-color: $pagination-hover-border;
+      background-color: $pagination-hover-background-color;
+      border-color: $pagination-hover-border-color;
       color: $pagination-hover-color;
       z-index: 2;
     }
@@ -62,8 +62,8 @@
   > .active > span {
     &,
     &:hover {
-      background-color: $pagination-active-bg;
-      border-color: $pagination-active-border;
+      background-color: $pagination-active-background-color;
+      border-color: $pagination-active-border-color;
       color: $pagination-active-color;
       cursor: default;
       z-index: 3;
@@ -75,8 +75,8 @@
     > span:hover,
     > a,
     > a:hover {
-      background-color: $pagination-disabled-bg;
-      border-color: $pagination-disabled-border;
+      background-color: $pagination-disabled-background-color;
+      border-color: $pagination-disabled-border-color;
       color: $pagination-disabled-color;
       cursor: $cursor-disabled;
     }
