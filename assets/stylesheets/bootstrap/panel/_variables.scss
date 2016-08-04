@@ -18,18 +18,18 @@ $panel-primary-border-color:               $base-primary-background-color !defau
 $panel-primary-color:                      #fff !default;
 $panel-primary-heading-background-color:   $base-primary-background-color !default;
 
-$panel-success-border-color:               $state-success-border-color !default;
-$panel-success-color:                      $state-success-color !default;
-$panel-success-heading-background-color:   $state-success-background-color !default;
+$panel-success-border-color:               $base-success-muted-border-color !default;
+$panel-success-color:                      $base-success-muted-color !default;
+$panel-success-heading-background-color:   $base-success-muted-background-color !default;
 
-$panel-info-border-color:                  $state-info-border-color !default;
-$panel-info-color:                         $state-info-color !default;
-$panel-info-heading-background-color:      $state-info-background-color !default;
+$panel-info-border-color:                  $base-info-muted-border-color !default;
+$panel-info-color:                         $base-info-muted-color !default;
+$panel-info-heading-background-color:      $base-info-muted-background-color !default;
 
-$panel-warning-border-color:               $state-warning-border-color !default;
-$panel-warning-color:                      $state-warning-color !default;
-$panel-warning-heading-background-color:   $state-warning-background-color !default;
+$panel-warning-border-color:               $base-warning-muted-border-color !default;
+$panel-warning-color:                      $base-warning-muted-color !default;
+$panel-warning-heading-background-color:   $base-warning-muted-background-color !default;
 
-$panel-danger-border-color:                $state-danger-border-color !default;
-$panel-danger-color:                       $state-danger-color !default;
-$panel-danger-heading-background-color:    $state-danger-background-color !default;
+$panel-danger-border-color:                $base-danger-muted-border-color !default;
+$panel-danger-color:                       $base-danger-muted-color !default;
+$panel-danger-heading-background-color:    $base-danger-muted-background-color !default;

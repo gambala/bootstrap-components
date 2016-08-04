@@ -5,25 +5,23 @@ $gray:                   lighten($gray-base, 33.5%) !default; // #555
 $gray-light:             lighten($gray-base, 46.7%) !default; // #777
 $gray-lighter:           lighten($gray-base, 93.5%) !default; // #eee
 
-//== Form states and alerts
-
-$state-success-background-color:  #dff0d8 !default;
-$state-success-border-color:      darken(adjust-hue($state-success-background-color, -10), 5%) !default;
-$state-success-color:             #3c763d !default;
-
-$state-info-background-color:     #d9edf7 !default;
-$state-info-border-color:         darken(adjust-hue($state-info-background-color, -10), 7%) !default;
-$state-info-color:                #31708f !default;
-
-$state-warning-background-color:  #fcf8e3 !default;
-$state-warning-border-color:      darken(adjust-hue($state-warning-background-color, -10), 5%) !default;
-$state-warning-color:             #8a6d3b !default;
-
-$state-danger-background-color:   #f2dede !default;
-$state-danger-border-color:       darken(adjust-hue($state-danger-background-color, -10), 5%) !default;
-$state-danger-color:              #a94442 !default;
 
 
+$base-success-muted-background-color:  #dff0d8 !default;
+$base-success-muted-border-color:      darken(adjust-hue($base-success-muted-background-color, -10), 5%) !default;
+$base-success-muted-color:             #3c763d !default;
+
+$base-info-muted-background-color:     #d9edf7 !default;
+$base-info-muted-border-color:         darken(adjust-hue($base-info-muted-background-color, -10), 7%) !default;
+$base-info-muted-color:                #31708f !default;
+
+$base-warning-muted-background-color:  #fcf8e3 !default;
+$base-warning-muted-border-color:      darken(adjust-hue($base-warning-muted-background-color, -10), 5%) !default;
+$base-warning-muted-color:             #8a6d3b !default;
+
+$base-danger-muted-background-color:   #f2dede !default;
+$base-danger-muted-border-color:       darken(adjust-hue($base-danger-muted-background-color, -10), 5%) !default;
+$base-danger-muted-color:              #a94442 !default;
 
 $base-primary-background-color:         darken(#428bca, 6.5%) !default; // #337ab7
 $base-success-background-color:         #5cb85c !default;

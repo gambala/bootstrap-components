@@ -19,19 +19,19 @@
 }
 
 .bg-success {
-  background-color: $state-success-background-color;
+  background-color: $base-success-muted-background-color;
 }
 
 .bg-info {
-  background-color: $state-info-background-color;
+  background-color: $base-info-muted-background-color;
 }
 
 .bg-warning {
-  background-color: $state-warning-background-color;
+  background-color: $base-warning-muted-background-color;
 }
 
 .bg-danger {
-  background-color: $state-danger-background-color;
+  background-color: $base-danger-muted-background-color;
 }
 
 .text-primary {
@@ -39,19 +39,19 @@
 }
 
 .text-success {
-  color: $state-success-color;
+  color: $base-success-muted-color;
 }
 
 .text-info {
-  color: $state-info-color;
+  color: $base-info-muted-color;
 }
 
 .text-warning {
-  color: $state-warning-color;
+  color: $base-warning-muted-color;
 }
 
 .text-danger {
-  color: $state-danger-color;
+  color: $base-danger-muted-color;
 }
 
 .text-muted {

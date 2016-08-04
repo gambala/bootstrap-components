@@ -21,13 +21,13 @@ a.bg-primary:hover {
 }
 
 @include bg-variant('.bg-primary', $base-primary-background-color);
-@include bg-variant('.bg-success', $state-success-background-color);
-@include bg-variant('.bg-info', $state-info-background-color);
-@include bg-variant('.bg-warning', $state-warning-background-color);
-@include bg-variant('.bg-danger', $state-danger-background-color);
+@include bg-variant('.bg-success', $base-success-muted-background-color);
+@include bg-variant('.bg-info', $base-info-muted-background-color);
+@include bg-variant('.bg-warning', $base-warning-muted-background-color);
+@include bg-variant('.bg-danger', $base-danger-muted-background-color);
 
 @include text-emphasis-variant('.text-primary', $base-primary-background-color);
-@include text-emphasis-variant('.text-success', $state-success-color);
-@include text-emphasis-variant('.text-info', $state-info-color);
-@include text-emphasis-variant('.text-warning', $state-warning-color);
-@include text-emphasis-variant('.text-danger', $state-danger-color);
+@include text-emphasis-variant('.text-success', $base-success-muted-color);
+@include text-emphasis-variant('.text-info', $base-info-muted-color);
+@include text-emphasis-variant('.text-warning', $base-warning-muted-color);
+@include text-emphasis-variant('.text-danger', $base-danger-muted-color);

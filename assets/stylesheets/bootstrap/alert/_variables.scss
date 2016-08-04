@@ -6,18 +6,18 @@ $alert-padding:          15px !default;
 
 $alert-link-font-weight: bold !default;
 
-$alert-success-background-color:    $state-success-background-color !default;
-$alert-success-border-color:        $state-success-border-color !default;
-$alert-success-color:               $state-success-color !default;
+$alert-success-background-color:    $base-success-muted-background-color !default;
+$alert-success-border-color:        $base-success-muted-border-color !default;
+$alert-success-color:               $base-success-muted-color !default;
 
-$alert-info-background-color:       $state-info-background-color !default;
-$alert-info-border-color:           $state-info-border-color !default;
-$alert-info-color:                  $state-info-color !default;
+$alert-info-background-color:       $base-info-muted-background-color !default;
+$alert-info-border-color:           $base-info-muted-border-color !default;
+$alert-info-color:                  $base-info-muted-color !default;
 
-$alert-warning-background-color:    $state-warning-background-color !default;
-$alert-warning-border-color:        $state-warning-border-color !default;
-$alert-warning-color:               $state-warning-color !default;
+$alert-warning-background-color:    $base-warning-muted-background-color !default;
+$alert-warning-border-color:        $base-warning-muted-border-color !default;
+$alert-warning-color:               $base-warning-muted-color !default;
 
-$alert-danger-background-color:     $state-danger-background-color !default;
-$alert-danger-border-color:         $state-danger-border-color !default;
-$alert-danger-color:                $state-danger-color !default;
+$alert-danger-background-color:     $base-danger-muted-background-color !default;
+$alert-danger-border-color:         $base-danger-muted-border-color !default;
+$alert-danger-color:                $base-danger-muted-color !default;

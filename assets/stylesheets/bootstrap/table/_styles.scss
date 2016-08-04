@@ -136,10 +136,10 @@ table {
 }
 
 @include table-row-variant('active', $table-active-background-color);
-@include table-row-variant('success', $state-success-background-color);
-@include table-row-variant('info', $state-info-background-color);
-@include table-row-variant('warning', $state-warning-background-color);
-@include table-row-variant('danger', $state-danger-background-color);
+@include table-row-variant('success', $base-success-muted-background-color);
+@include table-row-variant('info', $base-info-muted-background-color);
+@include table-row-variant('warning', $base-warning-muted-background-color);
+@include table-row-variant('danger', $base-danger-muted-background-color);
 
 // Context
 

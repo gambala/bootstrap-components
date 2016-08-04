@@ -104,7 +104,7 @@ button.list-group-item {
 
 // Modificators
 
-@include list-group-item-variant(success, $state-success-background-color, $state-success-color);
-@include list-group-item-variant(info, $state-info-background-color, $state-info-color);
-@include list-group-item-variant(warning, $state-warning-background-color, $state-warning-color);
-@include list-group-item-variant(danger, $state-danger-background-color, $state-danger-color);
+@include list-group-item-variant(success, $base-success-muted-background-color, $base-success-muted-color);
+@include list-group-item-variant(info, $base-info-muted-background-color, $base-info-muted-color);
+@include list-group-item-variant(warning, $base-warning-muted-background-color, $base-warning-muted-color);
+@include list-group-item-variant(danger, $base-danger-muted-background-color, $base-danger-muted-color);
