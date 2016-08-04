@@ -132,16 +132,19 @@
     top: 50%;
     z-index: 5;
   }
+
   .icon-prev,
   .glyphicon-chevron-left {
     left: 50%;
     margin-left: -10px;
   }
+
   .icon-next,
   .glyphicon-chevron-right {
     margin-right: -10px;
     right: 50%;
   }
+
   .icon-prev,
   .icon-next {
     font-family: serif;
@@ -149,7 +152,6 @@
     line-height: 1;
     width:  20px;
   }
-
 
   .icon-prev {
     &:before {
@@ -188,6 +190,7 @@
     text-indent: -999px;
     width:  10px;
   }
+
   .active {
     background-color: $carousel-indicator-active-background-color;
     height: 12px;
@@ -208,7 +211,8 @@
   text-align: center;
   text-shadow: $carousel-text-shadow;
   z-index: 10;
-  & .btn {
+
+  .btn {
     text-shadow: none; // No shadow for button elements in carousel-caption
   }
 }
@@ -226,10 +230,12 @@
       margin-top: ($carousel-control-font-size / -2);
       width: ($carousel-control-font-size * 1.5);
     }
+
     .glyphicon-chevron-left,
     .icon-prev {
       margin-left: ($carousel-control-font-size / -2);
     }
+
     .glyphicon-chevron-right,
     .icon-next {
       margin-right: ($carousel-control-font-size / -2);

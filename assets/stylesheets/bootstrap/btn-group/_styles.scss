@@ -92,14 +92,26 @@
 
 .btn-group-lg > .btn {
   // line-height: ensure even-numbered height of button next to large input
-  @include button-size($base-lg-padding-vertical, $base-lg-padding-horizontal, $base-lg-font-size, $base-lg-line-height-unitless, $btn-lg-border-radius);
+  @include button-size($base-lg-padding-vertical,
+                       $base-lg-padding-horizontal,
+                       $base-lg-font-size,
+                       $base-lg-line-height-unitless,
+                       $btn-lg-border-radius);
 }
 .btn-group-sm > .btn {
   // line-height: ensure proper height of button next to small input
-  @include button-size($base-sm-padding-vertical, $base-sm-padding-horizontal, $base-sm-font-size, $base-sm-line-height-unitless, $btn-sm-border-radius);
+  @include button-size($base-sm-padding-vertical,
+                       $base-sm-padding-horizontal,
+                       $base-sm-font-size,
+                       $base-sm-line-height-unitless,
+                       $btn-sm-border-radius);
 }
 .btn-group-xs > .btn {
-  @include button-size($base-xs-padding-vertical, $base-xs-padding-horizontal, $base-sm-font-size, $base-sm-line-height-unitless, $btn-sm-border-radius);
+  @include button-size($base-xs-padding-vertical,
+                       $base-xs-padding-horizontal,
+                       $base-sm-font-size,
+                       $base-sm-line-height-unitless,
+                       $btn-sm-border-radius);
 }
 
 // The clickable button for toggling the menu
@@ -160,10 +172,12 @@
   &:not(:first-child):not(:last-child) {
     border-radius: 0;
   }
+
   &:first-child:not(:last-child) {
     @include border-bottom-radius(0);
     @include border-top-radius($btn-border-radius);
   }
+
   &:last-child:not(:first-child) {
     @include border-bottom-radius($btn-border-radius);
     @include border-top-radius(0);

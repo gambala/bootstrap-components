@@ -83,6 +83,7 @@
       }
     }
   }
+
   > .panel-heading + .panel-collapse > .list-group {
     .list-group-item:first-child {
       @include border-top-radius(0);
@@ -95,6 +96,7 @@
     border-top-width: 0;
   }
 }
+
 .list-group + .panel-footer {
   border-top-width: 0;
 }
@@ -114,6 +116,7 @@
       padding-right: $panel-body-padding;
     }
   }
+
   > .table:first-child,
   > .table-responsive:first-child > .table:first-child {
     @include border-top-radius(($panel-border-radius - 1));
@@ -128,6 +131,7 @@
         th:first-child {
           border-top-left-radius: ($panel-border-radius - 1);
         }
+
         td:last-child,
         th:last-child {
           border-top-right-radius: ($panel-border-radius - 1);
@@ -135,6 +139,7 @@
       }
     }
   }
+
   > .table:last-child,
   > .table-responsive:last-child > .table:last-child {
     @include border-bottom-radius(($panel-border-radius - 1));
@@ -149,6 +154,7 @@
         th:first-child {
           border-bottom-left-radius: ($panel-border-radius - 1);
         }
+
         td:last-child,
         th:last-child {
           border-bottom-right-radius: ($panel-border-radius - 1);
@@ -156,16 +162,19 @@
       }
     }
   }
+
   > .panel-body + .table,
   > .panel-body + .table-responsive,
   > .table + .panel-body,
   > .table-responsive + .panel-body {
     border-top: 1px solid $table-border-color;
   }
+
   > .table > tbody:first-child > tr:first-child th,
   > .table > tbody:first-child > tr:first-child td {
     border-top: 0;
   }
+
   > .table-bordered,
   > .table-responsive > .table-bordered {
     border: 0;
@@ -183,6 +192,7 @@
         }
       }
     }
+
     > thead,
     > tbody {
       > tr:first-child {
@@ -192,6 +202,7 @@
         }
       }
     }
+
     > tbody,
     > tfoot {
       > tr:last-child {
@@ -202,6 +213,7 @@
       }
     }
   }
+
   > .table-responsive {
     border: 0;
     margin-bottom: 0;

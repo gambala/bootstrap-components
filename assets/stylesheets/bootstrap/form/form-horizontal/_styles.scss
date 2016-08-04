@@ -15,6 +15,7 @@
     margin-top: 0;
     padding-top: ($base-padding-vertical + 1); // Default padding plus a border
   }
+
   // Account for padding we're adding to ensure the alignment and of help text
   // and other content below items
   .radio,
@@ -53,6 +54,7 @@
       }
     }
   }
+
   .form-group-sm {
     @media (min-width: $screen-sm-min) {
       .control-label {

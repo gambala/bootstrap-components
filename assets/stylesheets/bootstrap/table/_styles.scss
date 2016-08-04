@@ -59,11 +59,13 @@ table {
       }
     }
   }
+
   // Bottom align for column headings
   > thead > tr > th {
     border-bottom: 2px solid $table-border-color;
     vertical-align: bottom;
   }
+
   // Remove top border from thead by default
   > caption + thead,
   > colgroup + thead,
@@ -75,6 +77,7 @@ table {
       }
     }
   }
+
   // Account for multiple tbody instances
   > tbody + tbody {
     border-top: 2px solid $table-border-color;
@@ -114,6 +117,7 @@ table {
       }
     }
   }
+
   > thead > tr {
     > th,
     > td {
