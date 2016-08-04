@@ -51,7 +51,7 @@
 .panel-footer {
   @include border-bottom-radius(($panel-border-radius - 1));
   background-color: $panel-footer-background-color;
-  border-top: 1px solid $panel-inner-border;
+  border-top: 1px solid $panel-inner-border-color;
   padding: $panel-footer-padding;
 }
 
@@ -249,14 +249,14 @@
 
     + .panel-collapse > .panel-body,
     + .panel-collapse > .list-group {
-      border-top: 1px solid $panel-inner-border;
+      border-top: 1px solid $panel-inner-border-color;
     }
   }
 
   .panel-footer {
     border-top: 0;
     + .panel-collapse .panel-body {
-      border-bottom: 1px solid $panel-inner-border;
+      border-bottom: 1px solid $panel-inner-border-color;
     }
   }
 }
