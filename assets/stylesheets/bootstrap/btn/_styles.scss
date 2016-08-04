@@ -116,7 +116,7 @@ a.btn.disabled {
   @include button-size($base-lg-padding-vertical, $base-lg-padding-horizontal, $base-lg-font-size, $base-lg-line-height-unitless, $btn-border-radius-large);
 
   .caret {
-    border-width: $caret-width-large $caret-width-large 0;
+    border-width: $caret-lg-width $caret-lg-width 0;
     border-bottom-width: 0;
   }
 }
