@@ -69,8 +69,8 @@
 .text-capitalize     { text-transform: capitalize; }
 
 // Font-family
-.serif               { font-family: $serif-font-family; }
-.sans                { font-family: $sans-serif-font-family; }
+.text-serif          { font-family: $serif-font-family; }
+.text-sans           { font-family: $sans-serif-font-family; }
 
 // Font-weight
 .text-regular        { font-weight: normal }
