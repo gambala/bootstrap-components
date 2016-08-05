@@ -3,57 +3,9 @@
 @import "bootstrap/base/mixins/rh";
 @import "mixins";
 
-p {
-  margin: 0 0 rh(0.5);
-}
+.clearfix { @include clearfix; }
 
-.lead {
-  font-size: floor(($base-font-size * 1.15));
-  font-weight: 300;
-  line-height: 1.4;
-  margin-bottom: rh();
+.center-block { @include center-block; }
 
-  @media (min-width: $screen-sm-min) {
-    font-size: ($base-font-size * 1.5);
-  }
-}
-
-// Ex: (12px small font / 14px base font) * 100% = about 85%
-small,
-.small {
-  font-size: floor((100% * $base-sm-font-size / $base-font-size));
-}
-
-mark,
-.mark {
-  background-color: $base-warning-muted-background-color;
-  padding: .2em;
-}
-
-// Floats
-// -------------------------
-
-.clearfix {
-  @include clearfix;
-}
-
-.center-block {
-  @include center-block;
-}
-
-.pull-right {
-  float: right !important;
-}
-
-.pull-left {
-  float: left !important;
-}
-
-// Context
-
-@media print {
-  p {
-    orphans: 3;
-    widows: 3;
-  }
-}
+.pull-left  { float: left !important; }
+.pull-right { float: right !important; }

@@ -30,56 +30,6 @@
   background-color: $base-danger-muted-background-color;
 }
 
-.text-primary {
-  color: $base-primary-background-color;
-}
-
-.text-success {
-  color: $base-success-muted-color;
-}
-
-.text-info {
-  color: $base-info-muted-color;
-}
-
-.text-warning {
-  color: $base-warning-muted-color;
-}
-
-.text-danger {
-  color: $base-danger-muted-color;
-}
-
-.text-muted {
-  color: $base-muted-color;
-}
-
-// Text modificators
-
-// Text-align
-.text-left           { text-align: left; }
-.text-right          { text-align: right; }
-.text-center         { text-align: center; }
-.text-justify        { text-align: justify; }
-.text-nowrap         { white-space: nowrap; }
-
-// Text-transform
-.text-lowercase      { text-transform: lowercase; }
-.text-uppercase      { text-transform: uppercase; }
-.text-capitalize     { text-transform: capitalize; }
-
-// Font-family
-.text-serif          { font-family: $serif-font-family; }
-.text-sans           { font-family: $sans-serif-font-family; }
-
-// Font-weight
-.text-regular        { font-weight: normal }
-.text-bold           { font-weight: bold }
-// Deprecated, use .text-bold instead
-.b                   { font-weight: bold; }
-
-.text-hide           { @include text-hide; }
-
 // Transition modificators
 
 .fade {
