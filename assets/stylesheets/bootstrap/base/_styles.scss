@@ -23,6 +23,13 @@
   outline: 0;
 };
 
+// Align modificators
+
+.center-block { @include center-block; }
+.pull-left    { float: left !important; }
+.pull-right   { float: right !important; }
+.clearfix     { @include clearfix; }
+
 // Affix modificators
 
 .affix {
