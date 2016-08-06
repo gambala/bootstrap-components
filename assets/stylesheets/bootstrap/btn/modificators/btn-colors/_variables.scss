@@ -1,11 +1,5 @@
 @import "bootstrap/base/variables";
 
-$btn-border-radius:         $base-border-radius !default;
-$btn-font-weight:         normal !default;
-
-$btn-lg-border-radius:      $base-lg-border-radius !default;
-$btn-sm-border-radius:      $base-sm-border-radius !default;
-
 $btn-default-background-color:    #fff !default;
 $btn-default-border-color:        #ccc !default;
 $btn-default-color:               #333 !default;
@@ -29,5 +23,3 @@ $btn-warning-color:               #fff !default;
 $btn-danger-background-color:     $base-danger-background-color !default;
 $btn-danger-border-color:         darken($btn-danger-background-color, 5%) !default;
 $btn-danger-color:                #fff !default;
-
-$btn-link-disabled-color:         $base-muted-color !default;

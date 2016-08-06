@@ -1,7 +1,8 @@
 @import "bootstrap/base/variables";
-@import "bootstrap/btn/variables";
+@import "bootstrap/btn/component/variables";
+@import "bootstrap/btn/modificators/btn-sizes/variables";
 @import "bootstrap/base/mixins/border-radius";
-@import "bootstrap/btn/mixins";
+@import "bootstrap/btn/component/mixins";
 @import "bootstrap/base/mixins/clearfix";
 
 // Component < div

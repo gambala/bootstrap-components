@@ -1,0 +1,11 @@
+.btn > .caret {
+  margin-left: 0;
+}
+
+// Context
+
+@media print {
+  .btn > .caret {
+    border-top-color: #000 !important;
+  }
+}
