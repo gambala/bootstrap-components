@@ -3,7 +3,7 @@
 @import "bootstrap/base/mixins/rh";
 @import "mixins";
 
-// Component
+// Component < input, textarea
 
 .form-control {
   background-color: $input-background-color;
@@ -53,27 +53,26 @@
   }
 }
 
+.form-control.text-center {
+  text-align: center
+}
+
 textarea.form-control {
   height: auto;
 }
 
-// Apply class to a `p` element
-.form-control-static {
-  margin-bottom: 0;
-  min-height: (rh() + $base-font-size);
-  padding-bottom: ($base-padding-vertical + 1);
-  padding-top: ($base-padding-vertical + 1);
+@include input-size('.input-sm',
+                    $input-sm-height,
+                    $base-sm-padding-vertical,
+                    $base-sm-padding-horizontal,
+                    $base-sm-font-size,
+                    $base-sm-line-height-unitless,
+                    $input-sm-border-radius);
 
-  &.input-lg,
-  &.input-sm {
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-@include input-size('.input-sm', $input-sm-height, $base-sm-padding-vertical, $base-sm-padding-horizontal, $base-sm-font-size, $base-sm-line-height-unitless, $input-sm-border-radius);
-@include input-size('.input-lg', $input-lg-height, $base-lg-padding-vertical, $base-lg-padding-horizontal, $base-lg-font-size, $base-lg-line-height-unitless, $input-lg-border-radius);
-
-.form-control.text-center {
-  text-align: center
-}
+@include input-size('.input-lg',
+                    $input-lg-height,
+                    $base-lg-padding-vertical,
+                    $base-lg-padding-horizontal,
+                    $base-lg-font-size,
+                    $base-lg-line-height-unitless,
+                    $input-lg-border-radius);
