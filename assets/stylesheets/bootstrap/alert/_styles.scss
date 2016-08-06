@@ -1,69 +1,12 @@
-@import "variables";
-@import "bootstrap/base/mixins/rh";
-@import "mixins";
-
 // Component < div
 
-.alert {
-  border-radius: $alert-border-radius;
-  border: 1px solid transparent;
-  margin-bottom: rh();
-  padding: $alert-padding;
-}
+@import "component/styles";
 
 // Elements
 
-.alert {
-  h4 {
-    // Specified for the h4 to prevent conflicts of changing $headings-color
-    color: inherit;
-    margin-top: 0;
-  }
-
-  > p,
-  > ul {
-    margin-bottom: 0;
-  }
-
-  > p + p {
-    margin-top: 5px;
-  }
-}
-
-.alert-link {
-  font-weight: $alert-link-font-weight;
-}
+@import "elements/alert-link/styles";
 
 // Modificators
 
-.alert-dismissible {
-  padding-right: ($alert-padding + 20);
-
-  .close {
-    color: inherit;
-    position: relative;
-    right: -21px;
-    top: -2px;
-  }
-}
-
-.alert-success {
-  @include alert-variant($alert-success-background-color,
-                         $alert-success-border-color,
-                         $alert-success-color);
-}
-.alert-info {
-  @include alert-variant($alert-info-background-color,
-                         $alert-info-border-color,
-                         $alert-info-color);
-}
-.alert-warning {
-  @include alert-variant($alert-warning-background-color,
-                         $alert-warning-border-color,
-                         $alert-warning-color);
-}
-.alert-danger {
-  @include alert-variant($alert-danger-background-color,
-                         $alert-danger-border-color,
-                         $alert-danger-color);
-}
+@import "modificators/alert-colored/styles";
+@import "modificators/alert-dismissible/styles";
