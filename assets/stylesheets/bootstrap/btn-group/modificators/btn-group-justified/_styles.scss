@@ -1,0 +1,21 @@
+.btn-group-justified {
+  border-collapse: separate;
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+
+  > .btn,
+  > .btn-group {
+    display: table-cell;
+    float: none;
+    width: 1%;
+  }
+
+  > .btn-group .btn {
+    width: 100%;
+  }
+
+  > .btn-group .dropdown-menu {
+    left: auto;
+  }
+}
