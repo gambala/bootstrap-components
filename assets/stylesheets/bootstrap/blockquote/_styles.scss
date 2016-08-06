@@ -2,7 +2,7 @@
 @import "variables";
 @import "bootstrap/base/mixins/rh";
 
-// Component
+// Component < div, p
 
 blockquote {
   border-left: 5px solid $blockquote-border-color;
