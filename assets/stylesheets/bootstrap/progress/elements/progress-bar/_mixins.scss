@@ -4,7 +4,3 @@
                                             $color 50%, $color 75%,
                                             transparent 75%, transparent);
 }
-
-@mixin progress-bar-variant($background-color) {
-  background-color: $background-color;
-}
