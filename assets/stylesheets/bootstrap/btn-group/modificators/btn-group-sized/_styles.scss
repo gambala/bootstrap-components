@@ -1,6 +1,6 @@
 @import "bootstrap/base/variables";
-@import "bootstrap/btn/modificators/btn-sizes/variables";
-@import "bootstrap/btn/component/mixins";
+@import "bootstrap/btn/btn-sizes/variables";
+@import "bootstrap/btn/_base/mixins";
 
 .btn-group-lg > .btn {
   // line-height: ensure even-numbered height of button next to large input
