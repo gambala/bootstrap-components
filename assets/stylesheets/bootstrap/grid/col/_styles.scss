@@ -1,4 +1,5 @@
-@import "mixins";
+@import "_mixins/make-grid-columns";
+@import "_mixins/make-grid";
 
 // Common styles for small and large grid columns
 @include make-grid-columns;
