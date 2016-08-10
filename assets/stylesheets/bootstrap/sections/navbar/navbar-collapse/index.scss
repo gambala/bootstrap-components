@@ -1,0 +1,77 @@
+@import "bootstrap/sections/navbar/--base/variables";
+@import "bootstrap/general/base/mixins/clearfix";
+
+// Navbar collapse (body)
+//
+// Group your navbar content into this for easy collapsing and expanding across
+// various device sizes. By default, this content is collapsed when <768px, but
+// will expand past that for a horizontal display.
+//
+// To start (on mobile devices) the navbar links, forms, and buttons are stacked
+// vertically and include a `max-height` to overflow in case you have too much
+// content for the user's viewport.
+
+// Component
+
+.navbar-collapse {
+  -webkit-overflow-scrolling: touch;
+  @include clearfix;
+  border-top: 1px solid transparent;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
+  overflow-x: visible;
+  padding-left:  $navbar-padding-horizontal;
+  padding-right: $navbar-padding-horizontal;
+}
+
+// Modificators
+
+.navbar-collapse {
+  &.in {
+    overflow-y: auto;
+  }
+
+  @media (min-width: $navbar-breakpoint-exact) {
+    border-top: 0;
+    box-shadow: none;
+    width: auto;
+
+    &.collapse {
+      display: block !important;
+      height: auto !important;
+      overflow: visible !important;
+      padding-bottom: 0; // Override default setting
+    }
+
+    &.in {
+      overflow-y: visible;
+    }
+  }
+}
+
+// Context
+
+.navbar-collapse {
+  @media (min-width: $navbar-breakpoint-exact) {
+    // Undo the collapse side padding for navbars with containers to ensure
+    // alignment of right-aligned contents.
+    .navbar-fixed-bottom &,
+    .navbar-fixed-top &,
+    .navbar-static-top & {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}
+
+.container,
+.container-fluid {
+  > .navbar-collapse {
+    margin-left:  -$navbar-padding-horizontal;
+    margin-right: -$navbar-padding-horizontal;
+
+    @media (min-width: $navbar-breakpoint-exact) {
+      margin-left:  0;
+      margin-right: 0;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+@import "bootstrap/general/base/variables";
+@import "variables";
+
+// Dropdown section headers
+.dropdown-header {
+  color: $dropdown-header-color;
+  display: block;
+  font-size: $base-sm-font-size;
+  line-height: $base-line-height-unitless;
+  padding: 3px 20px;
+  white-space: nowrap; // as with > li > a
+}

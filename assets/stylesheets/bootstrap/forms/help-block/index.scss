@@ -1,0 +1,19 @@
+@import "bootstrap/general/base/variables";
+@import "bootstrap/forms/input/variables";
+
+// Components
+
+output {
+  color: $input-color;
+  display: block;
+  font-size: $base-font-size;
+  line-height: $base-line-height-unitless;
+  padding-top: ($base-padding-vertical + 1);
+}
+
+.help-block {
+  color: lighten($base-color, 25%);
+  display: block;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}

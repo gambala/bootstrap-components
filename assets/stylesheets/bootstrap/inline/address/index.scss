@@ -1,0 +1,10 @@
+@import "bootstrap/general/base/variables";
+@import "bootstrap/general/base/mixins/rh";
+
+// Component
+
+address {
+  font-style: normal;
+  line-height: $base-line-height-unitless;
+  margin-bottom: rh();
+}

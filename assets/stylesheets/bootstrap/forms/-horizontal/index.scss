@@ -1,0 +1,66 @@
+@import "bootstrap/general/base/variables";
+@import "bootstrap/general/base/mixins/rh";
+@import "bootstrap/responsive/row/_mixins/make-row";
+
+// Modificator
+
+.form-horizontal {
+  // Consistent vertical alignment of radios and checkboxes
+  // Labels also get some reset styles, but that is scoped to a media query below.
+  .radio,
+  .checkbox,
+  .radio-inline,
+  .checkbox-inline {
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-top: ($base-padding-vertical + 1); // Default padding plus a border
+  }
+
+  // Account for padding we're adding to ensure the alignment and of help text
+  // and other content below items
+  .radio,
+  .checkbox {
+    min-height: (rh() + ($base-padding-vertical + 1));
+  }
+
+  // Make form groups behave like rows
+  .form-group {
+    @include make-row;
+  }
+
+  // Reset spacing and right align labels, but scope to media queries so that
+  // labels on narrow viewports stack the same as a default form example.
+  @media (min-width: $screen-sm-min) {
+    .control-label {
+      margin-bottom: 0;
+      padding-top: ($base-padding-vertical + 1); // Default padding plus a border
+      text-align: right;
+    }
+  }
+
+  // Reposition the icon because it's now within a grid column and columns have
+  // `position: relative;` on them. Also accounts for the grid gutter padding.
+  .has-feedback .form-control-feedback {
+    right: floor(($grid-gutter-width / 2));
+  }
+
+  // Quick utility class for applying `.input-lg` and `.input-sm` styles to the
+  // inputs and labels within a `.form-group`.
+  .form-group-lg {
+    @media (min-width: $screen-sm-min) {
+      .control-label {
+        font-size: $base-lg-font-size;
+        padding-top: ($base-lg-padding-vertical + 1);
+      }
+    }
+  }
+
+  .form-group-sm {
+    @media (min-width: $screen-sm-min) {
+      .control-label {
+        font-size: $base-sm-font-size;
+        padding-top: ($base-sm-padding-vertical + 1);
+      }
+    }
+  }
+}
