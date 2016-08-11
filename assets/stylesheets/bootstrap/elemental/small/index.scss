@@ -1,0 +1,7 @@
+@import "bootstrap/basical/base/variables";
+
+// Ex: (12px small font / 14px base font) * 100% = about 85%
+small,
+.small {
+  font-size: floor((100% * $base-sm-font-size / $base-font-size));
+}

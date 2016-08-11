@@ -1,0 +1,30 @@
+@import "bootstrap/basical/base/mixins/rh";
+@import "variables";
+
+// Component < div
+
+.alert {
+  border-radius: $alert-border-radius;
+  border: 1px solid transparent;
+  margin-bottom: rh();
+  padding: $alert-padding;
+}
+
+// Elements
+
+.alert {
+  h4 {
+    // Specified for the h4 to prevent conflicts of changing $headings-color
+    color: inherit;
+    margin-top: 0;
+  }
+
+  > p,
+  > ul {
+    margin-bottom: 0;
+  }
+
+  > p + p {
+    margin-top: 5px;
+  }
+}

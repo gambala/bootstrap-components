@@ -1,0 +1,52 @@
+@import "bootstrap/basical/base/variables";
+
+pre {
+  font-family: $monospace-font-family;
+}
+
+pre {
+  background-color: $pre-background-color;
+  border-radius: $base-border-radius;
+  border: 1px solid $pre-border-color;
+  color: $pre-color;
+  display: block;
+  font-size: ($base-font-size - 1); // 14px to 13px
+  line-height: $base-line-height-unitless;
+  margin: 0 0 rh(0.5);
+  padding: ((rh() - 1) / 2);
+  word-break: break-all;
+  word-wrap: break-word;
+
+  code {
+    background-color: transparent;
+    border-radius: 0;
+    color: inherit;
+    font-size: inherit;
+    padding: 0;
+    white-space: pre-wrap;
+  }
+}
+
+// Modificators
+
+.pre-scrollable {
+  max-height: $pre-scrollable-max-height;
+  overflow-y: scroll;
+}
+
+// Context
+
+@if $monospace-custom-font-family != none {
+  .wf-active {
+    pre {
+      font-family: $monospace-custom-font-family, $monospace-font-family;
+    }
+  }
+}
+
+@media print {
+  pre {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+}
