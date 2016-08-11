@@ -1,0 +1,93 @@
+@import "bootstrap/basical/base/variables";
+@import "bootstrap/elemental/caret/variables";
+@import "variables";
+@import "bootstrap/basical/base/mixins/border-radius";
+@import "bootstrap/basical/base/mixins/clearfix";
+@import "bootstrap/basical/base/mixins/rh";
+@import "mixins";
+
+// Component
+
+.navbar {
+  @include clearfix;
+  border: 1px solid transparent;
+  margin-bottom: $navbar-margin-bottom;
+  min-height: $navbar-height;
+  position: relative;
+}
+
+// Context
+
+@media (min-width: $navbar-breakpoint-exact) {
+  .navbar {
+    border-radius: $navbar-border-radius;
+  }
+}
+
+@media print {
+  .navbar {
+    display: none;
+  }
+}
+
+// Special
+
+// Dropdown menus
+
+.navbar-nav > li > .dropdown-menu {
+  @include border-top-radius(0);
+  margin-top: 0;
+}
+
+.navbar-fixed-bottom .navbar-nav > li > .dropdown-menu {
+  @include border-bottom-radius(0);
+  @include border-top-radius($navbar-border-radius);
+  margin-bottom: 0;
+}
+
+.navbar-fixed-bottom .dropdown {
+  .caret {
+    border-bottom: $caret-width dashed;
+    border-top: 0;
+    content: "";
+  }
+
+  .dropdown-menu {
+    bottom: 100%;
+    margin-bottom: 2px;
+    top: auto;
+  }
+}
+
+// Component alignment
+//
+// Repurpose the pull utilities as their own navbar utilities to avoid specificity
+// issues with parents and chaining. Only do this when the navbar is uncollapsed
+// though so that navbar contents properly stack and align in mobile.
+//
+// Declared after the navbar components to ensure more specificity on the margins.
+
+@media (min-width: $navbar-breakpoint-exact) {
+  .navbar-left {
+    float: left !important;
+  }
+
+  .navbar-right {
+    float: right !important;
+    margin-right: -$navbar-padding-horizontal;
+
+    .dropdown-menu {
+      right: 0; left: auto;
+    }
+
+    // Necessary for overrides of the default right aligned menu.
+    // Will remove come v4 in all likelihood.
+    .dropdown-menu-left {
+      left: 0; right: auto;
+    }
+
+    ~ .navbar-right {
+      margin-right: 0;
+    }
+  }
+}

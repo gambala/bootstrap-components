@@ -1,9 +1,0 @@
-@import "mixins";
-
-// Common styles for small and large grid columns
-@include make-grid-columns;
-
-@include make-grid(xs);
-@media (min-width: $screen-sm-min) { @include make-grid(sm); }
-@media (min-width: $screen-md-min) { @include make-grid(md); }
-@media (min-width: $screen-lg-min) { @include make-grid(lg); }
