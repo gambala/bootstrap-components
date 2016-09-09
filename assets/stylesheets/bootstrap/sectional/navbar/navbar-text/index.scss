@@ -1,5 +1,6 @@
 @import "bootstrap/sectional/navbar/--base/variables";
-@import "bootstrap/basical/base/mixins/rh";
+@import "bootstrap/mixins/rh";
+@import "bootstrap/mixins/navbar-vertical-align";
 
 // Add a class to make any element properly align itself vertically within the navbars.
 .navbar-text {

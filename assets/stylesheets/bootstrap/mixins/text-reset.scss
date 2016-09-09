@@ -1,17 +1,3 @@
-@mixin text-hide() {
-  background-color: transparent;
-  border: 0;
-  color: transparent;
-  font: 0/0 a;
-  text-shadow: none;
-}
-
-@mixin text-overflow() {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
 @mixin text-reset() {
   font-family: $base-font-family;
   font-style: normal;

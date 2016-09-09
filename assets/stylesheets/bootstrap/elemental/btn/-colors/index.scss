@@ -1,5 +1,5 @@
 @import "variables";
-@import "mixins";
+@import "bootstrap/mixins/button-variant";
 
 .btn-default {
   @include button-variant($btn-default-color,

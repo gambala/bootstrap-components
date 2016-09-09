@@ -1,5 +1,5 @@
 @import "bootstrap/basical/base/variables";
-@import "bootstrap/basical/base/mixins/clearfix";
+@import "bootstrap/mixins/clearfix";
 
 @mixin container-fixed($gutter-width: $grid-gutter-width) {
   @include clearfix;

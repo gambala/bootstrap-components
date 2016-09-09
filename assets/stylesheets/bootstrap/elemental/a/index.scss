@@ -1,6 +1,7 @@
 @import "bootstrap/basical/base/variables";
 @import "variables";
-@import "mixins";
+@import "bootstrap/mixins/link-bg-variant";
+@import "bootstrap/mixins/text-emphasis-variant";
 
 // Component
 
@@ -20,11 +21,11 @@ a.bg-primary:hover {
   color: #fff;
 }
 
-@include bg-variant('.bg-primary', $base-primary-background-color);
-@include bg-variant('.bg-success', $base-success-muted-background-color);
-@include bg-variant('.bg-info', $base-info-muted-background-color);
-@include bg-variant('.bg-warning', $base-warning-muted-background-color);
-@include bg-variant('.bg-danger', $base-danger-muted-background-color);
+@include link-bg-variant('.bg-primary', $base-primary-background-color);
+@include link-bg-variant('.bg-success', $base-success-muted-background-color);
+@include link-bg-variant('.bg-info', $base-info-muted-background-color);
+@include link-bg-variant('.bg-warning', $base-warning-muted-background-color);
+@include link-bg-variant('.bg-danger', $base-danger-muted-background-color);
 
 @include text-emphasis-variant('.text-primary', $base-primary-background-color);
 @include text-emphasis-variant('.text-success', $base-success-muted-color);

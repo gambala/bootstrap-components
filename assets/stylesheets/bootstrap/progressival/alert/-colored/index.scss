@@ -1,5 +1,5 @@
 @import "variables";
-@import "mixins";
+@import "bootstrap/mixins/alert-variant";
 
 .alert-success {
   @include alert-variant($alert-success-background-color,

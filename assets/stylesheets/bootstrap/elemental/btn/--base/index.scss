@@ -1,7 +1,7 @@
 @import "bootstrap/basical/base/variables";
-@import "bootstrap/basical/base/mixins/rh";
+@import "bootstrap/mixins/rh";
 @import "bootstrap/elemental/btn/--base/_variables";
-@import "bootstrap/elemental/btn/--base/_mixins";
+@import "bootstrap/mixins/button-size";
 
 // Component < div, a, input[type=button], input[type=submit]
 

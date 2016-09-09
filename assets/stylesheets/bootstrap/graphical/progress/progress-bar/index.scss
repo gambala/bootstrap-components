@@ -1,6 +1,6 @@
 @import "bootstrap/basical/base/variables";
 @import "variables";
-@import "mixins";
+@import "bootstrap/mixins/gradient-striped";
 
 @-webkit-keyframes progress-bar-stripes {
   from  { background-position: 40px 0; }

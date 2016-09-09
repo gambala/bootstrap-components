@@ -1,7 +1,8 @@
 @import "bootstrap/basical/base/variables";
 @import "bootstrap/formal/input/variables";
-@import "bootstrap/basical/base/mixins/rh";
-@import "mixins";
+@import "bootstrap/mixins/form-control-focus";
+@import "bootstrap/mixins/input-size";
+@import "bootstrap/mixins/rh";
 
 // Component < input, textarea
 
