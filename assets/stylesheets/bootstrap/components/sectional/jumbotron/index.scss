@@ -1,5 +1,6 @@
 @import "bootstrap/variables/base";
 @import "bootstrap/variables/jumbotron";
+@import "bootstrap/mixins/gg";
 
 // Component
 
@@ -39,8 +40,8 @@
   .container &,
   .container-fluid & {
     border-radius: $base-lg-border-radius; // Only round corners at higher resolutions if contained in a container
-    padding-left:  ($grid-gutter-width / 2);
-    padding-right: ($grid-gutter-width / 2);
+    padding-left: gg(0.5);
+    padding-right: gg(0.5);
   }
 
   @media screen and (min-width: $screen-sm-min) {
