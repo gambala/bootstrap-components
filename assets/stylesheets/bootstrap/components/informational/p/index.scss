@@ -1,4 +1,5 @@
 @import "bootstrap/variables/base";
+@import "bootstrap/variables/font-family";
 @import "bootstrap/mixins/text-hide";
 
 // Component
@@ -20,8 +21,8 @@ p {
 .text-uppercase    { text-transform: uppercase; }
 .text-capitalize   { text-transform: capitalize; }
 
-.text-serif        { font-family: $serif-font-family; }
-.text-sans         { font-family: $sans-serif-font-family; }
+.text-serif        { font-family: $font-family-serif; }
+.text-sans         { font-family: $font-family-sans; }
 
 .text-regular      { font-weight: normal }
 .text-bold         { font-weight: bold }

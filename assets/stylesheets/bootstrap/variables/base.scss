@@ -1,15 +1,10 @@
-$sans-serif-font-family:         "Helvetica Neue", Helvetica, Arial, sans-serif !default;
-$sans-serif-custom-font-family:  none !default;
-$serif-font-family:              Georgia, "Times New Roman", Times, serif !default;
-$serif-custom-font-family:       none !default;
-$monospace-font-family:          Menlo, Monaco, Consolas, "Courier New", monospace !default;
-$monospace-custom-font-family:   none !default;
+@import "bootstrap/variables/font-family";
 
 $base-background-color:          #fff !default;
 $base-border-radius:             4px !default;
 $base-color:                     #333 !default;
-$base-custom-font-family:        $sans-serif-custom-font-family !default;
-$base-font-family:               $sans-serif-font-family !default;
+$base-font-family-custom:        $font-family-sans-custom !default;
+$base-font-family:               $font-family-sans !default;
 $base-font-size:                 14px !default;
 $base-line-height-unitless:      1.428571429 !default; // 20/14
 $base-line-height-computed:      floor(($base-font-size * $base-line-height-unitless)) !default; // ~20px
