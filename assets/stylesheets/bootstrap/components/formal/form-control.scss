@@ -1,1 +1,79 @@
-@import "bootstrap/components/formal/form-control/index";
+@import "bootstrap/variables/base";
+@import "bootstrap/variables/input";
+@import "bootstrap/mixins/form-control-focus";
+@import "bootstrap/mixins/input-size";
+@import "bootstrap/mixins/rh";
+
+// Component < input, textarea
+
+.form-control {
+  background-color: $input-background-color;
+  background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
+  border-radius: $input-border-radius; // Note: This has no effect on <select>s in some browsers, due to the limited stylability of <select>s in CSS.
+  border: 1px solid $input-border-color;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  color: $input-color;
+  display: block;
+  font-size: $base-font-size;
+  height: $input-height; // Make inputs at least the height of their button counterpart (base line-height + padding + border)
+  line-height: rh();
+  padding: $base-padding-vertical $base-padding-horizontal;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  width: 100%;
+}
+
+// Elements
+
+.form-control {
+  @include form-control-focus;
+
+  &::placeholder {
+    color: $input-placeholder-color
+  }
+
+  // Unstyle the caret on `<select>`s in IE10+.
+  &::-ms-expand {
+    background-color: transparent;
+    border: 0;
+  }
+}
+
+// Modificators
+
+.form-control {
+  &[disabled],
+  &[readonly],
+  fieldset[disabled] & {
+    background-color: $input-disabled-background-color;
+    opacity: 1; // iOS fix for unreadable disabled content; see https://github.com/twbs/bootstrap/issues/11655
+  }
+
+  &[disabled],
+  fieldset[disabled] & {
+    cursor: $base-disabled-cursor;
+  }
+}
+
+.form-control.text-center {
+  text-align: center
+}
+
+textarea.form-control {
+  height: auto;
+}
+
+@include input-size('.input-sm',
+                    $input-sm-height,
+                    $base-sm-padding-vertical,
+                    $base-sm-padding-horizontal,
+                    $base-sm-font-size,
+                    $base-sm-line-height-unitless,
+                    $input-sm-border-radius);
+
+@include input-size('.input-lg',
+                    $input-lg-height,
+                    $base-lg-padding-vertical,
+                    $base-lg-padding-horizontal,
+                    $base-lg-font-size,
+                    $base-lg-line-height-unitless,
+                    $input-lg-border-radius);

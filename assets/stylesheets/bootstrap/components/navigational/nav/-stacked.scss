@@ -1,1 +1,10 @@
-@import "bootstrap/components/navigational/nav/-stacked/index";
+.nav-stacked {
+  > li {
+    float: none;
+
+    + li {
+      margin-left: 0; // no need for this gap between nav items
+      margin-top: 2px;
+    }
+  }
+}

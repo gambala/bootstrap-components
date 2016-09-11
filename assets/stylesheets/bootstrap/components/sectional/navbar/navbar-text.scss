@@ -1,1 +1,14 @@
-@import "bootstrap/components/sectional/navbar/navbar-text/index";
+@import "bootstrap/variables/navbar";
+@import "bootstrap/mixins/navbar-vertical-align";
+@import "bootstrap/mixins/rh";
+
+// Add a class to make any element properly align itself vertically within the navbars.
+.navbar-text {
+  @include navbar-vertical-align(rh());
+
+  @media (min-width: $navbar-breakpoint-exact) {
+    float: left;
+    margin-left: $navbar-padding-horizontal;
+    margin-right: $navbar-padding-horizontal;
+  }
+}

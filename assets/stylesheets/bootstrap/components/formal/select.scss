@@ -1,1 +1,7 @@
-@import "bootstrap/components/formal/select/index";
+// Modificators
+
+// Make multiple select elements height not fixed
+select[multiple],
+select[size] {
+  height: auto;
+}

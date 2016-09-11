@@ -1,1 +1,214 @@
-@import "bootstrap/components/formal/form-group/index";
+@import "bootstrap/variables/base";
+@import "bootstrap/variables/form-group";
+@import "bootstrap/variables/input";
+@import "bootstrap/mixins/form-control-validation";
+@import "bootstrap/mixins/rh";
+
+// Component
+
+.form-group {
+  margin-bottom: $form-group-margin-bottom;
+}
+
+// Modificators
+
+// The `.form-group-* form-control` variations are sadly duplicated to avoid the
+// issue documented in https://github.com/twbs/bootstrap/issues/15074.
+.form-group-sm {
+  .form-control {
+    border-radius: $input-sm-border-radius;
+    font-size: $base-sm-font-size;
+    height: $input-sm-height;
+    line-height: $base-sm-line-height-unitless;
+    padding: $base-sm-padding-vertical $base-sm-padding-horizontal;
+  }
+
+  select.form-control {
+    height: $input-sm-height;
+    line-height: $input-sm-height;
+  }
+
+  textarea.form-control,
+  select[multiple].form-control {
+    height: auto;
+  }
+
+  .form-control-static {
+    font-size: $base-sm-font-size;
+    height: $input-sm-height;
+    line-height: $base-sm-line-height-unitless;
+    min-height: (rh() + $base-sm-font-size);
+    padding: ($base-sm-padding-vertical + 1) $base-sm-padding-horizontal;
+  }
+}
+
+.form-group-lg {
+  .form-control {
+    border-radius: $input-lg-border-radius;
+    font-size: $base-lg-font-size;
+    height: $input-lg-height;
+    line-height: $base-lg-line-height-unitless;
+    padding: $base-lg-padding-vertical $base-lg-padding-horizontal;
+  }
+
+  select.form-control {
+    height: $input-lg-height;
+    line-height: $input-lg-height;
+  }
+
+  textarea.form-control,
+  select[multiple].form-control {
+    height: auto;
+  }
+
+  .form-control-static {
+    font-size: $base-lg-font-size;
+    height: $input-lg-height;
+    line-height: $base-lg-line-height-unitless;
+    min-height: (rh() + $base-lg-font-size);
+    padding: ($base-lg-padding-vertical + 1) $base-lg-padding-horizontal;
+  }
+}
+
+.radio,
+.checkbox {
+  display: block;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  position: relative;
+
+  label {
+    cursor: pointer;
+    font-weight: normal;
+    margin-bottom: 0;
+    min-height: rh();
+    padding-left: 20px;
+  }
+}
+
+.radio input[type="radio"],
+.radio-inline input[type="radio"],
+.checkbox input[type="checkbox"],
+.checkbox-inline input[type="checkbox"] {
+  margin-left: -20px;
+  margin-top: 4px \9;
+  position: absolute;
+}
+
+.radio + .radio,
+.checkbox + .checkbox {
+  margin-top: -5px;
+}
+
+// Radios and checkboxes on same line
+.radio-inline,
+.checkbox-inline {
+  cursor: pointer;
+  display: inline-block;
+  font-weight: normal;
+  margin-bottom: 0;
+  padding-left: 20px;
+  position: relative;
+  vertical-align: middle;
+}
+
+.radio-inline + .radio-inline,
+.checkbox-inline + .checkbox-inline {
+  margin-left: 10px;
+  margin-top: 0;
+}
+
+// Apply same disabled cursor tweak as for inputs
+// Some special care is needed because <label>s don't inherit their parent's `cursor`.
+//
+// Note: Neither radios nor checkboxes can be readonly.
+input[type="radio"],
+input[type="checkbox"] {
+  &[disabled],
+  &.disabled,
+  fieldset[disabled] & {
+    cursor: $base-disabled-cursor;
+  }
+}
+
+// These classes are used directly on <label>s
+.radio-inline,
+.checkbox-inline {
+  &.disabled,
+  fieldset[disabled] & {
+    cursor: $base-disabled-cursor;
+  }
+}
+
+// These classes are used on elements with <label> descendants
+.radio,
+.checkbox {
+  &.disabled,
+  fieldset[disabled] & {
+    label {
+      cursor: $base-disabled-cursor;
+    }
+  }
+}
+
+// Special
+
+.has-feedback {
+  // Enable absolute positioning
+  position: relative;
+
+  // Ensure icons don't overlap text
+  .form-control {
+    padding-right: ($input-height * 1.25);
+  }
+}
+
+// Feedback icon (requires .glyphicon classes)
+.form-control-feedback {
+  display: block;
+  height: $input-height;
+  line-height: $input-height;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+  width: $input-height;
+  z-index: 2; // Ensure icon is above input groups
+}
+
+.input-lg + .form-control-feedback,
+.input-group-lg + .form-control-feedback,
+.form-group-lg .form-control + .form-control-feedback {
+  height: $input-lg-height;
+  line-height: $input-lg-height;
+  width: $input-lg-height;
+}
+
+.input-sm + .form-control-feedback,
+.input-group-sm + .form-control-feedback,
+.form-group-sm .form-control + .form-control-feedback {
+  height: $input-sm-height;
+  line-height: $input-sm-height;
+  width: $input-sm-height;
+}
+
+.has-success {
+  @include form-control-validation($base-success-muted-color, $base-success-muted-color, $base-success-muted-background-color);
+}
+.has-warning {
+  @include form-control-validation($base-warning-muted-color, $base-warning-muted-color, $base-warning-muted-background-color);
+}
+.has-error {
+  @include form-control-validation($base-danger-muted-color, $base-danger-muted-color, $base-danger-muted-background-color);
+}
+
+// Reposition feedback icon if input has visible label above
+.has-feedback label {
+  & ~ .form-control-feedback {
+    top: (rh() + 5); // Height of the `label` and its margin
+  }
+  &.sr-only ~ .form-control-feedback {
+    top: 0;
+  }
+}

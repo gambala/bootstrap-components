@@ -1,1 +1,17 @@
-@import "bootstrap/components/formal/legend/index";
+@import "bootstrap/variables/base";
+@import "bootstrap/variables/legend";
+@import "bootstrap/mixins/rh";
+
+// Component
+
+legend {
+  border: 0;
+  border-bottom: 1px solid $legend-border-color;
+  color: $legend-color;
+  display: block;
+  font-size: ($base-font-size * 1.5);
+  line-height: inherit;
+  margin-bottom: rh();
+  padding: 0;
+  width: 100%;
+}

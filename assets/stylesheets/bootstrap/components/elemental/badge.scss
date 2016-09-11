@@ -1,1 +1,66 @@
-@import "bootstrap/components/elemental/badge/index";
+@import "bootstrap/variables/badge";
+@import "bootstrap/variables/base";
+
+// Component < div, span, a
+
+.badge {
+  background-color: $badge-background-color;
+  border-radius: $badge-border-radius;
+  color: $badge-color;
+  display: inline-block;
+  font-size: $base-sm-font-size;
+  font-weight: $badge-font-weight;
+  line-height: $badge-line-height;
+  min-width: 10px;
+  padding: 3px 7px;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+// Modificators
+
+.badge:empty {
+  display: none;
+}
+
+a.badge {
+  &:hover {
+    color: $badge-link-hover-color;
+    cursor: pointer;
+    text-decoration: none;
+  }
+}
+
+// Context
+
+.badge {
+  .btn & {
+    position: relative;
+    top: -1px;
+  }
+
+  .btn-xs &,
+  .btn-group-xs > .btn & {
+    padding: 1px 5px;
+    top: 0;
+  }
+
+  .list-group-item.active > &,
+  .nav-pills > .active > a > & {
+    background-color: $badge-active-background-color;
+    color: $badge-active-color;
+  }
+
+  .list-group-item > & {
+    float: right;
+  }
+
+  .list-group-item > & + & {
+    margin-right: 5px;
+  }
+
+  .nav-pills > li > a > & {
+    margin-left: 3px;
+  }
+}

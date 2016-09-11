@@ -1,1 +1,7 @@
-@import "bootstrap/components/elemental/mark/index";
+@import "bootstrap/variables/base";
+
+mark,
+.mark {
+  background-color: $base-warning-muted-background-color;
+  padding: .2em;
+}

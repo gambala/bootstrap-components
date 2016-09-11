@@ -1,1 +1,7 @@
-@import "bootstrap/components/responsival/row/index";
+@import "bootstrap/mixins/make-row";
+
+// Component
+
+.row {
+  @include make-row;
+}

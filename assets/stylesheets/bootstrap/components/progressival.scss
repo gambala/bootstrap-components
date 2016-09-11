@@ -1,6 +1,12 @@
 @import "bootstrap/components/progressival/alert";
+@import "bootstrap/components/progressival/alert/-colored";
+@import "bootstrap/components/progressival/alert/-dismissible";
+@import "bootstrap/components/progressival/alert/alert-link";
 @import "bootstrap/components/progressival/carousel";
 @import "bootstrap/components/progressival/dropdown";
+@import "bootstrap/components/progressival/dropdown/dropdown-backdrop";
+@import "bootstrap/components/progressival/dropdown/dropdown-header";
+@import "bootstrap/components/progressival/dropdown/dropdown-menu";
 @import "bootstrap/components/progressival/modal";
 @import "bootstrap/components/progressival/popover";
 @import "bootstrap/components/progressival/tooltip";

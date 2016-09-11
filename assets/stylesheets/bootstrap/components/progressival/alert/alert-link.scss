@@ -1,1 +1,5 @@
-@import "bootstrap/components/progressival/alert/alert-link/index";
+@import "bootstrap/variables/alert/alert-link";
+
+.alert-link {
+  font-weight: $alert-link-font-weight;
+}

@@ -1,1 +1,33 @@
-@import "bootstrap/components/sectional/navbar/-fixed/index";
+@import "bootstrap/variables/navbar";
+
+.navbar-fixed-top,
+.navbar-fixed-bottom {
+  .navbar-collapse {
+    max-height: $navbar-collapse-max-height;
+  }
+}
+
+// Fix the top/bottom navbars when screen real estate supports it
+.navbar-fixed-top,
+.navbar-fixed-bottom {
+  left: 0;
+  position: fixed;
+  right: 0;
+  z-index: $navbar-fixed-z-index;
+
+  // Undo the rounded corners
+  @media (min-width: $navbar-breakpoint-exact) {
+    border-radius: 0;
+  }
+}
+
+.navbar-fixed-top {
+  border-width: 0 0 1px;
+  top: 0;
+}
+
+.navbar-fixed-bottom {
+  border-width: 1px 0 0;
+  bottom: 0;
+  margin-bottom: 0; // override .navbar defaults
+}
