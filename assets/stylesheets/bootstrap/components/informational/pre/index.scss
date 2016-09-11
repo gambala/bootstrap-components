@@ -14,7 +14,7 @@ pre {
   font-size: ($base-font-size - 1); // 14px to 13px
   line-height: $base-line-height-unitless;
   margin: 0 0 rh(0.5);
-  padding: ((rh() - 1) / 2);
+  padding: (rh() - 1) / 2;
   word-break: break-all;
   word-wrap: break-word;
 

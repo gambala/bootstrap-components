@@ -24,7 +24,7 @@
 }
 
 .panel-heading {
-  @include border-top-radius(($panel-border-radius - 1));
+  @include border-top-radius($panel-border-radius - 1);
   border-bottom: 1px solid transparent;
   padding: $panel-heading-padding;
 
@@ -35,7 +35,7 @@
 
 .panel-title {
   color: inherit;
-  font-size: ceil(($base-font-size * 1.125));
+  font-size: ceil($base-font-size * 1.125);
   margin-bottom: 0;
   margin-top: 0;
 
@@ -49,7 +49,7 @@
 }
 
 .panel-footer {
-  @include border-bottom-radius(($panel-border-radius - 1));
+  @include border-bottom-radius($panel-border-radius - 1);
   background-color: $panel-footer-background-color;
   border-top: 1px solid $panel-inner-border-color;
   padding: $panel-footer-padding;
@@ -71,14 +71,14 @@
 
     &:first-child {
       .list-group-item:first-child {
-        @include border-top-radius(($panel-border-radius - 1));
+        @include border-top-radius($panel-border-radius - 1);
         border-top: 0;
       }
     }
 
     &:last-child {
       .list-group-item:last-child {
-        @include border-bottom-radius(($panel-border-radius - 1));
+        @include border-bottom-radius($panel-border-radius - 1);
         border-bottom: 0;
       }
     }
@@ -119,7 +119,7 @@
 
   > .table:first-child,
   > .table-responsive:first-child > .table:first-child {
-    @include border-top-radius(($panel-border-radius - 1));
+    @include border-top-radius($panel-border-radius - 1);
 
     > thead:first-child,
     > tbody:first-child {
@@ -142,7 +142,7 @@
 
   > .table:last-child,
   > .table-responsive:last-child > .table:last-child {
-    @include border-bottom-radius(($panel-border-radius - 1));
+    @include border-bottom-radius($panel-border-radius - 1);
 
     > tbody:last-child,
     > tfoot:last-child {

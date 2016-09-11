@@ -7,18 +7,18 @@ $base-font-family-custom:        $font-family-sans-custom !default;
 $base-font-family:               $font-family-sans !default;
 $base-font-size:                 14px !default;
 $base-line-height-unitless:      1.428571429 !default; // 20/14
-$base-line-height-computed:      floor(($base-font-size * $base-line-height-unitless)) !default; // ~20px
+$base-line-height-computed:      floor($base-font-size * $base-line-height-unitless) !default; // ~20px
 $base-padding-horizontal:        12px !default;
 $base-padding-vertical:          6px !default;
 
 $base-lg-border-radius:          6px !default;
-$base-lg-font-size:              ceil(($base-font-size * 1.25)) !default; // ~18px
+$base-lg-font-size:              ceil($base-font-size * 1.25) !default; // ~18px
 $base-lg-line-height-unitless:   1.3333333 !default; // extra decimals for Win 8.1 Chrome
 $base-lg-padding-horizontal:     16px !default;
 $base-lg-padding-vertical:       10px !default;
 
 $base-sm-border-radius:          3px !default;
-$base-sm-font-size:              ceil(($base-font-size * 0.85)) !default; // ~12px
+$base-sm-font-size:              ceil($base-font-size * 0.85) !default; // ~12px
 $base-sm-line-height-unitless:   1.5 !default;
 $base-sm-padding-horizontal:     10px !default;
 $base-sm-padding-vertical:       5px !default;
