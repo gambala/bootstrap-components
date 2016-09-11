@@ -1,0 +1,14 @@
+@import "bootstrap/variables/input";
+@import "bootstrap/mixins/navbar-vertical-align";
+
+// Vertically center a button within a navbar (when *not* in a form).
+.navbar-btn {
+  @include navbar-vertical-align($input-height);
+
+  &.btn-sm {
+    @include navbar-vertical-align($input-sm-height);
+  }
+  &.btn-xs {
+    @include navbar-vertical-align(22);
+  }
+}

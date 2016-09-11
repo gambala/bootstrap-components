@@ -1,0 +1,7 @@
+@import "bootstrap/mixins/form-inline";
+
+// Modificator
+
+.form-inline {
+  @include form-inline;
+}

@@ -1,0 +1,8 @@
+@import "bootstrap/variables/input";
+
+@mixin form-control-focus($border-color: $input-focus-border-color) {
+  &:focus {
+    border-color: $border-color;
+    outline: 0;
+  }
+}

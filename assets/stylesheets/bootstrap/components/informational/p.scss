@@ -1,0 +1,47 @@
+@import "bootstrap/variables/base";
+@import "bootstrap/variables/font-family";
+@import "bootstrap/mixins/text-hide";
+
+// Component
+
+p {
+  margin: 0 0 rh(0.5);
+}
+
+// Modificators
+
+.text-left         { text-align: left; }
+.text-right        { text-align: right; }
+.text-center       { text-align: center; }
+.text-justify      { text-align: justify; }
+
+.text-nowrap       { white-space: nowrap; }
+
+.text-lowercase    { text-transform: lowercase; }
+.text-uppercase    { text-transform: uppercase; }
+.text-capitalize   { text-transform: capitalize; }
+
+.text-serif        { font-family: $font-family-serif; }
+.text-sans         { font-family: $font-family-sans; }
+
+.text-regular      { font-weight: normal }
+.text-bold         { font-weight: bold }
+.b                 { font-weight: bold; } // Deprecated, use .text-bold instead
+
+.text-hide         { @include text-hide; }
+
+.text-primary      { color: $base-primary-background-color; }
+.text-success      { color: $base-success-muted-color; }
+.text-info         { color: $base-info-muted-color; }
+.text-warning      { color: $base-warning-muted-color; }
+.text-danger       { color: $base-danger-muted-color; }
+.text-muted        { color: $base-muted-color; }
+
+// Context
+
+@media print {
+  p {
+    orphans: 3;
+    widows: 3;
+  }
+}

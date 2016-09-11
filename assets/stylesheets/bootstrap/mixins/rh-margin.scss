@@ -1,0 +1,6 @@
+@import "bootstrap/variables/base";
+@import "bootstrap/mixins/rh";
+
+@function rh-margin($height, $qwazi: true, $line-height-base: $base-line-height-computed) {
+  @return rh($height, $qwazi, $line-height-base) - $height;
+}

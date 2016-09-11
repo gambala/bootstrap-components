@@ -1,8 +1,0 @@
-@import "bootstrap/basical/base/variables";
-@import "bootstrap/basical/base/mixins/clearfix";
-
-@mixin make-row($gutter: $grid-gutter-width) {
-  @include clearfix;
-  margin-left:  ceil(($gutter / -2));
-  margin-right: floor(($gutter / -2));
-}

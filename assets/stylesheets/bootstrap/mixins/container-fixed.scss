@@ -1,0 +1,10 @@
+@import "bootstrap/variables/grid";
+@import "bootstrap/mixins/clearfix";
+
+@mixin container-fixed($gutter-width: $grid-gutter-width) {
+  @include clearfix;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left:  floor($gutter-width / 2);
+  padding-right: ceil($gutter-width / 2);
+}

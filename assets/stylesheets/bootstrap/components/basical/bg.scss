@@ -1,0 +1,24 @@
+@import "bootstrap/variables/base";
+
+// Modificators for *
+
+.bg-primary {
+  background-color: $base-primary-background-color;
+  color: #fff;
+}
+
+.bg-success {
+  background-color: $base-success-muted-background-color;
+}
+
+.bg-info {
+  background-color: $base-info-muted-background-color;
+}
+
+.bg-warning {
+  background-color: $base-warning-muted-background-color;
+}
+
+.bg-danger {
+  background-color: $base-danger-muted-background-color;
+}

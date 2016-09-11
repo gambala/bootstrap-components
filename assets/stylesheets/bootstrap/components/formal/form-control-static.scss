@@ -1,0 +1,16 @@
+@import "bootstrap/variables/base";
+
+// Component < p
+
+.form-control-static {
+  margin-bottom: 0;
+  min-height: (rh() + $base-font-size);
+  padding-bottom: ($base-padding-vertical + 1);
+  padding-top: ($base-padding-vertical + 1);
+
+  &.input-lg,
+  &.input-sm {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

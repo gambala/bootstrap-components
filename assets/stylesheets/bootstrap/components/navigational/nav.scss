@@ -1,0 +1,77 @@
+@import "bootstrap/variables/base";
+@import "bootstrap/variables/link";
+@import "bootstrap/variables/nav";
+@import "bootstrap/mixins/clearfix";
+@import "bootstrap/mixins/nav-divider";
+
+// Component
+
+.nav {
+  @include clearfix;
+  list-style: none;
+  margin-bottom: 0;
+  padding-left: 0; // Override default ul/ol
+}
+
+// Elements
+
+.nav {
+  > li {
+    display: block;
+    position: relative;
+
+    > a {
+      display: block;
+      padding: $nav-link-padding;
+      position: relative;
+
+      &:hover {
+        background-color: $nav-link-hover-background-color;
+        text-decoration: none;
+      }
+    }
+
+    &.disabled > a {
+      color: $nav-disabled-link-color;
+
+      &:hover {
+        background-color: transparent;
+        color: $nav-disabled-link-hover-color;
+        cursor: $base-disabled-cursor;
+        text-decoration: none;
+      }
+    }
+  }
+
+  // Open dropdowns
+  .open > a {
+    &,
+    &:hover {
+      background-color: $nav-link-hover-background-color;
+      border-color: $link-color;
+    }
+  }
+
+  // Nav dividers (deprecated with v3.0.1)
+  //
+  // This should have been removed in v3 with the dropping of `.nav-list`, but
+  // we missed it. We don't currently support this anywhere, but in the interest
+  // of maintaining backward compatibility in case you use it, it's deprecated.
+  .nav-divider {
+    @include nav-divider;
+  }
+}
+
+// Special
+
+// Tabbable tabs
+// Hide tabbable panes to start, show them when `.active`
+.tab-content {
+  > .tab-pane {
+    display: none;
+  }
+
+  > .active {
+    display: block;
+  }
+}

@@ -1,0 +1,23 @@
+@import "bootstrap/variables/alert/-colors";
+@import "bootstrap/mixins/alert-variant";
+
+.alert-success {
+  @include alert-variant($alert-success-background-color,
+                         $alert-success-border-color,
+                         $alert-success-color);
+}
+.alert-info {
+  @include alert-variant($alert-info-background-color,
+                         $alert-info-border-color,
+                         $alert-info-color);
+}
+.alert-warning {
+  @include alert-variant($alert-warning-background-color,
+                         $alert-warning-border-color,
+                         $alert-warning-color);
+}
+.alert-danger {
+  @include alert-variant($alert-danger-background-color,
+                         $alert-danger-border-color,
+                         $alert-danger-color);
+}
