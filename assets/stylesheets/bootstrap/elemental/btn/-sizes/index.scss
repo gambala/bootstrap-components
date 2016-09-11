@@ -1,7 +1,7 @@
-@import "bootstrap/basical/base/variables";
-@import "bootstrap/elemental/caret/variables";
+@import "bootstrap/variables/base";
+@import "bootstrap/variables/btn/-sizes";
+@import "bootstrap/variables/caret";
 @import "bootstrap/mixins/button-size";
-@import "variables";
 
 .btn-lg {
   // line-height: ensure even-numbered height of button next to large input

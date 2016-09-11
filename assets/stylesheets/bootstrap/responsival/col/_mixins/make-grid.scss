@@ -1,5 +1,5 @@
-@import "bootstrap/basical/base/_variables";
-@import "bootstrap/responsival/col/_variables";
+@import "bootstrap/variables/base";
+@import "bootstrap/variables/grid";
 
 @mixin float-grid-columns($class, $i: 1, $list: ".col-#{$class}-#{$i}") {
   @for $i from (1 + 1) through $grid-columns {

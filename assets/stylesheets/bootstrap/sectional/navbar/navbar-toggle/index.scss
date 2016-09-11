@@ -1,5 +1,5 @@
-@import "bootstrap/basical/base/variables";
-@import "bootstrap/sectional/navbar/--base/variables";
+@import "bootstrap/variables/base";
+@import "bootstrap/variables/navbar";
 @import "bootstrap/mixins/navbar-vertical-align";
 
 // Custom button for toggling the `.navbar-collapse`

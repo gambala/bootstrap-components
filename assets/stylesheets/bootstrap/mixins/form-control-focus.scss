@@ -1,4 +1,4 @@
-@import "bootstrap/formal/input/variables";
+@import "bootstrap/variables/input";
 
 @mixin form-control-focus($border-color: $input-focus-border-color) {
   &:focus {
